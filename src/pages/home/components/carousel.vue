@@ -19,11 +19,11 @@
           <div class="absolute inset-0 z-20 flex items-center ">
             <div class="container mx-auto px-24">
               <div class="max-w-3xl">
-                <h1 class="text-6xl mb-6 bg-clip-text text-white tracking-wide max-w-[450px] font-light">
-                  人工智能赋能<br />新药发现
+                <h1 class="text-5xl mb-6 bg-clip-text text-white tracking-wide max-w-[580px] font-bold">
+                  欢迎访问侯廷军教授<br />课题组网站
                 </h1>
                 <p class="text-xl text-gray-300 mb-10 max-w-[550px] font-light">
-                  We offer comprehensive access to airline content, 右侧会放一个动画，粒子聚合成一个分子，然后扭动，然后散开.
+                  本课题组致力于计算机辅助药物分子设计方法和应用研究，加速药物分子的发现
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                   <div 

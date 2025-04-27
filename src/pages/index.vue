@@ -3,6 +3,13 @@
     <!-- 英雄区域 - 使用自定义轮播图组件 -->
     <Carousel />
 
+    <!-- Placeholder using Shadcn/Vue Card and Tailwind CSS -->
+    <Card class="border-dashed h-[500px] ">
+      <CardContent class="p-24 text-center text-muted-foreground">
+        <p>Future content will be displayed here.</p>
+      </CardContent>
+    </Card>
+
     <!-- 页脚 -->
   </PageFrame>
 </template>
