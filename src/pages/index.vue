@@ -3,212 +3,213 @@
     <!-- 英雄区域 - 使用自定义轮播图组件 -->
     <Carousel />
 
-    <!-- Placeholder using Shadcn/Vue Card and Tailwind CSS -->
-    <Card class="border-dashed h-[500px] ">
-      <CardContent class="p-24 text-center text-muted-foreground">
-        <p>Future content will be displayed here.</p>
-      </CardContent>
-    </Card>
+    <!-- 1. 数据展示区域 -->
+    <section class="py-16 bg-gradient-to-b from-slate-900 to-slate-950">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="p-6 text-center flex flex-col items-center justify-center transition-colors duration-300">
+            <div class="text-5xl font-bold mb-2 bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent">120+</div>
+            <div class="text-gray-400 text-lg">发表论文</div>
+          </div>
+          <div class="p-6 text-center flex flex-col items-center justify-center transition-colors duration-300">
+            <div class="text-5xl font-bold mb-2 bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent">30+</div>
+            <div class="text-gray-400 text-lg">申请专利</div>
+          </div>
+          <div class="p-6 text-center flex flex-col items-center justify-center transition-colors duration-300">
+            <div class="text-5xl font-bold mb-2 bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent">50+</div>
+            <div class="text-gray-400 text-lg">软件平台</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- 2. 四个研究方向 -->
+    <section class="py-16 bg-slate-950">
+      <div class="container mx-auto px-8">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-100">研究方向</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-slate-800 rounded-lg hover:bg-slate-700 transition-colors duration-300 overflow-hidden flex flex-col">
+            <img src="@/assets/imgs/research-new_d1-1.png" alt="AI Drug Design" class="w-full h-64 object-cover">
+            <div class="p-6 flex flex-col flex-grow">
+              <Brain class="w-12 h-12 text-primary mb-4" />
+              <h3 class="text-xl font-semibold mb-2 text-gray-100">基于人工智能的药物设计方法研究</h3>
+              <p class="text-gray-400 text-sm flex-grow">
+                围绕药物设计中的难点问题，应用大数据和AI技术发展高精度及高效的活性分子虚拟筛选方法、成药性预测方法、全新结构设计方法、逆合成预测方法以及靶标预测方法等，并开发整合的高精度药物设计和筛选软件平台。
+              </p>
+            </div>
+          </div>
+          <div class="bg-slate-800 rounded-lg hover:bg-slate-700 transition-colors duration-300 overflow-hidden flex flex-col">
+            <img src="@/assets/imgs/research-new_d2-1.png" alt="Physics-based Drug Design" class="w-full h-64 object-cover">
+            <div class="p-6 flex flex-col flex-grow">
+              <Atom class="w-12 h-12 text-primary mb-4" />
+              <h3 class="text-xl font-semibold mb-2 text-gray-100">基于物理方法的药物设计方法研究</h3>
+              <p class="text-gray-400 text-sm flex-grow">
+                基于分子对接的虚拟筛选成本低、效率高，已成为药物发现的关键技术。为提高虚拟筛选的预测精度，我们围绕靶标-配体相互作用预测展开了深入系统的方法学研究，开发了一系列针对药物设计和筛选的计算工具和软件，并应用于多个重要靶标的药物研究。
+              </p>
+            </div>
+          </div>
+          <div class="bg-slate-800 rounded-lg hover:bg-slate-700 transition-colors duration-300 overflow-hidden flex flex-col">
+            <img src="@/assets/imgs/research-new_d3-1.png" alt="Target-based Drug Design" class="w-full h-64 object-cover">
+            <div class="p-6 flex flex-col flex-grow">
+              <Target class="w-12 h-12 text-primary mb-4" />
+              <h3 class="text-xl font-semibold mb-2 text-gray-100">重要靶点的药物分子设计</h3>
+              <p class="text-gray-400 text-sm flex-grow">
+                先导化合物的发现和优化是新药开发中不可或缺的关键环节。我们通过整合计算模拟以及体内/体外生物活性评价，针对多个重要药物靶点进行了先导化合物的筛选与优化，广泛涉足药物临床前开发的各个阶段，加快药物发现和开发的速度。
+              </p>
+            </div>
+          </div>
+          <div class="bg-slate-800 rounded-lg hover:bg-slate-700 transition-colors duration-300 overflow-hidden flex flex-col">
+            <img src="@/assets/imgs/research-new_d4-1.png" alt="Multi-scale Simulation" class="w-full h-64 object-cover">
+            <div class="p-6 flex flex-col flex-grow">
+              <Microscope class="w-12 h-12 text-primary mb-4" />
+              <h3 class="text-xl font-semibold mb-2 text-gray-100">基于多尺度分子模拟的靶标-配体识别作用机制研究</h3>
+              <p class="text-gray-400 text-sm flex-grow">
+                传统实验方法无法描述配体−靶标之间的动态识别过程。全原子模拟（包括常规动力学模拟和增强采样动力学模拟）可以辅助实验技术捕捉原子层次的动力学和热力学作用机制，揭示复杂的分子机制，如药物分子耐药性机制等。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 重要方向详细描述 -->
+    <section class="py-16 bg-gradient-to-b from-slate-50 to-slate-100 text-gray-800">
+      <div class="container mx-auto px-8">
+        <h2 class="text-3xl font-bold text-center mb-12">DrugFlow</h2>
+        <!-- placeholder -->
+        <div class="h-[600px] bg-white flex justify-center items-center rounded-lg shadow-md">
+          <div class="text-2xl font-bold">待定</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. 软件平台展示 -->
+    <section class="py-16 bg-slate-100">
+      <div class="container mx-auto px-8">
+        <h2 class="text-3xl font-bold text-center mb-4 text-gray-900">软件平台</h2>
+        <p class="text-center text-gray-600 mb-12">我们开发的计算药物设计软件与平台</p>
+
+        <div class="relative overflow-hidden space-y-6">
+          <!-- First Row (Original Direction) -->
+          <div class="software-carousel flex gap-6 py-4">
+            <div v-for="software in allSoftware" :key="software.name + '-fwd'" class="flex-none w-72">
+              <div class="bg-white p-6 rounded-lg shadow-md h-full flex flex-col">
+                <h3 class="text-lg font-semibold mb-2 text-primary">{{ software.name }}</h3>
+                <p class="text-sm text-gray-600 flex-grow">{{ software.description }}</p>
+              </div>
+            </div>
+            <!-- Duplicate content for seamless looping -->
+            <div v-for="software in allSoftware" :key="software.name + '-fwd-dup'" class="flex-none w-72">
+              <div class="bg-white p-6 rounded-lg shadow-md h-full flex flex-col">
+                <h3 class="text-lg font-semibold mb-2 text-primary">{{ software.name }}</h3>
+                <p class="text-sm text-gray-600 flex-grow">{{ software.description }}</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Row (Reverse Direction) -->
+          <div class="software-carousel-reverse flex gap-6 py-4">
+            <div v-for="software in allSoftwareReversed" :key="software.name + '-rev'" class="flex-none w-72">
+              <div class="bg-white p-6 rounded-lg shadow-md h-full flex flex-col">
+                <h3 class="text-lg font-semibold mb-2 text-primary">{{ software.name }}</h3>
+                <p class="text-sm text-gray-600 flex-grow">{{ software.description }}</p>
+              </div>
+            </div>
+             <!-- Duplicate content for seamless looping -->
+            <div v-for="software in allSoftwareReversed" :key="software.name + '-rev-dup'" class="flex-none w-72">
+              <div class="bg-white p-6 rounded-lg shadow-md h-full flex flex-col">
+                <h3 class="text-lg font-semibold mb-2 text-primary">{{ software.name }}</h3>
+                <p class="text-sm text-gray-600 flex-grow">{{ software.description }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
     <!-- 页脚 -->
   </PageFrame>
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
-import { Button } from '@/components/ui/button'
-import { Sparkle } from 'lucide-vue-next'
+import { ref, onMounted, onUnmounted, computed } from 'vue'
 import PageFrame from '@/components/Layout/page_frame.vue'
-import { 
-  Card, 
-  CardHeader,
-  CardTitle, 
-  CardDescription, 
-  CardContent 
-} from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
-import ParticleBackground from '@/components/ParticleBackground.vue'
 import Carousel from '@/pages/home/components/carousel.vue'
-
-// 化学计算服务卡片相关
-const currentServiceCard = ref(0)
-const cardContainer = ref<HTMLElement | null>(null)
+import { FileText, FileCheck, Server, Brain, Atom, Target, Microscope, 
+         Lightbulb, Database, LineChart, ArrowRight } from 'lucide-vue-next'
+import { categories, softwareData } from '@/pages/software/components/data.js'
 
 // 监听滚动，更新当前选中的卡片
 onMounted(() => {
-  // 设置滚动显示动画
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-revealed')
-        observer.unobserve(entry.target)
-      }
-    })
-  }, {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-  })
-  
-  document.querySelectorAll('.reveal-item').forEach(item => {
-    observer.observe(item)
-  })
-
-  // 添加滚动监听，更新当前选中的服务卡片
-  window.addEventListener('scroll', updateActiveCard)
+  initSoftwareCarousel()
 })
 
 onUnmounted(() => {
-  window.removeEventListener('scroll', updateActiveCard)
+  // 清理事件监听器
 })
 
-// 更新激活的服务卡片
-const updateActiveCard = () => {
-  if (!cardContainer.value) return
-  
-  // 获取所有卡片元素
-  const cards = [0, 1, 2].map(i => document.getElementById(`service-card-${i}`))
-  
-  // 找到当前在视口中心的卡片
-  for (let i = 0; i < cards.length; i++) {
-    const card = cards[i]
-    if (!card) continue
-    
-    const rect = card.getBoundingClientRect()
-    const windowHeight = window.innerHeight
-    
-    // 如果卡片在视口中心附近，设为激活
-    if (rect.top <= windowHeight/2 && rect.bottom >= windowHeight/2) {
-      currentServiceCard.value = i
-      break
-    }
+const initSoftwareCarousel = () => {
+  // 实现软件平台的滚动效果
+  const carousel = document.querySelector('.software-carousel')
+  if (carousel) {
+    // 可以在这里添加自动滚动逻辑
   }
 }
 
-// 点击导航按钮时滚动到对应卡片
-const scrollToCard = (index: number) => {
-  const card = document.getElementById(`service-card-${index}`)
-  if (!card) return
-  
-  currentServiceCard.value = index
-  
-  // 滚动到卡片位置（平滑滚动）
-  card.scrollIntoView({ behavior: 'smooth', block: 'center' })
-}
+// Edit 5: Added computed property to flatten software data
+const allSoftware = computed(() => {
+  // Duplicate the array to make the loop seamless
+  const flatSoftware = Object.values(softwareData).flat();
+  return [...flatSoftware]; // Edit 7: Return only the original flat list (duplication handled in template)
+});
+
+// Edit 8: Added computed property for reversed software data
+const allSoftwareReversed = computed(() => {
+  const flatSoftware = Object.values(softwareData).flat();
+  return [...flatSoftware].reverse(); // Return a reversed copy
+});
 </script>
 
 <style scoped>
-.slide-enter-active,
-.slide-leave-active {
-  transition: all 0.5s ease;
+.software-carousel, .software-carousel-reverse {
+  /* Double the width to account for duplicated content */
+  width: calc( (18rem + 1.5rem) * v-bind(allSoftware.length) * 2); /* 18rem = w-72, 1.5rem = gap-6 */
 }
 
-.slide-enter-from {
-  opacity: 0;
-  transform: translateX(30px);
+.software-carousel {
+  animation: scroll 180s linear infinite;
 }
 
-.slide-leave-to {
-  opacity: 0;
-  transform: translateX(-30px);
+/* Edit 10: Added reverse carousel class and animation */
+.software-carousel-reverse {
+  animation: scroll-reverse 180s linear infinite;
 }
 
-/* 合作伙伴滚动样式 */
-.partner-scroller {
-  display: flex;
-  white-space: nowrap;
-}
-
-.partner-group {
-  display: flex;
-  animation-duration: 30s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-.scroller-left .partner-group {
-  animation-name: scroll-left;
-}
-
-.scroller-right .partner-group {
-  animation-name: scroll-right;
-}
-
-.partner-item {
-  flex: 0 0 auto;
-  background: white;
-  padding: 1rem;
-  margin: 0 1rem;
-  border-radius: 0.5rem;
-  border: 1px solid #e5e7eb;
-  transition: all 0.3s ease;
-  min-width: 160px;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.partner-item:hover {
-  border-color: #93c5fd;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
-
-@keyframes scroll-left {
+@keyframes scroll {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    /* Scroll by the width of the original content */
+    transform: translateX(calc( (18rem + 1.5rem) * v-bind(allSoftware.length) * -1));
   }
 }
 
-@keyframes scroll-right {
+/* Edit 11: Added reverse scroll animation */
+@keyframes scroll-reverse {
   0% {
-    transform: translateX(-100%);
+     /* Start scrolled by the width of the original content */
+    transform: translateX(calc( (18rem + 1.5rem) * v-bind(allSoftware.length) * -1));
   }
   100% {
     transform: translateX(0);
   }
 }
 
-/* 滚动显示动画 */
-.reveal-item {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.reveal-item.is-revealed {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.animation-delay-100 {
-  transition-delay: 0.1s;
-}
-
-.animation-delay-200 {
-  transition-delay: 0.2s;
-}
-
-.animation-delay-300 {
-  transition-delay: 0.3s;
-}
-
-.animation-delay-400 {
-  transition-delay: 0.4s;
-}
-
-/* 卡片淡入淡出过渡 */
-.card-fade-enter-active,
-.card-fade-leave-active {
-  transition: all 0.4s ease;
-}
-
-.card-fade-enter-from,
-.card-fade-leave-to {
-  opacity: 0;
-  transform: translateY(20px);
+/* 鼠标悬停时暂停滚动 */
+.software-carousel:hover,
+.software-carousel-reverse:hover {
+  animation-play-state: paused;
 }
 </style>
 
