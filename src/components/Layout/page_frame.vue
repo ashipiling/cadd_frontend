@@ -1,8 +1,8 @@
 <template>
   <!-- 页面框架 -->
-  <div class="min-h-screen bg-gray-950">
+  <div class="min-h-screen" :class="{'bg-gray-950': headerBackgroundColor === 'dark', 'bg-white': headerBackgroundColor === 'light'}">
     <!-- 导航栏 -->
-    <Header :backgroundColor="headerBackgroundColor" />
+    <Header :backgroundColor="headerBackgroundColor" :enableScrollHiding="enableScrollHiding" />
     <!-- 内容区域 -->
     <div>
       <slot></slot>
@@ -29,6 +29,10 @@ defineProps({
     type: String,
     default: 'dark',
     validator: (value) => ['dark', 'light'].includes(value)
+  },
+  enableScrollHiding: {
+    type: Boolean,
+    default: false
   }
 });
 

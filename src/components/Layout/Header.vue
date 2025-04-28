@@ -1,7 +1,8 @@
 <template>
   <header :class="[
     backgroundColor === 'dark' ? 'bg-transparent backdrop-blur-sm' : 'bg-transparent backdrop-blur-sm',
-    'fixed top-0 left-0 right-0 z-50'
+    'fixed top-0 left-0 right-0 z-50 transition-transform duration-300',
+    { '-translate-y-full': enableScrollHiding && !headerVisible }
   ]">
     <div class="container mx-auto px-8 py-4 flex items-center justify-between">
       <div class="flex items-center gap-3">
@@ -136,21 +137,52 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import { Button } from '@/components/ui/button'
 
 const currentLanguage = ref('zh') // 默认中文
+const headerVisible = ref(true)
+const lastScrollY = ref(0)
 
 const toggleLanguage = () => {
   currentLanguage.value = currentLanguage.value === 'zh' ? 'en' : 'zh'
   // 这里可以添加语言切换的逻辑，例如触发事件或修改全局状态
 }
 
-defineProps({
+const handleScroll = () => {
+  if (!props.enableScrollHiding) return
+  
+  const currentScrollY = window.scrollY
+  
+  // Determine scroll direction and update header visibility
+  if (currentScrollY > lastScrollY.value && currentScrollY > 50) {
+    // Scrolling down and not at the top
+    headerVisible.value = false
+  } else {
+    // Scrolling up or at the top
+    headerVisible.value = true
+  }
+  
+  lastScrollY.value = currentScrollY
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
+
+const props = defineProps({
   backgroundColor: {
     type: String,
     default: 'dark',
     validator: (value) => ['dark', 'light'].includes(value)
+  },
+  enableScrollHiding: {
+    type: Boolean,
+    default: false
   }
 });
 </script>
