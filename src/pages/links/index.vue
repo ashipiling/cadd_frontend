@@ -2,9 +2,9 @@
   <PageFrame headerBackgroundColor="light" backgroundColor="light" enableScrollHiding="true">
     <div class="container py-8 mx-auto relative">
       <!-- Decorative background elements -->
-      <div class="absolute inset-0 overflow-visible pointer-events-none">
-        <div class="absolute -top-24 -right-24 w-96 h-96 bg-primary/15 rounded-full blur-3xl"></div>
-        <div class="absolute top-20 -left-20 w-80 h-80 bg-amber-300/20 rounded-full blur-2xl"></div>
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute -top-24 md:-right-24 -right-8 w-60 md:w-96 h-60 md:h-96 bg-primary/15 rounded-full blur-3xl"></div>
+        <div class="absolute top-20 -left-10 md:-left-20 w-48 md:w-80 h-48 md:h-80 bg-amber-300/20 rounded-full blur-2xl"></div>
       </div>
       
       <div class="max-w-6xl mx-auto relative">
@@ -15,7 +15,7 @@
         </div>
         
         <!-- Navigation Section -->
-        <div class="mb-10 sticky top-2 z-10">
+        <div class="mb-10 sticky top-2 z-10 hidden md:block">
           <div class="bg-white/90 backdrop-blur-md shadow-md rounded-xl py-3 px-4 border border-gray-100">
             <div class="flex flex-wrap justify-center gap-2">
               <Button 

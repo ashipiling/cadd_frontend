@@ -4,8 +4,8 @@
     'border-t py-16'
   ]">
     <div class="container mx-auto px-8">
-      <div class="grid grid-cols-1 md:grid-cols-9 gap-2">
-        <div class="col-span-3"> 
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-9 gap-2">
+        <div class="col-span-2 md:col-span-3 mb-6"> 
           <div class="flex items-center gap-2 mb-6">
             <div class="w-10 h-10 relative flex items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-purple-600 shadow-md">
               <span class="text-white font-bold text-lg">H</span>
@@ -21,7 +21,7 @@
           </ul>
         </div>
         
-        <div>
+        <div class="mb-6">
           <h4 class="font-medium mb-4" :class="backgroundColor === 'dark' ? 'text-white' : 'text-gray-800'">人员组成</h4>
           <ul class="space-y-2 text-sm" :class="backgroundColor === 'dark' ? 'text-gray-400' : 'text-gray-600'">
             <li><a href="/people#faculty" :class="backgroundColor === 'dark' ? 'hover:text-blue-400' : 'hover:text-blue-600'">教师</a></li>
@@ -32,7 +32,7 @@
           </ul>
         </div>
 
-        <div>
+        <div class="mb-6">
           <h4 class="font-medium mb-4" :class="backgroundColor === 'dark' ? 'text-white' : 'text-gray-800'">论文专利</h4>
           <ul class="space-y-2 text-sm" :class="backgroundColor === 'dark' ? 'text-gray-400' : 'text-gray-600'">
             <li><a href="/publication#publication" :class="backgroundColor === 'dark' ? 'hover:text-blue-400' : 'hover:text-blue-600'">论文著作</a></li>
@@ -41,7 +41,7 @@
           </ul>
         </div>
         
-        <div>
+        <div class="mb-6">
           <h4 class="font-medium mb-4" :class="backgroundColor === 'dark' ? 'text-white' : 'text-gray-800'">程序开发</h4>
           <ul class="space-y-2 text-sm" :class="backgroundColor === 'dark' ? 'text-gray-400' : 'text-gray-600'">
             <li><a href="/software#database" :class="backgroundColor === 'dark' ? 'hover:text-blue-400' : 'hover:text-blue-600'">数据库</a></li>
@@ -56,7 +56,7 @@
           </ul>
         </div>
         
-        <div>
+        <div class="mb-6">
           <h4 class="font-medium mb-4" :class="backgroundColor === 'dark' ? 'text-white' : 'text-gray-800'">友情链接</h4>
           <ul class="space-y-2 text-sm" :class="backgroundColor === 'dark' ? 'text-gray-400' : 'text-gray-600'">
             <li><a href="/links#cooperation_group" :class="backgroundColor === 'dark' ? 'hover:text-blue-400' : 'hover:text-blue-600'">合作课题组</a></li>

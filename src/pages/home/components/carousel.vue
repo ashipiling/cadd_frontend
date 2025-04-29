@@ -17,12 +17,12 @@
             />
           </div>
           <div class="absolute inset-0 z-20 flex items-center ">
-            <div class="container mx-auto px-24 mt-20">
-              <div class="max-w-3xl">
-                <h1 class="text-5xl mb-6 bg-clip-text text-white tracking-wide max-w-[580px] font-bold animate-fade-in-up">
+            <div class="container mx-auto px-4 md:px-24 mt-20">
+              <div class="max-w-full md:max-w-3xl text-center md:text-left">
+                <h1 class="text-3xl md:text-5xl mb-6 bg-clip-text text-white tracking-wide max-w-[580px] font-bold animate-fade-in-up">
                   欢迎访问侯廷军教授<br />课题组网站
                 </h1>
-                <p class="text-xl text-gray-300 mb-10 max-w-[550px] font-light animate-fade-in-up animation-delay-200">
+                <p class="text-base md:text-xl text-gray-300 mb-10 max-w-[550px] font-light animate-fade-in-up animation-delay-200">
                   本课题组致力于计算机辅助药物分子设计方法和应用研究，加速药物分子的发现
                 </p>
                 <!-- 荣誉展示区 -->
@@ -32,7 +32,7 @@
                   <!-- 美化样式：增加高度、内边距、改变背景效果、添加边框和圆角 -->
                   <div class="h-16 overflow-hidden relative bg-white/5 rounded-lg backdrop-blur-sm p-5 group">
                     <!-- 滚动的实际内容区域 - 添加 items-center h-full 使文字垂直居中 -->
-                    <div class="flex animate-scroll-horizontal group-hover:pause-animation whitespace-nowrap items-center h-full font-light">
+                    <div class="text-sm md:text-base flex animate-scroll-horizontal group-hover:pause-animation whitespace-nowrap items-center h-full font-light">
                       <!-- 荣誉项 - 为了无缝滚动，需要复制列表 -->
                       <span class="text-gray-300 mx-4 inline-block">- 2023年 XX自然科学基金重点项目</span>
                       <span class="text-gray-300 mx-4 inline-block">- 2022年 教育部科技进步X等奖</span>
@@ -63,11 +63,11 @@
           </div>
           <div class="absolute inset-0 z-20 flex items-center">
             <div class="container mx-auto px-24">
-              <div class="max-w-3xl">
-                <h1 class="text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-400">
+              <div class="max-w-full md:max-w-3xl text-center md:text-left">
+                <h1 class="text-3xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-400">
                   最新科研成果1
                 </h1>
-                <p class="text-xl text-gray-300 mb-10">
+                <p class="text-base md:text-xl text-gray-300 mb-10">
                   XXXXXXXXXXXXX
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
@@ -95,11 +95,11 @@
           </div>
           <div class="absolute inset-0 z-20 flex items-center">
             <div class="container mx-auto px-24">
-              <div class="max-w-3xl">
-                <h1 class="text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-green-400">
+              <div class="max-w-full md:max-w-3xl text-center md:text-left">
+                <h1 class="text-3xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-green-400">
                   最新科研成果2
                 </h1>
-                <p class="text-xl text-gray-300 mb-10">
+                <p class="text-base md:text-xl text-gray-300 mb-10">
                   XXXXXXXXXXXXX
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">

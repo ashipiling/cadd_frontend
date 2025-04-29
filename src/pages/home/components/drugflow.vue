@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto px-8 relative z-10 bg-slate-100">
+  <div class="container mx-auto px-4 md:px-8 relative z-10 bg-slate-100">
     <div class="text-center mb-16 pt-16 reveal-item">
       <h2 class="text-4xl font-bold mb-4">DrugFlowXXX</h2>
       <p class="text-gray-600 max-w-2xl mx-auto">
@@ -7,7 +7,7 @@
       </p>
     </div>
     <!-- 大型视频展示区域 -->
-    <div class="bg-gray-100 rounded-xl p-6 relative reveal-item">
+    <div class="bg-gray-100 rounded-xl p-0 md:p-6 relative reveal-item">
       <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-green-500 rounded-xl opacity-50 blur-xl"></div>
       <div class="relative bg-white rounded-lg overflow-hidden">
         <div class="aspect-[16/9] w-full bg-gray-200 overflow-hidden relative">

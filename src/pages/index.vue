@@ -8,7 +8,7 @@
 
     <!-- 2. 四个研究方向 -->
     <section class="py-16 bg-slate-950">
-      <div class="container mx-auto px-8">
+      <div class="container mx-auto px-4 md:px-8">
         <h2 class="text-3xl font-bold text-center mb-12 text-gray-100">研究方向</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div class="bg-slate-800 rounded-lg hover:bg-slate-700 transition-colors duration-300 overflow-hidden flex flex-col">
@@ -60,7 +60,7 @@
 
     <!-- 4. 软件平台展示 -->
     <section class="py-16 bg-slate-100">
-      <div class="container mx-auto px-8">
+      <div class="container mx-auto px-4 md:px-8">
         <h2 class="text-3xl font-bold text-center mb-4 text-gray-900">软件平台</h2>
         <p class="text-center text-gray-600 mb-12">我们开发的计算药物设计软件与平台</p>
 
