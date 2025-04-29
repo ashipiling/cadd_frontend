@@ -4,24 +4,7 @@
     <Carousel />
 
     <!-- 1. 数据展示区域 -->
-    <section class="py-16 bg-gradient-to-b from-slate-900 to-slate-950">
-      <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="p-6 text-center flex flex-col items-center justify-center transition-colors duration-300">
-            <div class="text-5xl font-bold mb-2 bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent">120+</div>
-            <div class="text-gray-400 text-lg">发表论文</div>
-          </div>
-          <div class="p-6 text-center flex flex-col items-center justify-center transition-colors duration-300">
-            <div class="text-5xl font-bold mb-2 bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent">30+</div>
-            <div class="text-gray-400 text-lg">申请专利</div>
-          </div>
-          <div class="p-6 text-center flex flex-col items-center justify-center transition-colors duration-300">
-            <div class="text-5xl font-bold mb-2 bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent">50+</div>
-            <div class="text-gray-400 text-lg">软件平台</div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <DataShow />
 
     <!-- 2. 四个研究方向 -->
     <section class="py-16 bg-slate-950">
@@ -73,15 +56,7 @@
     </section>
 
     <!-- 3. 重要方向详细描述 -->
-    <section class="py-16 bg-gradient-to-b from-slate-50 to-slate-100 text-gray-800">
-      <div class="container mx-auto px-8">
-        <h2 class="text-3xl font-bold text-center mb-12">DrugFlow</h2>
-        <!-- placeholder -->
-        <div class="h-[600px] bg-white flex justify-center items-center rounded-lg shadow-md">
-          <div class="text-2xl font-bold">待定</div>
-        </div>
-      </div>
-    </section>
+    <DrugFlow />
 
     <!-- 4. 软件平台展示 -->
     <section class="py-16 bg-slate-100">
@@ -126,7 +101,6 @@
         </div>
       </div>
     </section>
-    
     <!-- 页脚 -->
   </PageFrame>
 </template>
@@ -135,6 +109,8 @@
 import { ref, onMounted, onUnmounted, computed } from 'vue'
 import PageFrame from '@/components/Layout/page_frame.vue'
 import Carousel from '@/pages/home/components/carousel.vue'
+import DataShow from '@/pages/home/components/datashow.vue'
+import DrugFlow from '@/pages/home/components/drugflow.vue'
 import { FileText, FileCheck, Server, Brain, Atom, Target, Microscope, 
          Lightbulb, Database, LineChart, ArrowRight } from 'lucide-vue-next'
 import { categories, softwareData } from '@/pages/software/components/data.js'

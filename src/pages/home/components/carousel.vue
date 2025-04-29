@@ -11,28 +11,39 @@
         <div class="min-w-full h-full relative">
           <div class="w-full h-full inset-0 bg-gradient-to-br from-blue-900/60 to-gray-900/70 z-10 overflow-hidden">
             <img 
-              src="@/assets/imgs/aaa.png" 
+              src="@/assets/imgs/hero-1.jpg" 
               alt="AI药物研发" 
-              class="w-full object-cover opacity-30"
+              class="w-full h-full object-cover opacity-30"
             />
           </div>
           <div class="absolute inset-0 z-20 flex items-center ">
-            <div class="container mx-auto px-24">
+            <div class="container mx-auto px-24 mt-20">
               <div class="max-w-3xl">
-                <h1 class="text-5xl mb-6 bg-clip-text text-white tracking-wide max-w-[580px] font-bold">
+                <h1 class="text-5xl mb-6 bg-clip-text text-white tracking-wide max-w-[580px] font-bold animate-fade-in-up">
                   欢迎访问侯廷军教授<br />课题组网站
                 </h1>
-                <p class="text-xl text-gray-300 mb-10 max-w-[550px] font-light">
+                <p class="text-xl text-gray-300 mb-10 max-w-[550px] font-light animate-fade-in-up animation-delay-200">
                   本课题组致力于计算机辅助药物分子设计方法和应用研究，加速药物分子的发现
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                  <div 
-                    class="relative overflow-hidden bg-white rounded-full p-3 px-8 border-1 border-gray-900 text-gray-900 hover:text-blue-500 hover:bg-gray-100 hover:border-blue-500 cursor-pointer transition-all duration-300 flex items-center gap-2"
-                  >
-                    <Sparkle class="w-5 h-5" />
-                    <span>
-                      联系我们
-                    </span>
+                <!-- 荣誉展示区 -->
+                <!-- 调整上边距，使其更靠近上方文字，让整体内容块在垂直方向上更居中 -->
+                <div class="mt-36">
+                  <!-- 横向滚动容器 -->
+                  <!-- 美化样式：增加高度、内边距、改变背景效果、添加边框和圆角 -->
+                  <div class="h-16 overflow-hidden relative bg-white/5 rounded-lg backdrop-blur-sm p-5 group">
+                    <!-- 滚动的实际内容区域 - 添加 items-center h-full 使文字垂直居中 -->
+                    <div class="flex animate-scroll-horizontal group-hover:pause-animation whitespace-nowrap items-center h-full font-light">
+                      <!-- 荣誉项 - 为了无缝滚动，需要复制列表 -->
+                      <span class="text-gray-300 mx-4 inline-block">- 2023年 XX自然科学基金重点项目</span>
+                      <span class="text-gray-300 mx-4 inline-block">- 2022年 教育部科技进步X等奖</span>
+                      <span class="text-gray-300 mx-4 inline-block">- 2021年 XX市科技进步X等奖</span>
+                      <span class="text-gray-300 mx-4 inline-block">- 2020年 XXXX学者称号</span>
+                      <!-- 重复荣誉项以实现无缝滚动 -->
+                      <span class="text-gray-300 mx-4 inline-block">- 2023年 XX自然科学基金重点项目</span>
+                      <span class="text-gray-300 mx-4 inline-block">- 2022年 教育部科技进步X等奖</span>
+                      <span class="text-gray-300 mx-4 inline-block">- 2021年 XX市科技进步X等奖</span>
+                      <span class="text-gray-300 mx-4 inline-block">- 2020年 XXXX学者称号</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -54,7 +65,7 @@
             <div class="container mx-auto px-24">
               <div class="max-w-3xl">
                 <h1 class="text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-400">
-                  融资和合作新闻
+                  最新科研成果1
                 </h1>
                 <p class="text-xl text-gray-300 mb-10">
                   XXXXXXXXXXXXX
@@ -63,7 +74,7 @@
                   <div class="relative overflow-hidden bg-white rounded-full p-3 px-8 border-1 border-gray-900 text-gray-900 hover:text-blue-500 hover:bg-gray-100 hover:border-blue-500 cursor-pointer transition-all duration-300 flex items-center gap-2">
                     <Sparkle class="w-5 h-5" />
                     <span>
-                      了解更多
+                      阅读研究报告
                     </span>
                   </div>
                 </div>
@@ -86,7 +97,7 @@
             <div class="container mx-auto px-24">
               <div class="max-w-3xl">
                 <h1 class="text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-green-400">
-                  最新研究成果
+                  最新科研成果2
                 </h1>
                 <p class="text-xl text-gray-300 mb-10">
                   XXXXXXXXXXXXX
@@ -195,6 +206,54 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
+/* 添加横向滚动动画 */
+@keyframes scroll-horizontal {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    /* 将内容向左移动其自身宽度的一半（因为我们复制了内容） */
+    transform: translateX(-50%);
+  }
+}
+
+/* 添加淡入向上动画 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards; /* 应用动画 */
+  opacity: 0; /* 初始状态为透明 */
+}
+
+/* 辅助类，用于添加延迟 */
+.animation-delay-200 {
+  animation-delay: 0.2s;
+}
+.animation-delay-400 {
+  animation-delay: 0.4s;
+}
+/* ... 可以添加更多延迟类 ... */
+
+.animate-scroll-horizontal {
+  /* 应用动画：名称 时长 速度曲线 循环次数 */
+  animation: scroll-horizontal 20s linear infinite; /* 调整 20s 来改变滚动速度 */
+  display: inline-block; /* 确保容器宽度适应内容 */
+}
+
+/* 鼠标悬停时暂停动画 (可选) */
+.group:hover .pause-animation {
+  animation-play-state: paused;
+}
+
 .slide-enter-active,
 .slide-leave-active {
   transition: all 0.5s ease;
