@@ -115,13 +115,23 @@ import { FileText, FileCheck, Server, Brain, Atom, Target, Microscope,
          Lightbulb, Database, LineChart, ArrowRight } from 'lucide-vue-next'
 import { categories, softwareData } from '@/pages/software/components/data.js'
 
+// Add these reactive refs for carousel widths
+const carouselWidth = ref(0);
+const carouselItemWidth = ref(306); // 18rem (288px) + 1.5rem (24px) gap
+
 // 监听滚动，更新当前选中的卡片
 onMounted(() => {
   initSoftwareCarousel()
+  // Calculate carousel width for Safari compatibility
+  calculateCarouselWidth()
+  
+  // Add window resize listener
+  window.addEventListener('resize', calculateCarouselWidth)
 })
 
 onUnmounted(() => {
   // 清理事件监听器
+  window.removeEventListener('resize', calculateCarouselWidth)
 })
 
 const initSoftwareCarousel = () => {
@@ -132,11 +142,16 @@ const initSoftwareCarousel = () => {
   }
 }
 
+// Function to calculate carousel width
+const calculateCarouselWidth = () => {
+  carouselWidth.value = carouselItemWidth.value * allSoftware.value.length;
+}
+
 // Edit 5: Added computed property to flatten software data
 const allSoftware = computed(() => {
   // Duplicate the array to make the loop seamless
   const flatSoftware = Object.values(softwareData).flat();
-  return [...flatSoftware]; // Edit 7: Return only the original flat list (duplication handled in template)
+  return [...flatSoftware];
 });
 
 // Edit 8: Added computed property for reversed software data
@@ -148,37 +163,60 @@ const allSoftwareReversed = computed(() => {
 
 <style scoped>
 .software-carousel, .software-carousel-reverse {
-  /* Double the width to account for duplicated content */
-  width: calc( (18rem + 1.5rem) * v-bind(allSoftware.length) * 2); /* 18rem = w-72, 1.5rem = gap-6 */
+  /* Use the ref instead of v-bind in calc() */
+  width: v-bind('carouselWidth * 2 + "px"');
 }
 
 .software-carousel {
   animation: scroll 180s linear infinite;
+  -webkit-animation: scroll 180s linear infinite;
 }
 
 /* Edit 10: Added reverse carousel class and animation */
 .software-carousel-reverse {
   animation: scroll-reverse 180s linear infinite;
+  -webkit-animation: scroll-reverse 180s linear infinite;
 }
 
 @keyframes scroll {
   0% {
     transform: translateX(0);
+    -webkit-transform: translateX(0);
   }
   100% {
-    /* Scroll by the width of the original content */
-    transform: translateX(calc( (18rem + 1.5rem) * v-bind(allSoftware.length) * -1));
+    /* Use the ref for animation distance instead of calc with v-bind */
+    transform: translateX(v-bind('carouselWidth * -1 + "px"'));
+    -webkit-transform: translateX(v-bind('carouselWidth * -1 + "px"'));
+  }
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(v-bind('carouselWidth * -1 + "px"'));
   }
 }
 
 /* Edit 11: Added reverse scroll animation */
 @keyframes scroll-reverse {
   0% {
-     /* Start scrolled by the width of the original content */
-    transform: translateX(calc( (18rem + 1.5rem) * v-bind(allSoftware.length) * -1));
+    transform: translateX(v-bind('carouselWidth * -1 + "px"'));
+    -webkit-transform: translateX(v-bind('carouselWidth * -1 + "px"'));
   }
   100% {
     transform: translateX(0);
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes scroll-reverse {
+  0% {
+    -webkit-transform: translateX(v-bind('carouselWidth * -1 + "px"'));
+  }
+  100% {
+    -webkit-transform: translateX(0);
   }
 }
 
@@ -186,6 +224,7 @@ const allSoftwareReversed = computed(() => {
 .software-carousel:hover,
 .software-carousel-reverse:hover {
   animation-play-state: paused;
+  -webkit-animation-play-state: paused;
 }
 </style>
 

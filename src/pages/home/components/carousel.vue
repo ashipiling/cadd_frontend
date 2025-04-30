@@ -9,11 +9,11 @@
       >
         <!-- 第一张轮播 -->
         <div class="min-w-full h-full relative">
-          <div class="w-full h-full inset-0 bg-gradient-to-br from-blue-900/60 to-gray-900/70 z-10 overflow-hidden">
+          <div class="w-full h-full inset-0 bg-gradient-to-b from-blue-600/60 to-gray-800/80 z-10 overflow-hidden">
             <img 
               src="@/assets/imgs/hero-1.jpg" 
               alt="AI药物研发" 
-              class="w-full h-full object-cover opacity-30"
+              class="w-full h-full object-cover opacity-50"
             />
           </div>
           <div class="absolute inset-0 z-20 flex items-center ">
@@ -215,6 +215,34 @@ onUnmounted(() => {
     /* 将内容向左移动其自身宽度的一半（因为我们复制了内容） */
     transform: translateX(-50%);
   }
+}
+
+/* 添加光效脉冲和浮动动画 */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 0.3; }
+}
+
+@keyframes pulse-slower {
+  0%, 100% { opacity: 0.15; }
+  50% { opacity: 0.25; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) translateX(-50%); }
+  50% { transform: translateY(-15px) translateX(-50%); }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 5s ease-in-out infinite;
+}
+
+.animate-pulse-slower {
+  animation: pulse-slower 7s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 9s ease-in-out infinite;
 }
 
 /* 添加淡入向上动画 */
