@@ -5,6 +5,7 @@ import router from './router'
 import './assets/index.css'
 import './assets/themes.css'
 import '@/utils/env'
+import i18n from './i18n'
 
 function bootstrap() {
   const app = createApp(App)
@@ -12,6 +13,7 @@ function bootstrap() {
   setupPlugins(app)
 
   app.use(router)
+  app.use(i18n)
   app.mount('#app')
 }
 

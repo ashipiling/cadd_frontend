@@ -20,10 +20,12 @@
             <div class="container mx-auto px-4 md:px-24 mt-20">
               <div class="max-w-full md:max-w-3xl text-center md:text-left">
                 <h1 class="text-3xl md:text-5xl mb-6 bg-clip-text text-white tracking-wide max-w-[580px] font-bold animate-fade-in-up">
-                  欢迎访问侯廷军教授<br />课题组网站
+                  <span>{{ t('index.welcome1') }}</span>
+                  <br />
+                  <span>{{ t('index.welcome2') }}</span>
                 </h1>
                 <p class="text-base md:text-xl text-gray-300 mb-10 max-w-[550px] font-light animate-fade-in-up animation-delay-200">
-                  本课题组致力于计算机辅助药物分子设计方法和应用研究，加速药物分子的发现
+                  {{ t('index.welcome_intro') }}
                 </p>
                 <!-- 荣誉展示区 -->
                 <!-- 调整上边距，使其更靠近上方文字，让整体内容块在垂直方向上更居中 -->
@@ -154,7 +156,8 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
 import { Sparkle } from 'lucide-vue-next'
-
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
 // 轮播图状态管理
 const currentSlide = ref(0)
 const slideCount = 3

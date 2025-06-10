@@ -56,7 +56,7 @@
             :id="`faculty-${index}`" 
             class="scroll-mt-20"
           >
-            <FacultyCard :member="member" />
+            <FacultyCard :member="member" :language="locale" />
           </section>
         </div>
 
@@ -69,6 +69,7 @@
               :key="`postdoc-${index}`" 
               :member="member" 
               type="postdoc"
+              :language="locale"
             />
           </div>
         </section>
@@ -82,6 +83,7 @@
               :key="`graduate-${index}`" 
               :member="member" 
               type="graduate"
+              :language="locale"
             />
           </div>
         </section>
@@ -95,20 +97,39 @@
               :key="`undergrad-${index}`" 
               :member="member" 
               type="undergraduate"
+              :language="locale"
             />
           </div>
         </section>
 
         <!-- Alumni Section -->
         <section id="alumni" class="mb-16 scroll-mt-20">
-          <h2 class="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200 text-center">校友</h2>
+          <h2 class="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200 text-center">前成员</h2>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <MemberCard 
               v-for="(member, index) in alumni" 
               :key="`alumni-${index}`" 
               :member="member" 
               type="alumni"
+              :language="locale"
             />
+          </div>
+          
+          <!-- Simple Alumni List -->
+          <div class="mt-12">
+            <h3 class="text-xl font-medium mb-4 text-center">更多前成员</h3>
+            <div class="p-6">
+              <div class="flex flex-wrap justify-center gap-3 md:gap-4">
+                <div 
+                  v-for="(member, index) in simple_alumni" 
+                  :key="`simple-alumni-${index}`"
+                  class="px-4 py-2 rounded-full bg-white border border-gray-200 shadow-sm hover:shadow hover:border-primary/30 hover:bg-primary/5 transition-all cursor-default flex items-center gap-2"
+                >
+                  <span class="font-medium text-gray-800">{{ locale === 'en-US' ? member.name_en : member.name_cn }}</span>
+                  <span class="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-600">{{ locale === 'en-US' ? member.title_en : member.title_cn }}</span>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>
@@ -120,16 +141,18 @@
 import { ref, onMounted, onUnmounted, computed } from 'vue'
 import PageFrame from '@/components/Layout/page_frame.vue'
 import { Button } from '@/components/ui/button'
-import { faculty, postdoc, graduate, undergraduate, alumni } from './components/data.js'
+import { faculty, postdoc, graduate, undergraduate, alumni, simple_alumni } from './components/data.js'
 import FacultyCard from './components/FacultyCard.vue'
 import MemberCard from './components/MemberCard.vue'
+import { useI18n } from 'vue-i18n'
+const { locale } = useI18n()
 
 // Define other sections (excluding faculty)
 const otherSections = [
-  { id: 'postdoc', title: '博士后' },
-  { id: 'graduate', title: '研究生' },
-  { id: 'undergraduate', title: '本科生' },
-  { id: 'alumni', title: '校友' }
+  { id: 'postdoc', title: '博士后', title_en: 'Postdoc' },
+  { id: 'graduate', title: '研究生', title_en: 'Graduate' },
+  { id: 'undergraduate', title: '本科生', title_en: 'Undergraduate' },
+  { id: 'alumni', title: '前成员', title_en: 'Alumni' }
 ]
 
 // Create a combined array of all sections for scroll handling

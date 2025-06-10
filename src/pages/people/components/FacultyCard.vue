@@ -9,11 +9,11 @@
       <!-- Information column -->
       <div class="md:w-2/3 p-6">
         <div class="mb-4">
-          <h3 class="text-2xl font-bold mb-1 text-gray-800">{{ language === 'en' ? member.name_en : member.name_cn }}</h3>
-          <p class="text-gray-600 font-medium mb-1">{{ language === 'en' ? member.title_en : member.title_cn }}</p>
+          <h3 class="text-2xl font-bold mb-1 text-gray-800">{{ language === 'en-US' ? member.name_en : member.name_cn }}</h3>
+          <p class="text-gray-600 font-medium mb-1">{{ language === 'en-US' ? member.title_en : member.title_cn }}</p>
           <p class="text-gray-500 text-sm flex items-center">
             <MapPinIcon class="h-4 w-4 mr-1 inline-block" />
-            {{ language === 'en' ? member.location_en : member.location_cn }}
+            {{ language === 'en-US' ? member.location_en : member.location_cn }}
           </p>
         </div>
         
@@ -35,7 +35,7 @@
             <AccordionContent>
               <ul class="text-sm space-y-3">
                 <li v-for="(edu, index) in member.education" :key="index" class="mb-2">
-                  <p>{{ language === 'en' ? edu.description_en : edu.description_cn }}</p>
+                  <p>{{ language === 'en-US' ? edu.description_en : edu.description_cn }}</p>
                 </li>
               </ul>
             </AccordionContent>
@@ -46,8 +46,8 @@
             <AccordionContent>
               <ul class="text-sm space-y-3">
                 <li v-for="(pos, index) in member.academic_positions" :key="index" class="mb-2">
-                  <p class="font-medium">{{ language === 'en' ? pos.title_en : pos.title_cn }}</p>
-                  <p>{{ language === 'en' ? pos.description_en : pos.description_cn }}</p>
+                  <p class="font-medium">{{ language === 'en-US' ? pos.title_en : pos.title_cn }}</p>
+                  <p>{{ language === 'en-US' ? pos.description_en : pos.description_cn }}</p>
                 </li>
               </ul>
             </AccordionContent>
@@ -58,7 +58,7 @@
             <AccordionContent>
               <ul class="text-sm space-y-3">
                 <li v-for="(award, index) in member.awards" :key="index" class="mb-2">
-                  <p>{{ language === 'en' ? award.description_en : award.description_cn }}</p>
+                  <p>{{ language === 'en-US' ? award.description_en : award.description_cn }}</p>
                 </li>
               </ul>
             </AccordionContent>
@@ -86,7 +86,6 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import { Button } from '@/components/ui/button'
 import { MailIcon, PhoneIcon, MapPinIcon } from 'lucide-vue-next'
-import { importImage } from './data.js'
 
 defineProps({
   member: {
@@ -96,7 +95,7 @@ defineProps({
   language: {
     type: String,
     default: 'cn',
-    validator: (value: string) => ['en', 'cn'].includes(value)
+    validator: (value: string) => ['en-US', 'zh-CN'].includes(value)
   }
 })
 </script> 

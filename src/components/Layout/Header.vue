@@ -17,98 +17,98 @@
       
       <div class="flex items-center space-x-6">
         <nav class="hidden md:flex space-x-6" :class="backgroundColor === 'dark' ? 'text-white' : 'text-gray-800'">
-          <a href="/" :class="backgroundColor === 'dark' ? 'hover:text-blue-400' : 'hover:text-blue-600'">首页</a>
+          <a href="/" :class="backgroundColor === 'dark' ? 'hover:text-blue-400' : 'hover:text-blue-600'">{{ t('headerFooter.home') }}</a>
           
           <div class="relative group">
             <a href="/people" :class="backgroundColor === 'dark' ? 'hover:text-blue-400' : 'hover:text-blue-600'" class="flex items-center gap-1">
-              人员组成
+              {{ t('headerFooter.people') }}
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
             </a>
             <div :class="backgroundColor === 'dark' ? 'bg-gray-800/90' : 'bg-white/90'" class="absolute left-0 mt-2 w-48 backdrop-blur-sm shadow-lg rounded-md py-2 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300">
               <a href="/people#faculty" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                教师
+                {{ t('headerFooter.faculty') }}
               </a>
               <a href="/people#postdoc" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                博士后
+                {{ t('headerFooter.postdoc') }}
               </a>
               <a href="/people#graduate" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                研究生
+                {{ t('headerFooter.graduate') }}
               </a>
               <a href="/people#undergraduate" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                本科生
+                {{ t('headerFooter.undergraduate') }}
               </a>
               <a href="/people#alumni" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                前成员
+                {{ t('headerFooter.alumni') }}
               </a>
             </div>
           </div>
           <!-- 新闻中心  -->
           <div class="relative group">
             <a href="/publication" :class="backgroundColor === 'dark' ? 'hover:text-blue-400' : 'hover:text-blue-600'" class="flex items-center gap-1">
-              论文专利
+              {{ t('headerFooter.publications') }}
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
             </a>
             <div :class="backgroundColor === 'dark' ? 'bg-gray-800/90' : 'bg-white/90'" class="absolute left-0 mt-2 w-48 backdrop-blur-sm shadow-lg rounded-md py-2 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300">
               <a href="/publication#publication" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                论文著作
+                {{ t('headerFooter.papers') }}
               </a>
               <a href="/publication#software" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                软件著作
+                {{ t('headerFooter.softwarePatent') }}
               </a>
               <a href="/publication#patent" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                发明专利
+                {{ t('headerFooter.patents') }}
               </a>
             </div>
           </div>
           <div class="relative group">
             <a href="/software" :class="backgroundColor === 'dark' ? 'hover:text-blue-400' : 'hover:text-blue-600'" class="flex items-center gap-1">
-              程序开发
+              {{ t('headerFooter.software') }}
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
             </a>
             <div :class="backgroundColor === 'dark' ? 'bg-gray-800/90' : 'bg-white/90'" class="absolute left-0 mt-2 w-48 backdrop-blur-sm shadow-lg rounded-md py-2 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300">
               <a href="/software#database" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                数据库
+                {{ t('headerFooter.database') }}
               </a>
               <a href="/software#molecular" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                分子表征
+                {{ t('headerFooter.molecularFeaturization') }}
               </a>
               <a href="/software#qsar" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                QSAR建模
+                {{ t('headerFooter.QSARModeling') }}
               </a>
               <a href="/software#admet" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                成药性预测
+                {{ t('headerFooter.ADMETPrediction') }}
               </a>
               <a href="/software#docking" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                蛋白-配体对接
+                {{ t('headerFooter.proteinLigandDocking') }}
               </a>
               <a href="/software#freeenergy" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                结合自由能预测
+                {{ t('headerFooter.bindingFreeEnergyPrediction') }}
               </a>
-              <a href="/software#admet" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                全新药物设计
+              <a href="/software#denovo" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
+                {{ t('headerFooter.DeNovoDrugDesign') }}
               </a>
               <a href="/software#ppdocking" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                蛋白-蛋白对接
+                {{ t('headerFooter.proteinProteinDocking') }}
               </a>
               <a href="/software#imgrec" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                分子图片识别
+                {{ t('headerFooter.molecularImageRecognition') }}
               </a>
               <a href="/software#tools" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                药物设计工具
+                {{ t('headerFooter.drugDesignTools') }}
               </a>
             </div>
           </div>
           <div class="relative group">
             <a href="/links" :class="backgroundColor === 'dark' ? 'hover:text-blue-400' : 'hover:text-blue-600'" class="flex items-center gap-1">
-              友情链接
+              {{ t('headerFooter.links') }}
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
             </a>
             <div :class="backgroundColor === 'dark' ? 'bg-gray-800/90' : 'bg-white/90'" class="absolute left-0 mt-2 w-48 backdrop-blur-sm shadow-lg rounded-md py-2 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300">
               <a href="/links#cooperation_group" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                合作课题组
+                {{ t('headerFooter.collaborators') }}
               </a>
               <a href="/links#important_journal" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                重要期刊
+                {{ t('headerFooter.importantJournals') }}
               </a>
             </div>
           </div>
@@ -131,7 +131,7 @@
           class="hidden md:block px-3 py-1 text-sm min-w-0 w-auto"
           @click="toggleLanguage"
         >
-          {{ currentLanguage === 'zh' ? 'EN' : '中' }}
+          {{ locale === 'zh-CN' ? 'EN' : '中' }}
         </Button>
       </div>
     </div>
@@ -177,7 +177,7 @@
              :class="backgroundColor === 'dark' ? 'text-white hover:bg-gray-800' : 'text-gray-900 hover:bg-gray-100'"
              @click="closeMobileMenu">
             <Home class="w-5 h-5 mr-3" />
-            <span class="font-medium">首页</span>
+            <span class="font-medium">{{ t('headerFooter.home') }}</span>
           </a>
           
           <!-- 人员组成 -->
@@ -185,7 +185,7 @@
             <div class="flex items-center py-3 px-4 rounded-lg text-lg font-medium"
                  :class="backgroundColor === 'dark' ? 'text-white bg-gray-800/50' : 'text-gray-900 bg-gray-100/80'">
               <Users class="w-5 h-5 mr-3" />
-              <span>人员组成</span>
+              <span>{{ t('headerFooter.people') }}</span>
             </div>
             <div class="mt-1 ml-4 space-y-1">
               <a href="/people#faculty" 
@@ -193,35 +193,35 @@
                  :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
                  @click="closeMobileMenu">
                 <User class="w-4 h-4 mr-3 opacity-70" />
-                <span>教师</span>
+                <span>{{ t('headerFooter.faculty') }}</span>
               </a>
               <a href="/people#postdoc" 
                  class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
                  :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
                  @click="closeMobileMenu">
                 <UserSquare class="w-4 h-4 mr-3 opacity-70" />
-                <span>博士后</span>
+                <span>{{ t('headerFooter.postdoc') }}</span>
               </a>
               <a href="/people#graduate" 
                  class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
                  :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
                  @click="closeMobileMenu">
                 <GraduationCap class="w-4 h-4 mr-3 opacity-70" />
-                <span>研究生</span>
+                <span>{{ t('headerFooter.graduate') }}</span>
               </a>
               <a href="/people#undergraduate" 
                  class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
                  :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
                  @click="closeMobileMenu">
                 <Backpack class="w-4 h-4 mr-3 opacity-70" />
-                <span>本科生</span>
+                <span>{{ t('headerFooter.undergraduate') }}</span>
               </a>
               <a href="/people#alumni" 
                  class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
                  :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
                  @click="closeMobileMenu">
                 <History class="w-4 h-4 mr-3 opacity-70" />
-                <span>前成员</span>
+                <span>{{ t('headerFooter.alumni') }}</span>
               </a>
             </div>
           </div>
@@ -231,7 +231,7 @@
             <div class="flex items-center py-3 px-4 rounded-lg text-lg font-medium"
                  :class="backgroundColor === 'dark' ? 'text-white bg-gray-800/50' : 'text-gray-900 bg-gray-100/80'">
               <FileText class="w-5 h-5 mr-3" />
-              <span>论文专利</span>
+              <span>{{ t('headerFooter.publications') }}</span>
             </div>
             <div class="mt-1 ml-4 space-y-1">
               <a href="/publication#publication" 
@@ -239,21 +239,21 @@
                  :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
                  @click="closeMobileMenu">
                 <BookOpen class="w-4 h-4 mr-3 opacity-70" />
-                <span>论文著作</span>
+                <span>{{ t('headerFooter.papers') }}</span>
               </a>
               <a href="/publication#software" 
                  class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
                  :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
                  @click="closeMobileMenu">
                 <Code class="w-4 h-4 mr-3 opacity-70" />
-                <span>软件著作</span>
+                <span>{{ t('headerFooter.softwarePatent') }}</span>
               </a>
               <a href="/publication#patent" 
                  class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
                  :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
                  @click="closeMobileMenu">
                 <Award class="w-4 h-4 mr-3 opacity-70" />
-                <span>发明专利</span>
+                <span>{{ t('headerFooter.patents') }}</span>
               </a>
             </div>
           </div>
@@ -263,7 +263,7 @@
             <div class="flex items-center py-3 px-4 rounded-lg text-lg font-medium"
                  :class="backgroundColor === 'dark' ? 'text-white bg-gray-800/50' : 'text-gray-900 bg-gray-100/80'">
               <Laptop class="w-5 h-5 mr-3" />
-              <span>程序开发</span>
+              <span>{{ t('headerFooter.software') }}</span>
             </div>
             <div class="mt-1 ml-4 space-y-1">
               <a href="/software#database" 
@@ -271,7 +271,7 @@
                  :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
                  @click="closeMobileMenu">
                 <Database class="w-4 h-4 mr-3 opacity-70" />
-                <span>数据库</span>
+                <span>{{ t('headerFooter.database') }}</span>
               </a>
               <!-- Include other software links with appropriate icons -->
               <a href="/software#molecular" 
@@ -279,9 +279,64 @@
                  :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
                  @click="closeMobileMenu">
                 <Atom class="w-4 h-4 mr-3 opacity-70" />
-                <span>分子表征</span>
+                <span>{{ t('headerFooter.molecularFeaturization') }}</span>
               </a>
-              <!-- Add other software links with similar styling -->
+              <a href="/software#qsar" 
+                 class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
+                 :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
+                 @click="closeMobileMenu">
+                <Atom class="w-4 h-4 mr-3 opacity-70" />
+                <span>{{ t('headerFooter.QSARModeling') }}</span>
+              </a>
+              <a href="/software#admet" 
+                 class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
+                 :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
+                 @click="closeMobileMenu">
+                <Atom class="w-4 h-4 mr-3 opacity-70" />
+                <span>{{ t('headerFooter.ADMETPrediction') }}</span>
+              </a>
+              <a href="/software#docking" 
+                 class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
+                 :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
+                 @click="closeMobileMenu">
+                <Atom class="w-4 h-4 mr-3 opacity-70" />
+                <span>{{ t('headerFooter.proteinLigandDocking') }}</span>
+              </a>
+              <a href="/software#freeenergy" 
+                 class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
+                 :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
+                 @click="closeMobileMenu">
+                <Atom class="w-4 h-4 mr-3 opacity-70" />
+                <span>{{ t('headerFooter.bindingFreeEnergyPrediction') }}</span>
+              </a>
+              <a href="/software#denovo" 
+                 class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
+                 :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
+                 @click="closeMobileMenu">
+                <Atom class="w-4 h-4 mr-3 opacity-70" />
+                <span>{{ t('headerFooter.DeNovoDrugDesign') }}</span>
+              </a>
+              <a href="/software#ppdocking" 
+                 class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
+                 :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
+                 @click="closeMobileMenu">
+                <Atom class="w-4 h-4 mr-3 opacity-70" />
+                <span>{{ t('headerFooter.proteinProteinDocking') }}</span>
+              </a>
+              <a href="/software#imgrec" 
+                 class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
+                 :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
+                 @click="closeMobileMenu">
+                <Atom class="w-4 h-4 mr-3 opacity-70" />
+                <span>{{ t('headerFooter.molecularImageRecognition') }}</span>
+              </a>
+              <a href="/software#tools" 
+                 class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
+                 :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
+                 @click="closeMobileMenu">
+                <Atom class="w-4 h-4 mr-3 opacity-70" />
+                <span>{{ t('headerFooter.drugDesignTools') }}</span>
+              </a>
             </div>
           </div>
           
@@ -290,7 +345,7 @@
             <div class="flex items-center py-3 px-4 rounded-lg text-lg font-medium"
                  :class="backgroundColor === 'dark' ? 'text-white bg-gray-800/50' : 'text-gray-900 bg-gray-100/80'">
               <Link class="w-5 h-5 mr-3" />
-              <span>友情链接</span>
+              <span>{{ t('headerFooter.links') }}</span>
             </div>
             <div class="mt-1 ml-4 space-y-1">
               <a href="/links#cooperation_group" 
@@ -298,14 +353,14 @@
                  :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
                  @click="closeMobileMenu">
                 <Users2 class="w-4 h-4 mr-3 opacity-70" />
-                <span>合作课题组</span>
+                <span>{{ t('headerFooter.collaborators') }}</span>
               </a>
               <a href="/links#important_journal" 
                  class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
                  :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
                  @click="closeMobileMenu">
                 <Newspaper class="w-4 h-4 mr-3 opacity-70" />
-                <span>重要期刊</span>
+                <span>{{ t('headerFooter.importantJournals') }}</span>
               </a>
             </div>
           </div>
@@ -317,7 +372,7 @@
               <div class="flex items-center text-lg font-medium"
                    :class="backgroundColor === 'dark' ? 'text-white' : 'text-gray-900'">
                 <Globe class="w-5 h-5 mr-3" />
-                <span>语言</span>
+                <span>{{ t('headerFooter.language') }}</span>
               </div>
               <Button 
                 variant="icon" 
@@ -326,7 +381,7 @@
                 class="px-3 py-1 text-sm min-w-0 w-auto font-medium"
                 @click="toggleLanguage"
               >
-                {{ currentLanguage === 'zh' ? 'English' : '中文' }}
+                {{ locale === 'zh-CN' ? 'EN' : '中' }}
               </Button>
             </div>
           </div>
@@ -344,15 +399,21 @@ import {
   History, FileText, BookOpen, Code, Award, Laptop, Database, Atom, 
   Link, Users2, Newspaper, Globe 
 } from 'lucide-vue-next'
-
-const currentLanguage = ref('zh') // 默认中文
+import { useI18n } from 'vue-i18n'
+const { locale } = useI18n()
+const { t } = useI18n()
 const headerVisible = ref(true)
 const lastScrollY = ref(0)
 const mobileMenuOpen = ref(false)
 
+// const toggleLanguage = () => {
+//   currentLanguage.value = currentLanguage.value === 'zh' ? 'en' : 'zh'
+// }
 const toggleLanguage = () => {
-  currentLanguage.value = currentLanguage.value === 'zh' ? 'en' : 'zh'
-  // 这里可以添加语言切换的逻辑，例如触发事件或修改全局状态
+  // 在中英文之间切换
+  locale.value = locale.value === 'zh-CN' ? 'en-US' : 'zh-CN'
+  // 保存语言设置到localStorage
+  localStorage.setItem('language', locale.value)
 }
 
 const toggleMobileMenu = () => {
