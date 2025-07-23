@@ -4,15 +4,15 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="p-6 text-center flex flex-col items-center justify-center transition-colors duration-300">
           <div class="text-5xl font-bold mb-2 bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent">{{ animatedPapers }}+</div>
-          <div class="text-gray-400 text-lg">发表论文</div>
+          <div class="text-gray-400 text-lg">{{ t('index.publishedPapers') }}</div>
         </div>
         <div class="p-6 text-center flex flex-col items-center justify-center transition-colors duration-300">
           <div class="text-5xl font-bold mb-2 bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent">{{ animatedPatents }}+</div>
-          <div class="text-gray-400 text-lg">申请专利</div>
+          <div class="text-gray-400 text-lg">{{ t('index.appliedPatents') }}</div>
         </div>
         <div class="p-6 text-center flex flex-col items-center justify-center transition-colors duration-300">
           <div class="text-5xl font-bold mb-2 bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent">{{ animatedPlatforms }}+</div>
-          <div class="text-gray-400 text-lg">软件平台</div>
+          <div class="text-gray-400 text-lg">{{ t('index.softwarePlatforms') }}</div>
         </div>
       </div>
     </div>
@@ -21,13 +21,16 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue';
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 
 // Add a template ref for the section element
 const sectionRef = ref<HTMLElement | null>(null);
 
-const targetPapers = 3000;
-const targetPatents = 24;
-const targetPlatforms = 37;
+const targetPapers = 580;
+const targetPatents = 50;
+const targetPlatforms = 40;
 
 const animatedPapers = ref(0);
 const animatedPatents = ref(0);

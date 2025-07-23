@@ -2,12 +2,12 @@
   <div class="bg-gradient-to-b from-slate-100 to-white py-12">
     <div class="container mx-auto px-4 md:px-8 relative z-10">
       <div class="text-center mb-16 pt-8 reveal-item" ref="titleSection">
-        <h2 class="text-4xl font-bold mb-4">DrugFlow</h2>
+        <h2 class="text-4xl font-bold mb-4">{{ t('index.drugflow.title') }}</h2>
         <p class="text-gray-600 max-w-2xl mx-auto">
-          AI驱动的一站式创新药发现平台，将前沿人工智能与物理计算技术深度结合，覆盖从靶标发现到先导化合物优化的全流程，大幅提升药物研发效率。
+          {{ t('index.drugflow.description') }}
         </p>
         <Button variant="outline" class="mt-4" asChild>
-          <a href="https://drugflow.com" target="_blank">了解更多 <ArrowRight class="ml-1 h-4 w-4" /></a>
+          <a href="https://drugflow.com" target="_blank">{{ t('index.drugflow.learnMore') }} <ArrowRight class="ml-1 h-4 w-4" /></a>
         </Button>
       </div>
       
@@ -27,7 +27,7 @@
                     onerror="this.src='/src/assets/imgs/drugflow_1.jpg'"
                   />
                   <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary/80 to-transparent text-white p-3 text-sm font-medium">
-                    AI辅助药物设计平台
+                    {{ t('index.drugflow.stats.platformInterface') }}
                   </div>
                 </div>
                 <div class="absolute -bottom-8 -left-8 w-24 h-24 bg-primary/10 rounded-full backdrop-blur-sm"></div>
@@ -38,7 +38,7 @@
             <!-- 右侧数据统计 (宽度从2/3减少到3/5) -->
             <div class="lg:col-span-2 bg-white p-6 flex flex-col justify-center">
               <h3 class="text-2xl font-bold mb-6 text-center lg:text-left border-b border-slate-100 pb-3">
-                <span class="text-primary">AI赋能</span> 显著提升药物研发效率
+                <span class="text-primary">{{ t('index.drugflow.stats.title') }}</span> {{ t('index.drugflow.stats.subtitle') }}
               </h3>
               
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -47,12 +47,12 @@
                     <Clock class="h-9 w-9 text-primary" />
                   </div>
                   <div>
-                    <p class="text-gray-600 text-sm">降低早期研发时间</p>
+                    <p class="text-gray-600 text-sm">{{ t('index.drugflow.stats.reduceTime') }}</p>
                     <div class="flex items-baseline">
-                      <p class="text-3xl font-bold text-primary">50%</p>
+                      <p class="text-3xl font-bold text-primary">{{ t('index.drugflow.stats.timeReduction') }}</p>
                       <TrendingDown class="h-5 w-5 text-green-500 ml-2" />
                     </div>
-                    <p class="text-xs text-gray-500 mt-1">相比传统研发方法</p>
+                    <p class="text-xs text-gray-500 mt-1">{{ t('index.drugflow.stats.comparedTraditional') }}</p>
                   </div>
                 </div>
                 
@@ -61,12 +61,12 @@
                     <Database class="h-9 w-9 text-blue-500" />
                   </div>
                   <div>
-                    <p class="text-gray-600 text-sm">降低早期研发成本</p>
+                    <p class="text-gray-600 text-sm">{{ t('index.drugflow.stats.reduceCost') }}</p>
                     <div class="flex items-baseline">
-                      <p class="text-3xl font-bold text-blue-500">70%</p>
+                      <p class="text-3xl font-bold text-blue-500">{{ t('index.drugflow.stats.costReduction') }}</p>
                       <TrendingDown class="h-5 w-5 text-green-500 ml-2" />
                     </div>
-                    <p class="text-xs text-gray-500 mt-1">显著节约研发投入</p>
+                    <p class="text-xs text-gray-500 mt-1">{{ t('index.drugflow.stats.significantSaving') }}</p>
                   </div>
                 </div>
                 
@@ -75,10 +75,10 @@
                     <Server class="h-9 w-9 text-green-500" />
                   </div>
                   <div class="flex-grow">
-                    <p class="text-gray-600 text-sm">高效筛选能力</p>
+                    <p class="text-gray-600 text-sm">{{ t('index.drugflow.stats.efficientScreening') }}</p>
                     <div class="flex items-baseline">
-                      <p class="text-3xl font-bold text-green-500">2天</p>
-                      <span class="text-base ml-2 text-gray-700">单机完成亿级底库筛选</span>
+                      <p class="text-3xl font-bold text-green-500">{{ t('index.drugflow.stats.screeningCapability') }}</p>
+                      <span class="text-base ml-2 text-gray-700">{{ t('index.drugflow.stats.billionScreening') }}</span>
                     </div>
                   </div>
                 </div>
@@ -89,23 +89,23 @@
       </div>
       
       <!-- Feature Cards Section -->
-      <h3 class="text-2xl font-bold mb-8 text-center reveal-item" ref="featuresTitle">核心功能</h3>
+      <h3 class="text-2xl font-bold mb-8 text-center reveal-item" ref="featuresTitle">{{ t('index.drugflow.features.title') }}</h3>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16 reveal-item" ref="featuresSection">
         <!-- Feature Card 1 -->
         <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 border border-slate-200 feature-card h-full">
           <div class="p-6 flex flex-col h-full">
             <div class="flex items-center mb-4">
               <FlaskConical class="h-6 w-6 text-primary mr-2" />
-              <h4 class="text-lg font-bold">活性预测</h4>
+              <h4 class="text-lg font-bold">{{ t('index.drugflow.features.activityPrediction.title') }}</h4>
             </div>
-            <p class="text-gray-600 mb-4">通过先进的AI算法精确预测药物候选分子与目标蛋白的亲和力，提高命中率，加速药物发现过程。</p>
+            <p class="text-gray-600 mb-4">{{ t('index.drugflow.features.activityPrediction.description') }}</p>
             
             <div class="mt-auto pt-4">
               <div class="bg-slate-50 rounded-lg p-3 mb-4 h-32 flex items-center justify-center overflow-hidden">
                 <img src="/src/assets/imgs/drugflow_1.png" alt="活性预测" class="max-w-full max-h-full object-contain" />
               </div>
               <a target="_blank" href="https://documents.drugflow.com/zh/guide/Docking.html" class="inline-flex items-center text-primary hover:underline">
-                查看详情 <ArrowRight class="ml-1 h-3 w-3" />
+                {{ t('index.drugflow.features.activityPrediction.viewDetails') }} <ArrowRight class="ml-1 h-3 w-3" />
               </a>
             </div>
           </div>
@@ -116,16 +116,16 @@
           <div class="p-6 flex flex-col h-full">
             <div class="flex items-center mb-4">
               <Pill class="h-6 w-6 text-primary mr-2" />
-              <h4 class="text-lg font-bold">成药性预测</h4>
+              <h4 class="text-lg font-bold">{{ t('index.drugflow.features.druglikeness.title') }}</h4>
             </div>
-            <p class="text-gray-600 mb-4">评估候选分子的吸收、分布、代谢、排泄和毒性特征，确保开发的药物具有理想的药代动力学特性。</p>
+            <p class="text-gray-600 mb-4">{{ t('index.drugflow.features.druglikeness.description') }}</p>
             
             <div class="mt-auto pt-4">
               <div class="bg-slate-50 rounded-lg p-3 mb-4 h-32 flex items-center justify-center overflow-hidden">
                 <img src="/src/assets/imgs/drugflow_2.png" alt="成药性预测" class="max-w-full max-h-full object-contain" />
               </div>
               <a target="_blank" href="https://documents.drugflow.com/zh/guide/ADMET.html" class="inline-flex items-center text-primary hover:underline">
-                查看详情 <ArrowRight class="ml-1 h-3 w-3" />
+                {{ t('index.drugflow.features.activityPrediction.viewDetails') }} <ArrowRight class="ml-1 h-3 w-3" />
               </a>
             </div>
           </div>
@@ -136,16 +136,16 @@
           <div class="p-6 flex flex-col h-full">
             <div class="flex items-center mb-4">
               <Atom class="h-6 w-6 text-primary mr-2" />
-              <h4 class="text-lg font-bold">分子生成</h4>
+              <h4 class="text-lg font-bold">{{ t('index.drugflow.features.molecularGeneration.title') }}</h4>
             </div>
-            <p class="text-gray-600 mb-4">利用生成式AI技术，设计全新的具有特定特性的分子结构，扩展化学空间，促进新药创新。</p>
+            <p class="text-gray-600 mb-4">{{ t('index.drugflow.features.molecularGeneration.description') }}</p>
             
             <div class="mt-auto pt-4">
               <div class="bg-slate-50 rounded-lg p-3 mb-4 h-32 flex items-center justify-center overflow-hidden">
                 <img src="/src/assets/imgs/drugflow_3.png" alt="分子生成" class="max-w-full max-h-full object-contain" />
               </div>
               <a target="_blank" href="https://documents.drugflow.com/zh/guide/Molecular-Factory.html" class="inline-flex items-center text-primary hover:underline">
-                查看详情 <ArrowRight class="ml-1 h-3 w-3" />
+                {{ t('index.drugflow.features.activityPrediction.viewDetails') }} <ArrowRight class="ml-1 h-3 w-3" />
               </a>
             </div>
           </div>
@@ -156,16 +156,16 @@
           <div class="p-6 flex flex-col h-full">
             <div class="flex items-center mb-4">
               <Brain class="h-6 w-6 text-primary mr-2" />
-              <h4 class="text-lg font-bold">AI建模</h4>
+              <h4 class="text-lg font-bold">{{ t('index.drugflow.features.aiModeling.title') }}</h4>
             </div>
-            <p class="text-gray-600 mb-4">基于海量药物数据构建定制化AI模型，针对特定疾病靶点提供精准的药物设计方案。</p>
+            <p class="text-gray-600 mb-4">{{ t('index.drugflow.features.aiModeling.description') }}</p>
             
             <div class="mt-auto pt-4">
               <div class="bg-slate-50 rounded-lg p-3 mb-4 h-32 flex items-center justify-center overflow-hidden">
                 <img src="/src/assets/imgs/drugflow_4.png" alt="AI建模" class="max-w-full max-h-full object-contain" />
               </div>
               <a target="_blank" href="https://documents.drugflow.com/zh/guide/QSAR.html" class="inline-flex items-center text-primary hover:underline">
-                查看详情 <ArrowRight class="ml-1 h-3 w-3" />
+                {{ t('index.drugflow.features.activityPrediction.viewDetails') }} <ArrowRight class="ml-1 h-3 w-3" />
               </a>
             </div>
           </div>
@@ -176,16 +176,16 @@
           <div class="p-6 flex flex-col h-full">
             <div class="flex items-center mb-4">
               <Filter class="h-6 w-6 text-primary mr-2" />
-              <h4 class="text-lg font-bold">虚拟筛选</h4>
+              <h4 class="text-lg font-bold">{{ t('index.drugflow.features.virtualScreening.title') }}</h4>
             </div>
-            <p class="text-gray-600 mb-4">从复杂的生物学数据中提取关键结构信息，辅助研究人员理解药物-靶点相互作用机制。</p>
+            <p class="text-gray-600 mb-4">{{ t('index.drugflow.features.virtualScreening.description') }}</p>
             
             <div class="mt-auto pt-4">
               <div class="bg-slate-50 rounded-lg p-3 mb-4 h-32 flex items-center justify-center overflow-hidden">
                 <img src="/src/assets/imgs/drugflow_5.png" alt="结构提取" class="max-w-full max-h-full object-contain" />
               </div>
               <a target="_blank" href="https://documents.drugflow.com/zh/guide/Virtual-Screening.html" class="inline-flex items-center text-primary hover:underline">
-                查看详情 <ArrowRight class="ml-1 h-3 w-3" />
+                {{ t('index.drugflow.features.activityPrediction.viewDetails') }} <ArrowRight class="ml-1 h-3 w-3" />
               </a>
             </div>
           </div>
@@ -196,16 +196,16 @@
           <div class="p-6 flex flex-col h-full">
             <div class="flex items-center mb-4">
               <Microscope class="h-6 w-6 text-primary mr-2" />
-              <h4 class="text-lg font-bold">结构提取</h4>
+              <h4 class="text-lg font-bold">{{ t('index.drugflow.features.structureExtraction.title') }}</h4>
             </div>
-            <p class="text-gray-600 mb-4">从复杂的生物学数据中提取关键结构信息，辅助研究人员理解药物-靶点相互作用机制。</p>
+            <p class="text-gray-600 mb-4">{{ t('index.drugflow.features.structureExtraction.description') }}</p>
             
             <div class="mt-auto pt-4">
               <div class="bg-slate-50 rounded-lg p-3 mb-4 h-32 flex items-center justify-center overflow-hidden">
                 <img src="/src/assets/imgs/drugflow_6.png" alt="结构提取" class="max-w-full max-h-full object-contain" />
               </div>
               <a target="_blank" href="https://documents.drugflow.com/zh/guide/Structure-Extraction.html" class="inline-flex items-center text-primary hover:underline">
-                查看详情 <ArrowRight class="ml-1 h-3 w-3" />
+                {{ t('index.drugflow.features.activityPrediction.viewDetails') }} <ArrowRight class="ml-1 h-3 w-3" />
               </a>
             </div>
           </div>
@@ -214,10 +214,10 @@
       
       <!-- 联系我们 -->
       <div class="text-center pb-8 reveal-item" ref="contactSection">
-        <h3 class="text-2xl font-bold mb-4">想了解更多信息？</h3>
-        <p class="text-gray-600 mb-4">我们的专业团队随时准备为您提供一对一咨询服务</p>
+        <h3 class="text-2xl font-bold mb-4">{{ t('index.drugflow.contact.title') }}</h3>
+        <p class="text-gray-600 mb-4">{{ t('index.drugflow.contact.description') }}</p>
         <Button asChild>
-          <a >联系我们 <MessageSquare class="ml-1 h-4 w-4" /></a>
+          <a >{{ t('index.drugflow.contact.contactUs') }} <MessageSquare class="ml-1 h-4 w-4" /></a>
         </Button>
       </div>
     </div>
@@ -241,6 +241,9 @@ import {
   MessageSquare,
   Filter
 } from 'lucide-vue-next'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 
 // 滚动动画处理
 const titleSection = ref(null)

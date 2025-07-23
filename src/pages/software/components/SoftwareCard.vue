@@ -2,8 +2,8 @@
   <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow border border-gray-100 overflow-hidden">
     <div class="p-5">
       <h3 class="text-lg font-semibold text-primary mb-2">{{ software.name }}</h3>
-      <p class="text-gray-600 text-sm mb-3">{{ software.description }}</p>
-      
+      <p class="text-gray-600 text-sm mb-3" v-if="locale === 'en-US'">{{ software.description_en }}</p>
+      <p class="text-gray-600 text-sm mb-3" v-if="locale === 'zh-CN'">{{ software.description_cn }}</p>
       <div class="space-y-2">
         <div class="flex items-center text-sm">
           <Link class="h-4 w-4 text-primary mr-2" />
@@ -24,6 +24,9 @@
 
 <script setup>
 import { Link, BookOpen } from 'lucide-vue-next'
+import { useI18n } from 'vue-i18n'
+
+const { t, locale } = useI18n()
 
 defineProps({
   software: {

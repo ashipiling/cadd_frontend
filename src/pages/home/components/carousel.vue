@@ -35,16 +35,18 @@
                   <div class="h-16 overflow-hidden relative bg-white/5 rounded-lg backdrop-blur-sm p-5 group">
                     <!-- 滚动的实际内容区域 - 添加 items-center h-full 使文字垂直居中 -->
                     <div class="text-sm md:text-base flex animate-scroll-horizontal group-hover:pause-animation whitespace-nowrap items-center h-full font-light">
-                      <!-- 荣誉项 - 为了无缝滚动，需要复制列表 -->
-                      <span class="text-gray-300 mx-4 inline-block">- 2023年 XX自然科学基金重点项目</span>
-                      <span class="text-gray-300 mx-4 inline-block">- 2022年 教育部科技进步X等奖</span>
-                      <span class="text-gray-300 mx-4 inline-block">- 2021年 XX市科技进步X等奖</span>
-                      <span class="text-gray-300 mx-4 inline-block">- 2020年 XXXX学者称号</span>
+                      <!-- 荣誉项 - 使用动态数据 -->
+                      <template v-for="honor in displayHonors" :key="`first-${honor.id}`">
+                        <span class="text-gray-300 mx-4 inline-block">
+                          - {{ honor.year }}年 {{ locale === 'zh-CN' ? honor.title : honor.title_en }}
+                        </span>
+                      </template>
                       <!-- 重复荣誉项以实现无缝滚动 -->
-                      <span class="text-gray-300 mx-4 inline-block">- 2023年 XX自然科学基金重点项目</span>
-                      <span class="text-gray-300 mx-4 inline-block">- 2022年 教育部科技进步X等奖</span>
-                      <span class="text-gray-300 mx-4 inline-block">- 2021年 XX市科技进步X等奖</span>
-                      <span class="text-gray-300 mx-4 inline-block">- 2020年 XXXX学者称号</span>
+                      <template v-for="honor in displayHonors" :key="`second-${honor.id}`">
+                        <span class="text-gray-300 mx-4 inline-block">
+                          - {{ honor.year }}年 {{ locale === 'zh-CN' ? honor.title : honor.title_en }}
+                        </span>
+                      </template>
                     </div>
                   </div>
                 </div>
@@ -58,27 +60,37 @@
           <div class="absolute inset-0 bg-gradient-to-br from-green-900/60 to-gray-900/70 z-10"></div>
           <div class="absolute inset-0 z-0">
             <img 
-              src="@/assets/imgs/aaa.png" 
-              alt="分子设计" 
-              class="w-full h-full object-cover opacity-50"
+              :src="papers[0].image" 
+              :alt="papers[0].title" 
+              class="w-full h-full object-cover opacity-60"
             />
           </div>
           <div class="absolute inset-0 z-20 flex items-center">
-            <div class="container mx-auto px-24">
-              <div class="max-w-full md:max-w-3xl text-center md:text-left">
-                <h1 class="text-3xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-400">
-                  最新科研成果1
+            <div class="container mx-auto px-4 md:px-24">
+              <div class="max-w-full md:max-w-4xl text-center md:text-left">
+                <!-- 期刊标签 -->
+                <div class="inline-block bg-green-500/20 backdrop-blur-sm text-green-300 px-4 py-2 rounded-full text-sm font-medium mb-4 border border-green-500/30">
+                  {{ papers[0].journal }}
+                </div>
+                
+                <h1 class="text-2xl md:text-4xl font-bold mb-6 text-white leading-tight max-w-4xl">
+                  {{ papers[0].title }}
                 </h1>
-                <p class="text-base md:text-xl text-gray-300 mb-10">
-                  XXXXXXXXXXXXX
+                
+                <p class="text-base md:text-lg text-gray-300 mb-8 max-w-3xl leading-relaxed">
+                  {{ locale === 'zh-CN' ? papers[0].description_cn : papers[0].description_en }}
                 </p>
+                
                 <div class="flex flex-col sm:flex-row gap-4">
-                  <div class="relative overflow-hidden bg-white rounded-full p-3 px-8 border-1 border-gray-900 text-gray-900 hover:text-blue-500 hover:bg-gray-100 hover:border-blue-500 cursor-pointer transition-all duration-300 flex items-center gap-2">
-                    <Sparkle class="w-5 h-5" />
-                    <span>
-                      阅读研究报告
-                    </span>
-                  </div>
+                  <a 
+                    :href="papers[0].link" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="relative overflow-hidden bg-green-600 hover:bg-green-700 text-white rounded-full py-3 px-8 font-medium transition-all duration-300 flex items-center justify-center gap-2 group"
+                  >
+                    <Sparkle class="w-5 h-5 group-hover:rotate-12 transition-transform" />
+                    <span>{{ t('index.read_original') }}</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -87,30 +99,40 @@
         
         <!-- 第三张轮播 -->
         <div class="min-w-full h-full relative">
-          <div class="absolute inset-0 bg-gradient-to-br from-blue-900/60 to-green-900/60 z-10"></div>
+          <div class="absolute inset-0 bg-gradient-to-br from-blue-900/60 to-purple-900/60 z-10"></div>
           <div class="absolute inset-0 z-0">
             <img 
-              src="@/assets/imgs/aaa.png" 
-              alt="研究成果" 
-              class="w-full h-full object-cover opacity-50"
+              :src="papers[1].image" 
+              :alt="papers[1].title" 
+              class="w-full h-full object-cover opacity-60"
             />
           </div>
           <div class="absolute inset-0 z-20 flex items-center">
-            <div class="container mx-auto px-24">
-              <div class="max-w-full md:max-w-3xl text-center md:text-left">
-                <h1 class="text-3xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-green-400">
-                  最新科研成果2
+            <div class="container mx-auto px-4 md:px-24">
+              <div class="max-w-full md:max-w-4xl text-center md:text-left">
+                <!-- 期刊标签 -->
+                <div class="inline-block bg-blue-500/20 backdrop-blur-sm text-blue-300 px-4 py-2 rounded-full text-sm font-medium mb-4 border border-blue-500/30">
+                  {{ papers[1].journal }}
+                </div>
+                
+                <h1 class="text-2xl md:text-4xl font-bold mb-6 text-white leading-tight max-w-4xl">
+                  {{ papers[1].title }}
                 </h1>
-                <p class="text-base md:text-xl text-gray-300 mb-10">
-                  XXXXXXXXXXXXX
+                
+                <p class="text-base md:text-lg text-gray-300 mb-8 max-w-3xl leading-relaxed">
+                  {{ locale === 'zh-CN' ? papers[1].description_cn : papers[1].description_en }}
                 </p>
+                
                 <div class="flex flex-col sm:flex-row gap-4">
-                  <div class="relative overflow-hidden bg-white rounded-full p-3 px-8 border-1 border-gray-900 text-gray-900 hover:text-blue-500 hover:bg-gray-100 hover:border-blue-500 cursor-pointer transition-all duration-300 flex items-center gap-2">
-                    <Sparkle class="w-5 h-5" />
-                    <span>
-                      阅读研究报告
-                    </span>
-                  </div>
+                  <a 
+                    :href="papers[1].link" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="relative overflow-hidden bg-blue-600 hover:bg-blue-700 text-white rounded-full py-3 px-8 font-medium transition-all duration-300 flex items-center justify-center gap-2 group"
+                  >
+                    <Sparkle class="w-5 h-5 group-hover:rotate-12 transition-transform" />
+                    <span>{{ t('index.read_original') }}</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -154,14 +176,52 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted, computed } from 'vue'
 import { Sparkle } from 'lucide-vue-next'
 import { useI18n } from 'vue-i18n'
-const { t } = useI18n()
+import { collectiveHonors } from '@/pages/honor/components/data'
+
+const { locale, t } = useI18n()
+
 // 轮播图状态管理
 const currentSlide = ref(0)
 const slideCount = 3
 const autoplayInterval = ref<number | null>(null)
+
+// 计算要显示的荣誉（取前8个）
+const displayHonors = computed(() => {
+  return collectiveHonors
+    .filter(honor => honor.year === '2024') // 只显示2024年的荣誉
+    .slice(0, 8) // 最多显示8个
+})
+
+const importImage = (imgPath: string) => {
+  if (!imgPath) {
+    console.error('Image path is undefined');
+    return '';
+  }
+  const imgUrl = new URL(`../../../assets/imgs/${imgPath}`, import.meta.url).href;
+  return imgUrl;
+};
+
+const papers = [
+  {
+    title: 'Token-Mol 1.0: tokenized drug design with large language models',
+    journal: 'Nature Communications',
+    description_cn: '我们提出了Token-Mol,一个仅基于token的3D药物设计模型,它将2D和3D结构信息以及分子性质编码为离散的token。基于transformer解码器并使用因果掩码进行训练,Token-Mol引入了专门针对回归任务的高斯交叉熵损失函数,从而在多个下游应用中实现了卓越的性能。',
+    description_en: 'Here, we present Token-Mol, a token-only 3D drug design model that encodes both 2D and 3D structural information, along with molecular properties, into discrete tokens. Built on a transformer decoder and trained with causal masking, Token-Mol introduces a Gaussian cross-entropy loss function tailored for regression tasks, enabling superior performance across multiple downstream applications.',
+    link: 'https://www.nature.com/articles/s41467-025-59628-y',
+    image: importImage('paper1.jpg')
+  },
+  {
+    title: 'Discovery of antimicrobial peptides with notable antibacterial potency by an LLM-based foundation model',
+    journal: 'Science Advances',
+    description_cn: '该研究提出了一种基于大语言模型的抗菌肽（AMPs）设计方法AMP-Designer，在48天内，完成了18种抗菌肽的从头设计与湿实验的验证。体外抗菌实验结果表明，17种抗菌肽对革兰氏阴性菌展现出广谱抗菌活性，成功率高达94.4%。其中，2个优选抗菌肽不仅表现出优异的体内抗菌效果，同时兼具极低的溶血毒性、良好的人体血浆稳定性以及很低的耐药性诱导风险。这一研究成果为应对日益严峻的抗生素耐药性问题提供了新的解决方案和研究方向。',
+    description_en: 'This study presents AMP-Designer, a large language model-based approach for designing antimicrobial peptides (AMPs). Within 48 days, it completed the de novo design and wet-lab validation of 18 AMPs. In vitro antibacterial experiments showed that 17 AMPs exhibited broad-spectrum antibacterial activity against Gram-negative bacteria, achieving a success rate of 94.4%. Among them, 2 selected AMPs demonstrated excellent in vivo antibacterial effects while featuring extremely low hemolytic toxicity, good human plasma stability, and low risk of resistance induction. This research provides new solutions and directions for addressing the increasingly severe problem of antibiotic resistance.',
+    link: 'https://www.science.org/doi/10.1126/sciadv.ads8932',
+    image: importImage('paper2.jpg')
+  }
+]
 
 // 切换到上一张幻灯片
 const prevSlide = () => {
@@ -276,7 +336,7 @@ onUnmounted(() => {
 
 .animate-scroll-horizontal {
   /* 应用动画：名称 时长 速度曲线 循环次数 */
-  animation: scroll-horizontal 20s linear infinite; /* 调整 20s 来改变滚动速度 */
+  animation: scroll-horizontal 25s linear infinite; /* 调整 25s 来改变滚动速度 */
   display: inline-block; /* 确保容器宽度适应内容 */
 }
 

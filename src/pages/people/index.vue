@@ -1,8 +1,8 @@
 <template>
   <PageFrame headerBackgroundColor="light" backgroundColor="light" enableScrollHiding="true">
-    <div class="container py-8 mx-auto relative">
+    <div class="py-8 mx-auto relative">
       <!-- Decorative background elements -->
-      <div class="absolute inset-0 overflow-hidden md:overflow-visible pointer-events-none">
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
         <div class="absolute -top-24 md:-right-24 -right-8 w-60 md:w-96 h-60 md:h-96 bg-primary/15 rounded-full blur-3xl"></div>
         <div class="absolute top-20 -left-10 md:-left-20 w-48 md:w-80 h-48 md:h-80 bg-amber-300/20 rounded-full blur-2xl"></div>
       </div>
@@ -10,7 +10,7 @@
       <div class="max-w-6xl mx-auto relative">
         <!-- Enhanced Hero Section -->
         <div class="mt-16 mb-12 text-center">
-          <h1 class="text-4xl md:text-5xl font-bold mb-3 text-primary bg-clip-text">课题组成员</h1>
+          <h1 class="text-4xl md:text-5xl font-bold mb-3 text-primary bg-clip-text">{{ t('people.title') }}</h1>
           <div class="w-24 h-1 bg-gradient-to-r from-primary/60 to-primary mx-auto mb-4 rounded-full"></div>
         </div>
         
@@ -27,7 +27,7 @@
                 :class="{'bg-primary/10 text-primary font-medium': activeSection === `faculty-${index}`}"
                 @click="scrollToSection(`faculty-${index}`)"
               >
-                {{ member.name_cn }}{{ (member.name_cn === '侯廷军'|| member.name_cn === '李丹') ? '教授' : '研究员' }}
+                {{ getMemberName(member) }}{{ getMemberTitle(member) }}
               </Button>
               
               <!-- Divider between faculty and other categories -->
@@ -42,14 +42,14 @@
                 :class="{'bg-primary/10 text-primary font-medium': activeSection === section.id}"
                 @click="scrollToSection(section.id)"
               >
-                {{ section.title }}
+                {{ t(`people.${section.id}`) }}
               </Button>
             </div>
           </div>
         </div>
 
         <!-- Individual Faculty Sections -->
-        <div class="space-y-12 mb-16">
+        <div id="faculty" class="space-y-16 mb-20 scroll-mt-20">
           <section 
             v-for="(member, index) in faculty" 
             :key="`faculty-${index}`"
@@ -61,63 +61,67 @@
         </div>
 
         <!-- Postdoc Section -->
-        <section id="postdoc" class="mb-16 scroll-mt-20">
-          <h2 class="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200 text-center">博士后</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <section id="postdoc" class="mb-20 scroll-mt-20">
+          <h2 class="text-2xl font-semibold mb-8 pb-2 border-b border-gray-200 text-center">{{ t('people.postdoc') }}</h2>
+          <div class="auto-fit-grid">
             <MemberCard 
               v-for="(member, index) in postdoc" 
               :key="`postdoc-${index}`" 
               :member="member" 
               type="postdoc"
               :language="locale"
+              :align="getCardAlign(index)"
             />
           </div>
         </section>
 
         <!-- Graduate Students Section -->
-        <section id="graduate" class="mb-16 scroll-mt-20">
-          <h2 class="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200 text-center">研究生</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <section id="graduate" class="mb-20 scroll-mt-20">
+          <h2 class="text-2xl font-semibold mb-8 pb-2 border-b border-gray-200 text-center">{{ t('people.graduate') }}</h2>
+          <div class="auto-fit-grid">
             <MemberCard 
               v-for="(member, index) in graduate" 
               :key="`graduate-${index}`" 
               :member="member" 
               type="graduate"
               :language="locale"
+              :align="getCardAlign(index)"
             />
           </div>
         </section>
 
         <!-- Undergraduates Section -->
-        <section id="undergraduate" class="mb-16 scroll-mt-20">
-          <h2 class="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200 text-center">本科生</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <section id="undergraduate" class="mb-20 scroll-mt-20">
+          <h2 class="text-2xl font-semibold mb-8 pb-2 border-b border-gray-200 text-center">{{ t('people.undergraduate') }}</h2>
+          <div class="auto-fit-grid">
             <MemberCard 
               v-for="(member, index) in undergraduate" 
               :key="`undergrad-${index}`" 
               :member="member" 
               type="undergraduate"
               :language="locale"
+              :align="getCardAlign(index)"
             />
           </div>
         </section>
 
         <!-- Alumni Section -->
-        <section id="alumni" class="mb-16 scroll-mt-20">
-          <h2 class="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200 text-center">前成员</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <section id="alumni" class="mb-20 scroll-mt-20">
+          <h2 class="text-2xl font-semibold mb-8 pb-2 border-b border-gray-200 text-center">{{ t('people.alumni') }}</h2>
+          <div class="auto-fit-grid">
             <MemberCard 
               v-for="(member, index) in alumni" 
               :key="`alumni-${index}`" 
               :member="member" 
               type="alumni"
               :language="locale"
+              :align="getCardAlign(index)"
             />
           </div>
           
           <!-- Simple Alumni List -->
           <div class="mt-12">
-            <h3 class="text-xl font-medium mb-4 text-center">更多前成员</h3>
+            <h3 class="text-xl font-medium mb-4 text-center">{{ t('people.moreAlumni') }}</h3>
             <div class="p-6">
               <div class="flex flex-wrap justify-center gap-3 md:gap-4">
                 <div 
@@ -125,8 +129,8 @@
                   :key="`simple-alumni-${index}`"
                   class="px-4 py-2 rounded-full bg-white border border-gray-200 shadow-sm hover:shadow hover:border-primary/30 hover:bg-primary/5 transition-all cursor-default flex items-center gap-2"
                 >
-                  <span class="font-medium text-gray-800">{{ locale === 'en-US' ? member.name_en : member.name_cn }}</span>
-                  <span class="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-600">{{ locale === 'en-US' ? member.title_en : member.title_cn }}</span>
+                  <span class="font-medium text-gray-800">{{ getMemberName(member) }}</span>
+                  <span class="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-600">{{ getMemberJobTitle(member) }}</span>
                 </div>
               </div>
             </div>
@@ -145,19 +149,47 @@ import { faculty, postdoc, graduate, undergraduate, alumni, simple_alumni } from
 import FacultyCard from './components/FacultyCard.vue'
 import MemberCard from './components/MemberCard.vue'
 import { useI18n } from 'vue-i18n'
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 
 // Define other sections (excluding faculty)
 const otherSections = [
-  { id: 'postdoc', title: '博士后', title_en: 'Postdoc' },
-  { id: 'graduate', title: '研究生', title_en: 'Graduate' },
-  { id: 'undergraduate', title: '本科生', title_en: 'Undergraduate' },
-  { id: 'alumni', title: '前成员', title_en: 'Alumni' }
+  { id: 'postdoc' },
+  { id: 'graduate' },
+  { id: 'undergraduate' },
+  { id: 'alumni' }
 ]
+
+// Helper functions for name and title display
+const getMemberName = (member: any) => {
+  return locale.value === 'en-US' ? member.name_en || member.name_cn : member.name_cn
+}
+
+const getMemberTitle = (member: any) => {
+  if (member.name_cn === '侯廷军' || member.name_cn === '谢昌谕' || member.name_cn === '李丹') {
+    return locale.value === 'en-US' ? ' Professor' : '教授'
+  } else {
+    return locale.value === 'en-US' ? ' Researcher' : '研究员'
+  }
+}
+
+const getMemberJobTitle = (member: any) => {
+  return locale.value === 'en-US' ? member.title_en || member.title_cn : member.title_cn
+}
+
+// Helper function to determine card alignment based on grid position
+const getCardAlign = (index: number): 'start' | 'center' | 'end' => {
+  const position = index % 3
+  switch (position) {
+    case 0: return 'start'   // Left column
+    case 1: return 'center'  // Middle column
+    case 2: return 'end'     // Right column
+    default: return 'center'
+  }
+}
 
 // Create a combined array of all sections for scroll handling
 const allSections = computed(() => {
-  const facultySections = faculty.map((_, index) => ({
+  const facultySections = faculty.map((_: any, index: number) => ({
     id: `faculty-${index}`,
     title: faculty[index].name_cn
   }))
@@ -169,10 +201,14 @@ const allSections = computed(() => {
 const activeSection = ref(`faculty-0`)
 
 // Scroll to section with smooth behavior
-const scrollToSection = (sectionId) => {
+const scrollToSection = (sectionId: string) => {
   const element = document.getElementById(sectionId)
   if (element) {
-    element.scrollIntoView({ behavior: 'smooth' })
+    const elementPosition = element.getBoundingClientRect().top + window.scrollY - 100
+    window.scrollTo({
+      top: elementPosition,
+      behavior: 'smooth'
+    })
   }
 }
 
@@ -207,7 +243,40 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-/* Any additional scoped styles if needed */
+.auto-fit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem 2rem;
+  align-items: start;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .auto-fit-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .auto-fit-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem 1.5rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .auto-fit-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem 2rem;
+    max-width: none;
+  }
+}
+
+/* Ensure equal height for grid items in the same row */
+.auto-fit-grid > * {
+  height: 100%;
+}
 </style>
 
 <route lang="yaml">

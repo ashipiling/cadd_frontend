@@ -17,7 +17,7 @@ export const faculty = [
     location_en: '446, School of Pharmacy, Zijingang Campus, Zhejiang University',
     email: 'tingjunhou@zju.edu.cn',
     phone: '0571-88208412',
-    image: importImage('people_tingjunhou.png'),
+    image: importImage('people_tingjunhou.jpg'),
     education: [
       {
         description_cn: '1992年至1997年：北京大学化学与分子工程学院，本科（导师：徐筱杰教授）',
@@ -66,28 +66,36 @@ export const faculty = [
     ],
     awards: [
       {
+        description_cn: '2025年，2024年中国高被引学者（爱思唯尔）',
+        description_en: '2025, 2024 China Highly Cited Scholar (Elsevier)',
+      },
+      {
         description_cn: '2024年，2024年科睿唯安全球高被引科学家',
         description_en: '2024, 2024 Global Highly Cited Researcher',
       },
       {
-        description_cn: '2023年，2023年中国高被引学者（爱思唯尔）',
-        description_en: '2023, 2023 China Highly Cited Scholar (Elsevier)',
+        description_cn: '2024年，2023年中国高被引学者（爱思唯尔）',
+        description_en: '2024, 2023 China Highly Cited Scholar (Elsevier)',
       },
       {
         description_cn: '2023年，2023年科睿唯安全球高被引科学家',
         description_en: '2023, 2023 Global Highly Cited Researcher',
       },
       {
-        description_cn: '2022年，2022年中国高被引学者（爱思唯尔）',
-        description_en: '2022, 2022 China Highly Cited Scholar (Elsevier)',
+        description_cn: '2023年，2022年中国高被引学者（爱思唯尔）',
+        description_en: '2023, 2022 China Highly Cited Scholar (Elsevier)',
       },
       {
         description_cn: '2022年，2022年科睿唯安全球高被引科学家',
         description_en: '2022, 2022 Global Highly Cited Researcher',
       },
       {
-        description_cn: '2021年，2021年中国高被引学者（爱思唯尔）',
-        description_en: '2021, 2021 China Highly Cited Scholar (Elsevier)',
+        description_cn: '2022年，2021年中国高被引学者（爱思唯尔）',
+        description_en: '2022, 2021 China Highly Cited Scholar (Elsevier)',
+      },
+      {
+        description_cn: '2021年，2020年中国高被引学者（爱思唯尔）',
+        description_en: '2021, 2020 China Highly Cited Scholar (Elsevier)',
       },
       {
         description_cn: '2020年，国家万人计划领军人才',
@@ -98,16 +106,16 @@ export const faculty = [
         description_en: '2020, Royal Society of Chemistry "Top 1%" Highly Cited Chinese Author',
       },
       {
-        description_cn: '2019年，2019年中国高被引学者（爱思唯尔）',
-        description_en: '2019, 2019 China Highly Cited Scholar (Elsevier)',
+        description_cn: '2020年，2019年中国高被引学者（爱思唯尔）',
+        description_en: '2020, 2019 China Highly Cited Scholar (Elsevier)',
       },
       {
         description_cn: '2019年，英国皇家化学会"Top 1%"高被引中国作者',
         description_en: '2019, Royal Society of Chemistry "Top 1%" Highly Cited Chinese Author',
       },
       {
-        description_cn: '2018年，2018年中国高被引学者（爱思唯尔）',
-        description_en: '2018, 2018 China Highly Cited Scholar (Elsevier)',
+        description_cn: '2019年，2018年中国高被引学者（爱思唯尔）',
+        description_en: '2019, 2018 China Highly Cited Scholar (Elsevier)',
       },
       {
         description_cn: '2018年，科技部中青年科技创新领军人才（国家创新人才推进计划）',
@@ -143,6 +151,38 @@ export const faculty = [
       },
     ],
     papers: [
+      {
+        title: 'Huifeng Zhao, Odin Zhang*, Dejun Jiang, Zhenxing Wu, Hongyan Du, Xiaorui Wang, Yihao Zhao, Yuansheng Huang, Jingxuan Ge, Tingjun Hou*, Yu Kang*, RAPiDock: Pushing the Boundaries of Protein-peptide Docking with Rational and Accurate Diffusion Generative Model, Nature Machine Intelligence, 2025, accepted.',
+        url: '',
+      },
+      {
+        title: 'Bowen Wang, Junyou Li, Donghao Zhou, Lanqing Li, Jinpeng Li, Ercheng Wang, Jianye Hao, Liang Shi, Chengqiang Lu, Jiezhong Qiu, Tingjun Hou*, Dongsheng Cao*, Guangyong Chen*, PhengAnn Heng, Unified and Explainable Molecular Representation Learning for Imperfectly Annotated Data from the Hypergraph View, Nature Communications, 2025, accepted.',
+        url: '',
+      },
+      {
+        title: 'Shicheng Chen, Odin Zhang, Chenran Jiang, Huifeng Zhao, Xujun Zhang, Mengting Chen, Yun Liu, Qun Su, Zhenxing Wu, Xinyue Wang, Wanglin Qu, Yuanyi Ye, Xin Chai, Ning Wang, Tianyue Wang, Yuan An, Guanlin Wu, Qianqian Yang, Jiean Chen, Wei Xie, Haitao Lin, Dan Li, Chang-Yu Hsieh*, Yong Huang*, Yu Kang*, Tingjun Hou*, Peichen Pan*, Deep lead optimization enveloped in protein pocket and its application in designing potent and selective ligands targeting LTK protein, Nature Machine Intelligence, 2025, 7, 448-458.',
+        url: '',
+      },
+      {
+        title: 'Shukai Gu, Chao Shen, Xujun Zhang, Huiyong Sun, Heng Cai, Hao Luo, Huifeng Zhao, Bo Liu, Hongyan Du, Yihao Zhao, Chenggong Fu, Silong Zhai, Yafeng Deng, Huanxiang Liu, Tingjun Hou*, Yu Kang*, Benchmarking AI-powered docking methods from the perspective of virtual screening, Nature Machine Intelligence, 2025, 7, 509-520.',
+        url: '',
+      },
+      {
+        title: 'Jike Wang, Rui Qin, Mingyang Wang, Meijing Fang, Yangyang Zhang, Yuchen Zhu, Qun Su, Qiaolin Gou, Chao Shen, Odin Zhang, Zhenxing Wu, Dejun Jiang, Xujun Zhang, Huifeng Zhao, Jingxuan Ge, Zhourui Wu, Yu Kang*, Chang-Yu Hsieh*, Tingjun Hou*, Token-Mol 1.0: tokenized drug design with large language models, Nature Communications, 2025, 16, 4416.',
+        url: '',
+      },
+      {
+        title: 'Yue Wan, Jialu Wu, Tingjun Hou*, Chang-Yu Hsieh*, Xiaowei Jia*, Multi-channel learning for integrating structural hierarchies into context-dependent molecular representation, Nature Communications, 2025, 16, 413.',
+        url: '',
+      },
+      {
+        title: 'Jike Wang, Jianwen Feng, Yu Kang, Peichen Pan, Jingxuan Ge, Yan Wang, Mingyang Wang, Zhenxing Wu, Xingcai Zhang, Jiameng Yu, Xujun Zhang, Tianyue Wang, Lirong Wen, Guangning Yan, Yafeng Deng, Hui Shi, Chang-Yu Hsieh*, Zhihui Jiang*, Tingjun Hou*, Discovery of antimicrobial peptides with notable antibacterial potency by an LLM-based foundation model, Science Advances, 2025, 11, eads8932.',
+        url: '',
+      },
+      {
+        title: 'Yifei Liu, Yiheng Zhu, Jike Wang, Renling Hu, Chao Shen, Wanglin Qu, Gaoang Wang, Qun Su, Yuchen Zhu, Yu Kang*, Peichen Pan*, Chang-Yu Hsieh*, Tingjun Hou*, A Multi-Objective Molecular Generation Method Based on Pareto Algorithm and Monte Carlo Tree Search, Advanced Science, 2025, 12, e2410640.',
+        url: '',
+      },
       {
         title: 'Zhenxing Wu, Odin Zhang, Xiaorui Wang, Li Fu, Huifeng Zhao, Jike Wang, Hongyan Du, Dejun Jiang, Yafeng Deng, Dongsheng Cao*, Chang-Yu Hsieh*, Tingjun Hou*, Leveraging Language Model for Advanced Multi-Property Molecular Optimization via Prompt Engineering, Nature Machine Intelligence, 2024, accepted.',
         url: '',
@@ -362,7 +402,7 @@ export const faculty = [
     location_en: '446, School of Pharmacy, Zijingang Campus, Zhejiang University',
     email: 'lidancps@zju.edu.cn',
     phone: '0571-88208412',
-    image: importImage('people_danli.png'),
+    image: importImage('people_danli.jpg'),
     education: [
       {
         description_cn: '1996年9月至2000年6月：中国药科大学，药学院，学士',
@@ -376,41 +416,29 @@ export const faculty = [
         description_cn: '2005年2月至2009年4月：德国马堡大学，药学院药物化学系，博士',
         description_en: '2005-2009: University of Marburg, Germany, Department of Medicinal Chemistry, PhD',
       },
-    ],
-    academic_positions: [
       {
-        title_cn: '工作经历',
-        title_en: 'Work Experience',
         description_cn: '2009年5月至2010年2月：德国马堡大学，药学院药物化学系，博士后',
         description_en: '2009-2010: University of Marburg, Germany, Department of Medicinal Chemistry, Postdoctoral Researcher',
       },
       {
-        title_cn: '工作经历',
-        title_en: 'Work Experience',
         description_cn: '2010年7月至2013年5月：德国吉森大学，生物化学系，洪堡学者',
         description_en: '2010-2013: University of Giessen, Germany, Department of Biochemistry, Humboldt Scholar',
       },
       {
-        title_cn: '工作经历',
-        title_en: 'Work Experience',
         description_cn: '2013年5月至2013年12月：浙江大学，药学院，教师',
         description_en: '2013-2013: Zhejiang University, School of Pharmacy, Faculty',
       },
       {
-        title_cn: '工作经历',
-        title_en: 'Work Experience',
         description_cn: '2013年12月至2022年12月：浙江大学，药学院，副教授',
         description_en: '2013-2022: Zhejiang University, School of Pharmacy, Associate Professor',
       },
       {
-        title_cn: '工作经历',
-        title_en: 'Work Experience',
         description_cn: '2022年12月至今：浙江大学，药学院，教授',
         description_en: '2022-present: Zhejiang University, School of Pharmacy, Professor',
       },
+    ],
+    research_direction: [
       {
-        title_cn: '研究方向',
-        title_en: 'Research Interests',
         description_cn: '创新型（新靶点、新结构、新的筛选思路和策略）小分子药物的设计和发现。针对相应靶点，通过分子对接、分子动力学模拟和自由能计算等计算机辅助药物设计方法发现潜在的候选活性化合物；对候选化合物进行酶、细胞或细菌活性评价，并且通过生化和分子生物学手段进行深入的分子水平的论证和研究。目前研究体系主要包括：(1). 以卡介苗菌株BCG为模式菌，设计和发现抗结核杆菌药物；(2).针对雄激素受体，设计和发现抗前列腺癌药物。',
         description_en: 'Design and discovery of innovative small molecule drugs (new targets, new structures, new screening ideas and strategies). Using computer-aided drug design methods such as molecular docking, molecular dynamics simulation and free energy calculations to discover potential candidate active compounds for corresponding targets; evaluating enzymatic, cellular or bacterial activities of candidate compounds, and conducting in-depth studies at the molecular level through biochemical and molecular biological methods. Current research systems mainly include: (1) Design and discovery of anti-tuberculosis drugs using BCG strain as a model; (2) Design and discovery of anti-prostate cancer drugs targeting the androgen receptor.',
       },
@@ -513,6 +541,113 @@ export const faculty = [
     ],
   },
   {
+    name_cn: '谢昌谕',
+    name_en: 'Changyu Xie',
+    title_cn: '教授',
+    title_en: 'Professor',
+    location_cn: '浙江大学药学院',
+    location_en: 'School of Pharmacy, Zhejiang University',
+    email: 'kimhsieh@zju.edu.cn', 
+    phone: '',
+    image: importImage('people_kim.jpg'),
+    education: [
+      {
+        description_cn: '2007年至2011年：加拿大多伦多大学，工程物理学士',
+        description_en: '2007-2011: University of Toronto, Bachelor of Engineering Physics',
+      },
+      {
+        description_cn: '2011年至2015年：加拿大渥太华大学，物理博士',
+        description_en: '2011-2015: University of Ottawa, PhD in Physics',
+      },
+      {
+        description_cn: '2015年至2018年：多伦多大学与麻省理工学院，理论化学博士后',
+        description_en: '2015-2018: University of Toronto and MIT, Postdoctoral Research in Theoretical Chemistry',
+      },
+      {
+        description_cn: '2018年至2022年：腾讯量子实验室，量子计算和AI for Science研究',
+        description_en: '2018-2022: Tencent Quantum Lab, Research in Quantum Computing and AI for Science',
+      },
+      {
+        description_cn: '2022年至今：浙江大学药学院，教授',
+        description_en: '2022-present: School of Pharmacy, Zhejiang University, Professor',
+      },
+    ],
+    research_direction: [
+      {
+        description_cn: '主要研究方向包括：(1) AI辅助药物设计 (2) AI for Science (3) 量子计算',
+        description_en: 'Main research interests include: (1) AI-assisted Drug Design (2) AI for Science (3) Quantum Computing',
+      },
+    ],
+    awards: [
+      {
+        description_cn: '第24届中国专利奖-银奖',
+        description_en: '24th China Patent Award - Silver Award',
+      },
+    ],
+    papers: [
+      {
+        title: 'Zhenxing Wu, Jike Wang, Hongyan Du, Dejun Jiang, Yu Kang, Dan Li, Peichen Pan, Yafeng Deng, Dongsheng Cao, Chang-Yu Hsieh, Tingjun Hou, Chemistry-intuitive explanation of graph neural networks for molecular property prediction with substructure masking, Nature Communications, 2023, 14, 2585.',
+        url: '',
+      },
+      {
+        title: 'Shuo Liu, Shi-Xin Zhang, Chang-Yu Hsieh, Shengyu Zhang, Hong Yao; Discrete time crystal enabled by Stark many-body localization; Physical Review Letter, 2023, 130, 120403.',
+        url: '',
+      },
+      {
+        title: 'Yuquan Li, Chang-Yu Hsieh, Ruiqiang Lu, Xiaoqing Gong, Xiaorui Wang, Pengyong li, Shuo Liu, Yanan Tian, Dejun Jiang, Jiaxian Yan, Qifeng Bai, Huanxiang Liu, Shengyu Zhang, Xiaojun Yang,  An adaptive graph learning method for automated molecular interactions and properties predictions, Nature Machine Intelligence, 2022, 4, 645.',
+        url: '',
+      },
+      {
+        title: 'Yue Wan, Benben Liao, Chang-Yu Hsieh, Shengyu Zhang, Retroformer: Pushing the Limits of Interpretable End-to-end Retrosynthesis Transformer, ICML, 2022 , Accepted. (CCF-A top conference)',
+        url: '',
+      },
+      {
+        title: 'Yu-Qin Chen, Yu Chen, Chee-Kong Lee, Shengyu Zhang, Chang-Yu Hsieh, Optimizing quantum annealing schedules with Monte Carlo tree search enhanced with neural networks, Nature Machine Intelligence, 2022, 4, 269.',
+        url: '',
+      },
+      {
+        title: 'Shi-Xin Zhang, Zhou-Quan Wan, Chee-Kong Lee, Chang-Yu Hsieh, Shengyu Zhang, Hong Yao, Variational quantum-neural hybrid eigensolver, Physical Review Letters, 2022, 128, 120502.',
+        url: '',
+      },
+      {
+        title: 'Ziyi Yang, Zhaofeng Ye, Yijia Xiao, Chang-Yu Hsieh, Shengyu Zhang, SPLDExtraTrees: robust machine learning approach for predicting kinase inhibitor resistance, Briefings in Bioinformatics, 2022, bbac050.',
+        url: '',
+      },
+      {
+        title: 'Zhenxing Wu, Dejun Jiang, Jike Wang, Xujun Zhang, Hongyan Du, Lurong Pan, Chang-Yu Hsieh, Dongsheng Cao, Tingjun Hou, Knowledge-based BERT: a method to extract molecular features like computational chemists, Briefings in Bioinformatics, 2022, bbac131.',
+        url: '',
+      },
+      {
+        title: 'Qing Ye, Chang-Yu Hsieh, Ziyi Yang, Yu Kang, Jiming Chen, Dongsheng Cao, Shibo He, Tingjun Hou, A unified drug-target interaction prediction framework based on knowledge graph and recommendation system, Nature Communications, 2021, 12, 6775.',
+        url: '',
+      },
+      {
+        title: 'Jike Wang, Chang-Yu Hsieh, Mingyang Wang, Xiaorui Wang, Zhenxing Wu, Dejun Jiang, Benben Liao, Xujun Zhang, Bo Yang, Qiaojun He, Dongsheng Cao, Xi Chen, Tingjun Hou, Multi-constraint molecular generation based on conditional transformer, knowledge distillation and reinforcement learning, Nature Machine Intelligence, 2021, 3, 914.',
+        url: '',
+      },
+      {
+        title: 'Dejun Jiang, Chang-Yu Hsieh, Zhenxing Wu, Yu Kang, Jike Wang, Ercheng Wang, Ben Liao, Chao Shen, Lei Xu, Jian Wu, Dongsheng Cao, Tingjun Hou, InteractionGraphNet: a novel and efficient deep graph representation learning framework for accurate protein-ligand interaction predictions, Journal of Medicinal Chemistry, 2021, 64, 18209.',
+        url: '',
+      },
+      {
+        title: 'Chang-Yu Hsieh, Qiming Sun, Shengyu Zhang, Chee Kong Lee, Unitary-coupled restricted Boltzmann machine ansatz for quantum simulations, NPJ Quantum Information, 2021, 7, 1.',
+        url: '',
+      },
+      {
+        title: 'Zhenxing Wu, Dejun Jiang, Jike Wang, Chang-Yu Hsieh, Dongsheng Cao, Tingjun Hou, Mining toxicity information from large amounts of toxicity data, Journal of Medicinal Chemistry, 2021, 64, 6924.',
+        url: '',
+      },
+      {
+        title: 'Xiaorui Wang, Yuquan Li, Jiezhong Qiu, Guangyong Chen, Huanxiang Liu, Benben Liao, Chang-Yu Hsieh, Xiaojun Yao, RetroPrime: A Diverse, plausible and Transformer-based method for single-step retrosynthesis predictions, Chemical Engineering Journal, 2021, 420, 129845.',
+        url: '',
+      },
+      {
+        title: 'Jonathan Allcock, Chang-Yu Hsieh, A quantum extension of SVM-perf for training nonlinear SVMs in almost linear time, Quantum, 2020, 4, 342.',
+        url: '',
+      },
+    ]
+  },
+  {
     name_cn: '潘培辰',
     name_en: 'Peichen Pan',
     title_cn: '特聘研究员、博士生导师',
@@ -521,7 +656,7 @@ export const faculty = [
     location_en: '446, School of Pharmacy, Zijingang Campus, Zhejiang University',
     email: 'panpeichen@zju.edu.cn',
     phone: '0571-88208412',
-    image: importImage('people_peichenpan.png'),
+    image: importImage('people_peichenpan.jpg'),
     education: [
       {
         description_cn: '2007年至2011年：苏州大学材料与化学化工学部，学士（导师：侯廷军教授）',
@@ -548,10 +683,8 @@ export const faculty = [
         description_en: '2021 - present: Zhejiang University School of Pharmacy, Assistant Professor, PhD Supervisor',
       },
     ],
-    academic_positions: [
+    research_direction: [
       {
-        title_cn: '研究方向',
-        title_en: 'Research Interests',
         description_cn: '长期围绕分子模拟技术在药物设计中的应用，开发并利用基于生物物理学/化学理论的计算机辅助药物设计方法，针对重要的药物靶点进行先导化合物的发现与优化。并与药物化学、药理学以及动物科学等多个学科进行交叉融合，从靶点的验证、到小分子抑制剂的设计与筛选、到先导化合物的体内外活性评价，进行了一系列创新性的研究和探索，发现了多种具有全新结构的抗肿瘤和抗炎症先导化合物。',
         description_en: 'Long-term focus on the application of molecular simulation technology in drug design, developing and utilizing computer-aided drug design methods based on biophysical/chemical theories for the discovery and optimization of lead compounds for important drug targets. Interdisciplinary research with medicinal chemistry, pharmacology, and animal science, from target validation to small molecule inhibitor design and screening, to in vitro and in vivo activity evaluation of lead compounds, conducting a series of innovative research and exploration, discovering multiple novel anti-tumor and anti-inflammatory lead compounds with new structures.',
       },
@@ -633,7 +766,7 @@ export const faculty = [
     location_en: '4-0206, Building 4, Qichun Campus, Zhejiang University School of Medicine',
     email: 'shenchao513@zju.edu.cn',
     phone: '0571-88208412',
-    image: importImage('people_chaoshen.png'),
+    image: importImage('people_chaoshen.jpg'),
     education: [
       {
         description_cn: '2013年9月至2017年6月：浙江大学药学院，学士（导师：侯廷军教授）',
@@ -652,7 +785,12 @@ export const faculty = [
         description_en: 'Jul 2024 - present: The First Affiliated Hospital, Zhejiang University School of Medicine, Assistant Professor',
       },
     ],
-    research_direction: ['蛋白-配体打分、对接及虚拟筛选方法的开发、评测和应用研究'],
+    research_direction: [
+      {
+        description_cn: '蛋白-配体打分、对接及虚拟筛选方法的开发、评测和应用研究',
+        description_en: 'Development, evaluation and application of protein-ligand scoring, docking and virtual screening methods',
+      },
+    ],
     papers: [
       {
         title: 'Chao Shen#, Jianfei Song#, Chang-Yu Hsieh, Dongsheng Cao, Yu Kang, Wenling Ye, Zhenxing Wu, Jike Wang, Odin Zhang, Xujun Zhang, Hao Zeng, Heng Cai, Yu Chen, Linkang Chen, Hao Luo, Xinda Zhao, Tianye Jian, Tong Chen, Dejun Jiang, Mingyang Wang, Qing Ye, Jialu Wu, Hongyan Du, Hui Shi, Yafeng Deng*, Tingjun Hou*, DrugFlow: an AI-driven one-stop platform for innovative drug discovery, Journal of Chemical Information and Modeling, 2024, 64, 5381-5391.',
@@ -699,48 +837,6 @@ export const faculty = [
 ]
 
 export const postdoc = [
-  {
-    name_cn: '王栋',
-    name_en: 'Zhang San',
-    title_cn: '博士后/助理研究员',
-    title_en: 'Professor',
-    email: 'duke.wang@zju.edu.cn',
-    research_direction: [
-      '基于机器学习的药物筛选方法研究',
-      '基于深度学习的GPCR专一性预测研究'
-    ],
-    image: importImage('people_dongwang.png'),
-    education: [
-      {
-        description_cn: '2010年9月-2014年6月：江苏大学，学士',
-        description_en: 'Sep 2010 - Jun 2014: Jiangsu University, Bachelor',
-      },
-      {
-        description_cn: '2014年9月-2016年6月：华中农业大学，硕士（导师：孔德信 教授）',
-        description_en: 'Sep 2014 - Jun 2016: Huazhong Agricultural University, Master (Supervisor: Prof. Dexin Kong)',
-      },
-      {
-        description_cn: '2016年7月-2017年7月：中科院昆明植物研究所，研究助理',
-        description_en: 'Jul 2016 - Jul 2017: Kunming Institute of Botany, Chinese Academy of Sciences, Research Assistant',
-      },
-      {
-        description_cn: '2017年9月-2021年6月：华中农业大学，博士（导师：孔德信 教授）',
-        description_en: 'Sep 2017 - Jun 2021: Huazhong Agricultural University, PhD (Supervisor: Prof. Dexin Kong)',
-      },
-      {
-        description_cn: '2021年8月至今：浙江大学，博士后（合作导师：侯廷军 教授）',
-        description_en: 'Aug 2021 - present: Zhejiang University, Postdoctoral Researcher (Supervisor: Prof. Tingjun Hou)',
-      },
-    ],
-    awards: [
-    ],
-    papers: [
-      {
-        title: 'Wang, D., Chen, N. H.; Alex G. T.; Jin Y. T.; Wen C. C.; Kong, D. X.*, Accelerating the Identification of Subtype Selective Inhibitors via Three-Dimensional Biologically Relevant Spectrum (BRS-3D): The Monoamine Oxidase Subtypes as a Case Study, Bioorg. Chem., 2020, 106, 104503.',
-        url: '',
-      },
-    ],
-  },
   {
     name_cn: '柴昕',
     name_en: 'Xin Chai',
@@ -824,45 +920,6 @@ export const postdoc = [
     ],
   },
   {
-    name_cn: '吴振兴',
-    name_en: 'Zhenxing Wu',
-    title_cn: '博士后/助理研究员',
-    title_en: 'Postdoctoral Researcher/Assistant Researcher',
-    email: '3140101624@zju.edu.cn',
-    research_direction: ['基于机器学习和人工智能技术的成药性预测研究'],
-    image: importImage('people_zhenxingwu.png'),
-    education: [
-      {
-        description_cn: '2014年9月-2018年6月：浙江大学，药学院，学士',
-        description_en: 'Sep 2014 - Jun 2018: Zhejiang University, School of Pharmacy, Bachelor',
-      },
-      {
-        description_cn: '2018年9月-2023年6月：浙江大学，药学院，博士（导师：侯廷军教授）',
-        description_en: 'Sep 2018 - Jun 2023: Zhejiang University, School of Pharmacy, PhD (Supervisor: Prof. Tingjun Hou)',
-      },
-      {
-        description_cn: '2023年7月至今：浙江大学，药学院，博士后（合作导师：侯廷军教授）',
-        description_en: 'Jul 2023 - present: Zhejiang University, School of Pharmacy, Postdoctoral Researcher (Supervisor: Prof. Tingjun Hou)',
-      },
-    ],
-    awards: [
-    ],
-    papers: [
-      {
-        title: 'Zhenxing Wu, Dejun Jiang, Jike Wang, Xujun Zhang, Hongyan Du, Lurong Pan, Changyu Hsieh*, Dongsheng Cao*, Tingjun Hou*, Knowledge-based BERT: a method to extract molecular features like computational chemists, Briefings in Bioinformatics, 2022, 23, bbac131.',
-        url: '',
-      },
-      {
-        title: 'Zhenxing Wu, Dejun Jiang, Jike Wang, Chang-Yu Hsieh*, Dongsheng Cao*, Tingjun Hou*, Mining Toxicity Information from Large Amounts of Toxicity Data, Journal of Medicinal Chemistry, 2021, 64, 6924-6936.',
-        url: '',
-      },
-      {
-        title: 'Zhenxing Wu, Dejun Jiang, Chang-Yu Hsieh, Guangyong Chen, Ben Liao, Dongsheng Cao*, Tingjun Hou*, Hyperbolic Relational Graph Convolution Networks Plus: a Simple but Highly Efficient QSAR-modeling Method, Briefings in Bioinformatics, 2021, 22, bbab112.',
-        url: '',
-      },
-    ],
-  },
-  {
     name_cn: '王極可',
     name_en: 'Jike Wang',
     title_cn: '博士后/助理研究员',
@@ -934,36 +991,6 @@ export const postdoc = [
       },
       {
         title: 'Mingyang Wang, Zhe Wang, Huiyong Sun, Jike Wang, Chao Shen, Gaoqi Weng, Xin Chai, Honglin Li*, Dongsheng Cao*, Tingjun Hou*, Deep learning approaches for de novo drug design: an overview, Current Opinion in Structural Biology, 2022, 72, 135-144.',
-        url: '',
-      },
-    ],
-  },
-  {
-    name_cn: '李诗萌',
-    name_en: 'Shimeng Li',
-    title_cn: '博士后/助理研究员',
-    title_en: 'Postdoctoral Researcher/Assistant Researcher',
-    email: 'lishimeng1994@163.com',
-    research_direction: ['基于人工智能的成药性预测'],
-    image: importImage('people_shimengli.png'),
-    education: [
-      {
-        description_cn: '2013年9月-2017年6月：辽宁大学，学士',
-        description_en: 'Sep 2013 - Jun 2017: Liaoning University, Bachelor',
-      },
-      {
-        description_cn: '2017年9月-2023年6月：辽宁大学，博士',
-        description_en: 'Sep 2017 - Jun 2023: Liaoning University, PhD',
-      },
-      {
-        description_cn: '2023年6月至今：浙江大学，药学院，博士后 （合作导师：侯廷军教授）',
-        description_en: 'Jun 2023 - present: Zhejiang University, School of Pharmacy, Postdoctoral Researcher (Supervisor: Prof. Tingjun Hou)',
-      },
-    ],
-    awards: [],
-    papers: [
-      {
-        title: 'Li S, Wang L, Meng J, et al. De Novo design of potential inhibitors against SARS-CoV-2 Mpro[J]. Computers in Biology and Medicine, 2022, 147: 105728.',
         url: '',
       },
     ],
@@ -1156,14 +1183,11 @@ export const postdoc = [
       },
     ],
   },
-]
-
-export const graduate = [
   {
     name_cn: '张锦途',
     name_en: 'Jintu Zhang',
-    title_cn: '博士研究生（2020.9-2025.6）',
-    title_en: 'PhD Student (Sep 2020 - Jun 2025)',
+    title_cn: '博士后/助理研究员',
+    title_en: 'Postdoctoral Researcher/Assistant Researcher',
     email: '12019032@zju.edu.cn',
     research_direction: ['主要从事分子动力学模拟与加速采样方法的研究'],
     image: importImage('people_jintuzhang.png'),
@@ -1177,26 +1201,95 @@ export const graduate = [
     ],
   },
   {
-    name_cn: '杜红岩',
-    name_en: 'Hongyan Du',
-    title_cn: '博士研究生（2020.9-2025.6）',
-    title_en: 'PhD Student (Sep 2020 - Jun 2025)',
-    email: 'hongyan_du@zju.edu.cn',
-    research_direction: ['用于共价药物设计、筛选和发现的相关计算方法的开发'],
-    image: importImage('people_hongyandu.png'),
-    education: [],
+    name_cn: '赵博伟',
+    name_en: 'Bowei Zhao',
+    title_cn: '博士后/助理研究员',
+    title_en: 'Postdoctoral Researcher/Assistant Researcher',
+    email: 'zhaobowei@zju.edu.cn',
+    research_direction: ['基于生物医药知识图谱的可解释性药物发现方法研究'],
+    image: importImage('people_boweizhao.jpg'),
+    education: [
+      {
+        description_cn: '2025年1月至今：浙江大学药学院，博士后（导师：侯廷军教授）',
+        description_en: 'Jan 2025 - present: Zhejiang University, School of Pharmacy, Postdoctoral Researcher (Supervisor: Prof. Tingjun Hou)',
+      },
+      {
+        description_cn: '2019年9月-2024年6月：中国科学院大学，计算机应用技术，博士（导师：胡伦研究员和尤著宏教授）',
+        description_en: 'Sep 2019 - Jun 2024: University of Chinese Academy of Sciences, Computer Application Technology, PhD (Supervisors: Prof. Lun Hu and Prof. Zhuhong You)',
+      },
+    ],
     awards: [],
     papers: [
       {
-        title: 'Hongyan Du, Dejun Jiang, Junbo Gao, Xujun Zhang, Lingxiao Jiang, Yundian Zeng, Zhenxing Wu, Chao Shen, Lei Xu, Dongsheng Cao*, Tingjun Hou*, Peichen Pan*, Proteome-Wide Profiling of the Covalent-Druggable Cysteines with a Structure-Based Deep Graph Learning Network, Research, 2022, 9873564.',
+        title: 'B.-W. Zhao et al., Regulation-aware graph learning for drug repositioning over heterogeneous biological network, Information Sciences, 2025, 686: 121360.',
         url: '',
       },
       {
-        title: 'Hongyan Du, Junbo Gao, Gaoqi Weng, Junjie Ding, Xin Chai, Jinping Pang, Yu Kang, Dan Li, Dongsheng Cao*, Tingjun Hou*, CovalentInDB: a comprehensive database facilitating the discovery of covalent inhibitors, Nucleic Acids Research, 2021, 49(D1), D1122-D1129.',
+        title: 'B.-W. Zhao et al., Motif-aware miRNA-disease association prediction via hierarchical attention network, IEEE Journal of Biomedical and Health Informatics, 2024, 1-14.',
+        url: '',
+      },
+      {
+        title: 'B.-W. Zhao et al., iGRLDTI: An Improved Graph Representation Learning Method for Predicting Drug-Target Interactions over Heterogeneous Biological Information Network, Bioinformatics, 2023, 39(8): btad451.',
+        url: '',
+      },
+      {
+        title: 'B.-W. Zhao et al., Fusing Higher and Lower-order Biological Information for Drug Repositioning via Graph Representation Learning, IEEE Transactions on Emerging Topics in Computing, 2023, 12：163-176.',
+        url: '',
+      },
+      {
+        title: 'B.-W. Zhao et al., HINGRL: predicting drug-disease associations with graph representation learning on heterogeneous information networks, Briefings in Bioinformatics, 2022, 23(1): bbab515.',
+        url: '',
+      },
+      {
+        title: 'B.-W. Zhao et al., A geometric deep learning framework for drug repositioning over heterogeneous information networks, Briefings in Bioinformatics, 2022, 23(6): bbac384.',
         url: '',
       },
     ],
   },
+  {
+    name_cn: '王洁',
+    name_en: 'Jie Wang', 
+    title_cn: '博士后/助理研究员',
+    title_en: 'Postdoctoral Researcher/Assistant Researcher',
+    email: 'jwangliu@163.com',
+    research_direction: ['基于大语言模型的医药信息挖掘','基于计算机辅助的药物设计'],
+    image: importImage('people_jiewang.jpg'),
+    education: [
+      {
+        description_cn: '2017年9月-2023年6月：华东理工大学，药学院，博士（导师：李洪林教授）',
+        description_en: 'Sep 2017 - Jun 2023: East China University of Science and Technology, School of Pharmacy, PhD (Supervisor: Prof. Honglin Li)',
+      },
+      {
+        description_cn: '2013年9月-2017年6月：安徽中医药大学，药学院，学士',
+        description_en: 'Sep 2013 - Jun 2017: Anhui University of Chinese Medicine, School of Pharmacy, Bachelor',
+      }
+    ],
+    papers: [
+      {
+        title: 'Shiliang Li†, Fang Ye†, Yucheng Zheng†, Jie Wang†, Haoran Peng, Lili Zhu, Lili Chen, Tao Yu, Huan Ge, Jiaqi He, Binghao Zhang, Jiayun Wu, Zhiyi Zhang, Liangliang Jiang, Geng Chen, Ping Zhao, Ke Lan, Zhenjiang Zhao, Xuhong Qian, Ke Xu*, Yang Du*, Honglin Li*. Dual-Locking the SARS-CoV-2 Spike Trimer: An Amphipathic Molecular "Bolt" Stabilizes Conserved Druggable Interfaces for Coronavirus Inhibition. Adv. Sci., 2025. 12 : 2417534',
+        url: '',
+      },
+      {
+        title: 'Jie Wang†, Zihao Shen†, Yichen Liao, Zhen Yuan, Shiliang Li, Gaoqi He, Man Lan, Xuhong Qian, Kai Zhang*, Honglin Li*. Multi-Modal chemical information reconstruction from images and texts for exploring the near-drug space. Briefings Bioinf., 2022: bbac461.',
+        url: '',
+      },
+      {
+        title: 'Dou Dou†, Jie Wang†, Yunjin Qiao†, Gulinuer Wumaier†, Wenjie Sha†, Wenjie Li, Wenyi Mei, Tingyuan Yang, Chen Zhang, Huan He, Caolin Wang, Linna Chu, Baihui Sun, Rongrong Su, Xiangyu Ma, Mengdie Gong, Lijuan Xie, Yanyan Diao, Lili Zhu, Zhenjiang Zhao, Zhuo Chen*, Yufang Xu*, Shengqing Li*, and Honglin Li*. Discovery and optimization of 4-anilinoquinazoline derivatives that spanning ATP binding site and allosteric site as effective EGFR-C797S inhibitors. Eur. J. Med. Chem., 2022.',
+        url: '',
+      },
+      {
+        title: 'Huan He†, Qi Liu†, Lu Chen†, Jie Wang†, Yuan Yuan, Honglin Li, Xuhong Qian, Zhenjiang Zhao*, Zhuo Chen*. Design, synthesis and biological evaluation of Pteridine-7(8H)-one Derivatives as potent and selective CDK4/6 inhibitors. Bioorg. Med. Chem. Lett., 2022. 76: 128991.',
+        url: '',
+      },
+      {
+        title: 'Tong Zhao†, Jie Wang†, Yidi Chen, Shan Wang, Jian Lu, Jianlu Lv, Shiliang Li, Jiaying Wang, Minyi Qian*, Honglin Li*, Xu Shen*. Antiallergic drug Mebhydrolin ameliorates glucose homeostasis in type 2 diabetic mice by functioning as a selective FXR antagonist. Metabolism, 2021. 119 : 154771.',
+        url: '',
+      }
+    ],
+  }
+]
+
+export const graduate = [
   {
     name_cn: '曾韵典',
     name_en: 'Yundian Zeng',
@@ -1211,47 +1304,6 @@ export const graduate = [
         description_en: 'Co-supervisor: Prof. Shibo He',
       },
     ],
-    awards: [],
-    papers: [],
-  },
-  {
-    name_cn: '廖佳宁',
-    name_en: 'Jianing Liao',
-    title_cn: '硕博连读研究生（2020.9-2025.6）',
-    title_en: 'Master-PhD Program Student (Sep 2020 - Jun 2025)',
-    email: '22019004@zju.edu.cn',
-    research_direction: ['靶向雄激素受体的药物筛选和生物学测试'],
-    image: importImage('people_jianingliao.png'),
-    education: [],
-    awards: [],
-    papers: [],
-  },
-  {
-    name_cn: '朱屹恒',
-    name_en: 'Yiheng Zhu',
-    title_cn: '博士研究生（2020.9-2025.7）',
-    title_en: 'PhD Student (Sep 2020 - Jul 2025)',
-    email: 'zhuyiheng2020@zju.edu.cn',
-    research_direction: ['分子生成'],
-    image: importImage('people_yihengzhu.png'),
-    education: [
-      {
-        description_cn: '共同导师：吴健教授',
-        description_en: 'Co-supervisor: Prof. Jian Wu',
-      },
-    ],
-    awards: [],
-    papers: [],
-  },
-  {
-    name_cn: '王斯羽',
-    name_en: 'Siyu Wang',
-    title_cn: '硕士研究生（2020.9-2024.3）',
-    title_en: 'Master Student (Sep 2020 - Mar 2024)',
-    email: '12019076@zju.edu.cn',
-    research_direction: ['基于人工智能技术的成药性预测研究'],
-    image: importImage('people_siyuwang.png'),
-    education: [],
     awards: [],
     papers: [],
   },
@@ -1300,8 +1352,8 @@ export const graduate = [
   {
     name_cn: '吴正健',
     name_en: 'Zhengjian Wu',
-    title_cn: '博士研究生（2021.9-2024.6，武汉大学计算机学院）',
-    title_en: 'PhD Student (Sep 2021 - Jun 2024, School of Computer Science, Wuhan University)',
+    title_cn: '博士研究生（2021.9-2024.6）',
+    title_en: 'PhD Student (Sep 2021 - Jun 2024)',
     email: 'zhengjianwu@whu.edu.cn',
     research_direction: ['人工智能辅助药物发现，基于人工智能的分子生成技术研究'],
     image: importImage('people_zhengjianwu.png'),
@@ -1317,8 +1369,8 @@ export const graduate = [
   {
     name_cn: '谷书凯',
     name_en: 'Shukai Gu',
-    title_cn: '博士研究生（2023.9-2026.6，澳门理工大学）',
-    title_en: 'PhD Student (Sep 2023 - Jun 2026, Macau Polytechnic University)',
+    title_cn: '博士研究生（2023.9-2026.6）',
+    title_en: 'PhD Student (Sep 2023 - Jun 2026)',
     email: '3160101168@zju.edu.cn',
     research_direction: ['基于人工智能技术的药物设计'],
     image: importImage('people_shukaigu.png'),
@@ -1339,23 +1391,6 @@ export const graduate = [
         url: '',
       },
     ],
-  },
-  {
-    name_cn: '徐若兰',
-    name_en: 'Ruolan Xu',
-    title_cn: '硕士研究生（2020.9-2023.6）',
-    title_en: 'Master Student (Sep 2020 - Jun 2023)',
-    email: '2837259554@qq.com',
-    research_direction: ['基于机器学习的GPCR个性化打分方法的研究'],
-    image: importImage('people_ruolanxu.png'),
-    education: [
-      {
-        description_cn: '共同导师：康玉副教授',
-        description_en: 'Co-supervisor: Associate Prof. Yu Kang',
-      },
-    ],
-    awards: [],
-    papers: [],
   },
   {
     name_cn: '陈世诚',
@@ -1406,8 +1441,8 @@ export const graduate = [
   {
     name_cn: '金婕妤',
     name_en: 'Jieyu Jin',
-    title_cn: '博士研究生（2024.9-2027.6，澳门理工大学）',
-    title_en: 'PhD Student (Sep 2024 - Jun 2027, Macau Polytechnic University)',
+    title_cn: '博士研究生（2024.9-2027.6）',
+    title_en: 'PhD Student (Sep 2024 - Jun 2027)',
     email: '22119149@zju.edu.cn',
     research_direction: ['基于人工智能技术的成药性预测研究'],
     image: importImage('people_jieyujin.png'),
@@ -1463,23 +1498,6 @@ export const graduate = [
     papers: [],
   },
   {
-    name_cn: '聂豆',
-    name_en: 'Dou Nie',
-    title_cn: '硕士研究生（2021.9-2024.6）',
-    title_en: 'Master Student (Sep 2021 - Jun 2024)',
-    email: '22119029@zju.edu.cn',
-    research_direction: ['计算机辅助药物设计和机制研究'],
-    image: importImage('people_dounie.png'),
-    education: [
-      {
-        description_cn: '共同导师：康玉副教授',
-        description_en: 'Co-supervisor: Associate Prof. Yu Kang',
-      },
-    ],
-    awards: [],
-    papers: [],
-  },
-  {
     name_cn: '赵慧锋',
     name_en: 'Huifeng Zhao',
     title_cn: '博士研究生（2022.9-2027.6）',
@@ -1523,36 +1541,6 @@ export const graduate = [
     ],
   },
   {
-    name_cn: '张昊天',
-    name_en: 'Haotian Zhang',
-    title_cn: '硕士研究生（2022.9-2025.6）',
-    title_en: 'Master Student (Sep 2022 - Jun 2025)',
-    email: 'haotianzhang@zju.edu.cn',
-    research_direction: ['深度几何模型与深度概率模型', '3D分子生成和构象生成'],
-    image: importImage('people_haotianzhang.png'),
-    education: [
-      {
-        description_cn: '个人主页：https://haotianzhangai4science.github.io/',
-        description_en: 'Personal page: https://haotianzhangai4science.github.io/',
-      },
-    ],
-    awards: [],
-    papers: [
-      {
-        title: 'Odin Zhang#, Tianyue Wang#, Gaoqi Weng, Dejun Jiang, Ning Wang, Xiaorui Wang, Huifeng Zhao, Jialu Wu, Ercheng Wang, Guangyong Chen, Yafeng Deng, Peichen Pan, Yu Kang*, Chang-Yu Hsieh*, Tingjun Hou*, Learning on topological surface and geometric structure for 3D molecular generation, Nature Computational Science, 2023, in press.',
-        url: '',
-      },
-      {
-        title: 'Odin Zhang, Jintu Zhang, Jieyu Jin, Xujun Zhang, RenLing Hu, Chao Shen, Hanqun Cao, Hongyan Du, Yu Kang, Yafeng Deng, Furui Liu*, Guangyong Chen*, Chang-Yu Hsieh*, Tingjun Hou*, ResGen is a pocket-aware 3D molecular generation model based on parallel multiscale modelling, Nature Machine Intelligence, 2023, 5, 1020-1030.',
-        url: '',
-      },
-      {
-        title: 'Xujun Zhang#, Odin Zhang#, Chao Shen, Wanglin Qu, Shicheng Chen, Hanqun Cao, Yu Kang, Zhe Wang, Ercheng Wang, Jintu Zhang, Yafeng Deng, Furui Liu, Tianyue Wang, Hongyan Du, Langcheng Wang, Peichen Pan*, Guangyong Chen*, Chang-Yu Hsieh*, Tingjun Hou*, Efficient and accurate large library ligand docking with KarmaDock, Nature Computational Science, 2023, 3, 789-804.',
-        url: '',
-      },
-    ],
-  },
-  {
     name_cn: '胡仁龄',
     name_en: 'Renling Hu',
     title_cn: '博士研究生（2022.9-2027.6）',
@@ -1568,23 +1556,6 @@ export const graduate = [
         url: '',
       },
     ],
-  },
-  {
-    name_cn: '张忆雪',
-    name_en: 'Yixue Zhang',
-    title_cn: '硕士研究生（2022.9-2025.6）',
-    title_en: 'Master Student (Sep 2022 - Jun 2025)',
-    email: 'yixuezhang@zju.edu.cn',
-    research_direction: ['基于人工智能技术和机器学习的成药性预测研究'],
-    image: importImage('people_yixuezhang.png'),
-    education: [
-      {
-        description_cn: '共同导师：康玉副教授',
-        description_en: 'Co-supervisor: Associate Prof. Yu Kang',
-      },
-    ],
-    awards: [],
-    papers: [],
   },
   {
     name_cn: '王华婷',
@@ -1969,18 +1940,18 @@ export const alumni = [
   {
     name_cn: '冯志炜',
     name_en: 'Zhiwei Feng',
-    title_cn: '助理教授',
-    title_en: 'Assistant Professor',
-    email: 'zhf11@pitt.edu',
-    location_cn: '',
-    location_en: 'School of Pharmacy, University of Pittsburgh, 222 Salk Pavilion, 335 Sutherland drive, Pittsburgh, PA 15213',
+    title_cn: '特聘教授',
+    title_en: 'Distinguished Professor',
+    email: 'fengzhiwei@suat-sz.edu.cn & fengzhiwei128@gmail.com',
+    location_cn: '深圳理工大学，药学院，广东省深圳市光明区公常路1号，518107',
+    location_en: 'School of Pharmacy, Shenzhen University of Technology and Science, 1 Gongchang Road, Guangming District, Shenzhen, Guangdong Province, 518107',
     phone: '',
-    description_url: 'http://www.pharmacy.pitt.edu/directory/profile.php?profile=1734',
+    description_url: 'https://pharm.suat-sz.edu.cn/info/1013/1320.htm',
     research_direction: [
-      '系统药理学分析及临床大数据分析：建立智能数据库平台（包括靶点、小分子、药物、信号通路，实验方法，参考文献，可视化、分析工具等），与医院临床结合做相关统计及预测；基于GPCRs、离子通道等重要靶标的分子动态模拟及新型药物分子的设计：新靶点（APE1、p18、p62、KLF4、TRPM8）等先导物筛选，多功能杂合类化合物设计（小分子化合物同时靶向多靶点， 如CB2-TRPV1， CB2-CCR2）, 化合物改造（CB2、TNFα、p18、p62）；GPU-加速算法的优化设计、AI人工智能药物设计平台和软件/app的开发',
+      '专注于人工智能驱动的抗体类药物、小分子药物、疫苗设计等交叉领域的研究，致力于推动AI技术在新药研发中的系统化落地，拥有超过15年的计算机辅助药物设计（CADD）经验，8年AI驱动抗体与疫苗设计实践，以及5年以上AI大数据建模与算法研发背景。'
     ],
     research_direction_en: [
-      'Systems pharmacology analysis and clinical big data analysis: Establishing intelligent database platforms (including targets, small molecules, drugs, signaling pathways, experimental methods, references, visualization, and analysis tools), combined with hospital clinical work for relevant statistics and predictions; Molecular dynamics simulation and design of novel drug molecules based on important targets such as GPCRs and ion channels: Lead compound screening for new targets (APE1, p18, p62, KLF4, TRPM8), design of multifunctional hybrid compounds (small molecules targeting multiple targets simultaneously, such as CB2-TRPV1, CB2-CCR2), compound modification (CB2, TNFα, p18, p62); Optimization design of GPU-accelerated algorithms, development of AI drug design platforms and software/apps.'
+      'Focused on interdisciplinary research in AI-driven antibody drugs, small molecule drugs, and vaccine design, committed to promoting the systematic implementation of AI technology in new drug development, with over 15 years of experience in computer-aided drug design (CADD), 8 years of practice in AI-driven antibody and vaccine design, and more than 5 years of background in AI big data modeling and algorithm development.'
     ],
     image: importImage('people_zhiweifeng.png'),
     education: [
@@ -2001,37 +1972,37 @@ export const alumni = [
         description_en: 'July 2013 to June 2015: University of Pittsburgh, School of Pharmacy, Postdoctoral Fellow'
       },
       {
-        description_cn: '2015年7月至2017年6月：匹兹堡大学，药学院，研究助理',
-        description_en: 'July 2015 to June 2017: University of Pittsburgh, School of Pharmacy, Research Assistant'
+        description_cn: '2017年7月至2025年4月：匹兹堡大学，药学院，助理教授',
+        description_en: 'July 2017 to April 2025: University of Pittsburgh, School of Pharmacy, Assistant Professor'
       },
       {
-        description_cn: '2017年7月至今：匹兹堡大学，药学院，助理教授',
-        description_en: 'July 2017 to present: University of Pittsburgh, School of Pharmacy, Assistant Professor'
-      },
+        description_cn: '2014年5月至今：深圳理工大学，药学院，特聘教授',
+        description_en: 'May 2014 to present: Shenzhen University of Technology and Science, School of Pharmacy, Distinguished Professor'
+      }
     ],
     awards: [
     ],
     papers: [
       {
+        title: 'Changrui Xing#, Youwen Zhuang#, Ting-Hai Xu#, Zhiwei Feng#(equal-first author), X. Edward Zhou, Maozi Chen, Lei Wang, Xing Meng, Ying Xue, Junmei Wang, Heng Liu, Terence Francis McGuire, Gongpu Zhao, Karsten Melcher, Cheng Zhang*, H. Eric Xu*, Xiang-Qun Xie*, Cryo-EM Structure of Human Cannabinoid Receptor CB2-Gi Signaling Complex, Cell, 2020, 180, 645-654.',
+        url: '',
+      },
+      {
         title: 'Hyunjoo Cha-Molstad#, Ji Eun Yu#, Zhiwei Feng#(equal-first author), Su Hyun Lee#, Jung Gi Kim#, Peng Yang#, Young Dong Yoo, Joonsung Hwang, Terry McGuire , Sang Mi Shim, Hyun Dong Song, Srinivasrao Ganipisetti, Nuozhou Wang , Jun Min Jang, Min Jae Lee, Seung Jun Kim, Kyung Ho Lee, Jin Tae Hong, Aaron Ciechanover, Inhee Mook-Jung, Xiang-Qun Xie*, Yong Tae Kwon*, and Bo Yeon Kim*, The N-end rule pathway mediates autophagic proteolysis, Nature Communications, 2017, 8, 102.',
         url: '',
       },
       {
-        title: 'Ying Xue#, Zhiwei Feng#(equal -first author), Xiaoye Li#, Ziheng Hu, Qing Xu, Zi Wang, Jiahui Cheng, Hongtao Shi, Qibing Wang,Hongyi Wu, Xiangqun Xie*, Qianzhou Lv*, The efficacy and safety of cilostazol as an alternative to aspirin after coronary stent implantation in patients with intolerance to aspirin: A combination of clinical study and computational system pharmacology analysis, Acta Pharmacologica Sinica, 2017, 1-8, doi:10.1038/aps.2017.85.',
+        title: 'Ze-Yu Sun, Jiayi Yuan, Divya Jaiswal, Jingxuan Ge, Tianjian Liang, Jiahui Wei, Jinghong Cao, Yulong Li, Xiaojie Chu, Yan Chen*, Ying Xue*, Wei Li*, Tingjun Hou*, Zhiwei Feng*, AntiBMPNN: Structure-Guided Graph Neural Networks for Precision Antibody Engineering, Advanced Science, Published online June 27, 2025.',
         url: '',
       },
       {
-        title: 'Zhiwei Feng, Larry V. Pearce, Xiaomeng Xu, Xiaole Yang, Peng Yang, Peter M. Blumberg*, and Xiang-Qun Xie*, Structural Insight into Tetrameric hTRPV1 from Homology Modeling, Molecular Docking, Molecular Dynamics Simulation, Virtual Screening and Bioassay Validations, Journal Chemical Information Modeling, 2015, 55, 572–588.',
+        title: 'Tianjian Liang, Ze-Yu Sun, Rieko Ishima, Xiang-Qun Xie*, Ying Xue*, Wei Li*, Zhiwei Feng*, ProstaNet: A Novel GVP-GNN Algorithm for Protein Stability Prediction in Single and Multiple Point Mutations, Research, 2025, 8, 0674.',
         url: '',
       },
       {
-        title: 'Xiaotian Sun#, Zhiwei Feng# (equal-first author), Tingjun Hou, Youyong Li*, Mechanism of Graphene Oxide as an Enzyme Inhibitor from Molecular Dynamics Simulations, ACS Applied Materials & Interfaces, 2014, 6 (10), 7153–7163.',
+        title: 'Tianjian Liang, Margaret G. Hines, Ze-Yu Sun, Kerri Jo Penrose, Xiang-Qun Xie*, Wei Li*, Zhiwei Feng*, AI-based IsAb2.0 for Antibody Design, Briefings in Bioinformatics, 2024, 25, bbae445.',
         url: '',
-      },
-      {
-        title: 'Zhiwei Feng, Tingjun Hou, Youyong Li*, The Studies on the Interactions between β2 Adrenergic Receptor and Gs Protein by Molecular Dynamics Simulations, Journal Chemical Information Modeling, 2012, 52, 1005-1014.',
-        url: '',
-      },
+      }
     ],
   },
   {
@@ -2314,24 +2285,16 @@ export const alumni = [
   {
     name_cn: '孙慧涌',
     name_en: 'Huiyong Sun',
-    title_cn: '特聘副研究员',
-    title_en: 'Distinguished Associate Researcher',
-    email: 'huiyongsun@zju.edu.cn',
-    location_cn: '中国药科大学药学院',
-    location_en: 'School of Pharmacy, China Pharmaceutical University',
+    title_cn: '副研究员',
+    title_en: 'Associate Researcher',
+    email: 'huiyongsun@cpu.edu.cn',
+    location_cn: '中国药科大学药学院，江宁新实验楼一期511',
+    location_en: 'Room 511, Phase I New Laboratory Building, School of Pharmacy, China Pharmaceutical University',
     phone: '',
-    description_url: 'http://www.cpu.edu.cn',
-    research_direction: '药物-靶点相互作用及抗药性机制研究',
+    description_url: 'https://www.researchgate.net/profile/Huiyong-Sun-2',
+    research_direction: '基于分子模拟与人工智能技术的原创靶点/难靶靶点药物发现；基于分子模拟技术的药物-靶标作用机制分析',
     image: importImage('people_huiyongsun.png'),
     education: [
-      {
-        description_cn: '2005年9月至2009年6月：鲁东大学，生命科学学院，学士',
-        description_en: '2005-2009: Ludong University, School of Life Sciences, Bachelor'
-      },
-      {
-        description_cn: '2009年9月至2012年6月：山东理工大学，生命科学学院，硕士',
-        description_en: '2009-2012: Shandong University of Technology, School of Life Sciences, Master'
-      },
       {
         description_cn: '2012年9月至2015年6月：苏州大学，功能纳米与软物质研究院，博士',
         description_en: '2012-2015: Soochow University, Institute of Functional Nano & Soft Materials, PhD'
@@ -2349,23 +2312,23 @@ export const alumni = [
     ],
     papers: [
       {
-        title: 'Huiyong Sun, Tingjun Hou*, Hongyu Zhang*, Finding chemical drugs for genetic diseases, Drug Discovery Today, 2014, 19, 1836-1840. (Feature article)',
+        title: 'Sutong Xiang, Zhe Wang, Qirui Deng, Rongfan Tang, Qinghua Wang, Yang Yu, Tingjun Hou*, Haiping Hao*, Huiyong Sun*, Shared Interaction Pathways of Ligands Targeting the Ligand-Binding Pocket of Nuclear Receptors, Cell Reports Physical Science, 2025, 6, 102352.',
         url: '',
       },
       {
-        title: 'Huiyong Sun, Pengcheng Chen, Dan Li, Youyong Li, Tingjun Hou*, Directly Binding Rather than Induced-Fit Dominated Binding Affinity Difference in (S)- and (R)-Crizotinib Bound MTH1, Journal of Chemical Theory and Computation, 2016, 12, 851-860.',
+        title: 'Wanfeng Xu, Yun Wang, Shuang Cui, Qiuling Zheng, Yanghao Lin, Qingqing Cui, Yuxin Xie, Yuming Zeng, Chuan Zhang, Yujie Li, Xin Jin , Minna Qin, Huiyong Sun*, Haiping Hao*, Lijuan Cao*, Methylcobalamin Protects Against Liver Failure via Engaging Gasdermin E, Nature Communications, 2025, 16, 1233.',
         url: '',
       },
       {
-        title: 'Huiyong Sun, Youyong Li, Sheng Tian, Junmei Wang, Tingjun Hou*, P-loop Conformation Governed Crizotinib Resistance in G2032R-Mutated ROS1 Tyrosine Kinase: Clues from Free Energy Landscape, PLoS Computational Biology, 2014, 10, e1003729.',
+        title: 'Jingxuan Ge, Chang-Yu Hsieh, Meijing Fang, Huiyong Sun*, Tingjun Hou*, Development of PROTACs Using Computational Approaches, Trends in Pharmacological Sciences, 2024, 45, 1162-1174.',
         url: '',
       },
       {
-        title: 'Huiyong Sun, Youyong Li*, Dan Li, Tingjun Hou*, Insight into Crizotinib Resistance Mechanisms Caused by Three Mutations in ALK Tyrosine Kinase using Free Energy Calculation Approaches, Journal of Chemical Information and Modeling, 2013, 53, 2376-2389.',
+        title: 'Qinghua Wang, Zhe Wang, Qirui Deng, Sutong Xiang, Rongfan Tang, Yang Yu, Tingjun Hou*, Haiping Hao*, Huiyong Sun*, Discriminating Functional and Non-functional Nuclear-Receptor Ligands with A Conformational Selection-Inspired Machine-Learning Algorithm, Cell Reports Physical Science, 2023, 4, 101466.',
         url: '',
       },
       {
-        title: 'Huiyong Sun, Youyong Li, Mingyun Shen, Dan Li, Yu Kang, Tingjun Hou*, Characterizing Drug-Target Residence Time with Metadynamics: How to Achieve Dissociation Rate Efficiently without Losing Accuracy against Time-Consuming Approaches, Journal of Chemical Information and Modeling, 2017, 57, 1895-1906.',
+        title: 'Ercheng Wang#, Huiyong Sun#, Junmei Wang, Zhe Wang, Hui Liu, John Z.H. Zhang*, Tingjun Hou*, End-Point Binding Free Energy Calculation with MM/PBSA and MM/GBSA: Strategies and Applications in Drug Design, Chemical Reviews, 2019, 119, 9478-9508.',
         url: '',
       },
     ],
@@ -2375,12 +2338,12 @@ export const alumni = [
     name_en: 'Xiaotian Kong',
     title_cn: '讲师',
     title_en: 'Lecturer',
-    email: 'kongxt123@126.com',
-    location_cn: '北京工业大学环境与生命学部生物医学工程系',
-    location_en: 'Department of Biomedical Engineering, School of Environment and Life Sciences, Beijing University of Technology',
+    email: 'kongxt123@bjut.edu.cn',
+    location_cn: '北京工业大学化学与生命科学学院',
+    location_en: 'College of Chemistry and Life Science, Beijing University of Technology',
     phone: '',
     description_url: '',
-    research_direction: '主要从事基于靶点结构的大规模小分子数据库的虚拟筛选。此外，另外一个主要研究方向是采用模拟计算的手段（如分子对接、分子动力学、加强采样和自由能计算等方法）探索小分子结合机理。',
+    research_direction: '主要从事基于靶点结构的大规模小分子数据库的虚拟筛选。此外，另外一个主要研究方向是采用多尺度分子模拟（高斯加速动力学模拟、弹性网络模型和自由能微扰计算等）探索蛋白-配体/蛋白质/DNA/RNA相互作用微观机制，以及基于AI和分子模拟蛋白质-配体/蛋白质/DNA/RNA相互作用热点残基预测模型的构建。',
     image: importImage('people_xiaotiankong.png'),
     education: [
       {
@@ -2388,23 +2351,27 @@ export const alumni = [
         description_en: '2015-2018: Soochow University, PhD Student (Co-supervisor: Prof. Youyong Li)'
       },
       {
-        description_cn: '2018年至2020年：俄亥俄州立大学，博士后',
-        description_en: '2018-2020: Ohio State University, Postdoctoral Researcher'
+        description_cn: '2018年至2021年：俄亥俄州立大学，博士后',
+        description_en: '2018-2021: Ohio State University, Postdoctoral Researcher'
       },
     ],
     awards: [
     ],
     papers: [
       {
-        title: 'Xiaotian Kong, Huiyong Sun, Peichen Pan, Sheng Tian, Dan Li, Youyong Li*, Tingjun Hou*, Molecular Principle of Cyclin-dependent Kinases Selectivity of 4-(Thiazol-5-yl)-2-(phenylamino) pyrimidine-5-carbonitrile Derivatives Revealed by Molecular Modeling Studies, Physical Chemistry Chemical Physics, 2016, 18, 2034-2046.',
+        title: 'LC Tao, T Zhou, et al., XT Kong*, CH Li*. ESPDHot: An Effective Machine Learning-Based Approach for Predicting Protein-DNA Interaction Hotspots. J Chem Inf Model, 2024, 64(8): 3548-3557.',
         url: '',
       },
       {
-        title: 'Xiaotian Kong, Peichen Pan, Dan Li, Sheng Tian, Youyong Li*, Tingjun Hou*, Importance of Protein Flexibility in Ranking Inhibitor Affinities: Modeling the Binding Mechanisms of Piperidine Carboxamides as Type I1/2 ALK Inhibitors, Physical Chemistry Chemical Physics, 2015, 17, 6098-6113.',
+        title: 'YJ Liu#, KR Yu#, XT Kong#, et al., SJ Wu*, JN Zhang*, YB Liu*. FOXA1 O-GlcNAcylation–mediated transcriptional switch governs metastasis capacity in breast cancer. Sci Adv, 2023, 9(33), eadg7112.',
         url: '',
       },
       {
-        title: 'Huiyong Sun, Peichen Pan, Sheng Tian, Lei Xu, Xiaotian Kong, Youyong Li, Dan Li, Tingjun Hou*, Constructing and Validating High-Performance MIEC-SVM Models in Virtual Screening for Kinases: A Better Way for Actives Discovery, Scientific Reports, 2016, 6, 24817.',
+        title: 'XT Kong, EM Xing, et al., XL Cheng*. Mechanistic insight into the allosteric inhibition of AR by BF3 antagonists from an integrated molecular modeling study, J Chem Inf Model, 2021, 61(7):3477-3494.',
+        url: '',
+      },
+      {
+        title: 'XT Kong, PC Pan, et al., TJ Hou*. Drug discovery targeting anaplastic lymphoma kinase (ALK), J Med Chem, 2019, 62(24): 10927-10954.',
         url: '',
       },
     ],
@@ -2414,7 +2381,7 @@ export const alumni = [
     name_en: 'Tailong Lei',
     title_cn: '助理研究员',
     title_en: 'Assistant Researcher',
-    email: 'leitailong@zju.edu.cn or ltl_1988@126.com',
+    email: 'leitailong@zju.edu.cn',
     location_cn: '浙江大学医学院附属邵逸夫医院科教楼714室',
     location_en: 'Room 714, Science and Education Building, Sir Run Run Shaw Hospital, Zhejiang University School of Medicine',
     phone: '0571-86006142',
@@ -2466,51 +2433,55 @@ export const alumni = [
     title_cn: '副研究员',
     title_en: 'Associate Researcher',
     email: 'huxueping@sdu.edu.cn',
-    location_cn: '山东大学前沿交叉科学青岛研究院',
-    location_en: 'Qingdao Institute for Frontier Science, Shandong University',
+    location_cn: '山东大学青岛校区图书馆824',
+    location_en: 'Room 824, Library Building, Qingdao Campus, Shandong University',
     phone: '',
-    description_url: 'http://www.frontier.qd.sdu.edu.cn/',
-    research_direction: '计算机辅助药物分子设计与虚拟筛选',
+    description_url: '',
+    research_direction: '长期围绕计算机辅助药物分子设计与分子动力学模拟，以发展创新药物的筛选方法为基础，与化学、生物学等多个学科进行交叉融合，主要研究内容包括：1）药物-靶标相互作用的多尺度模拟；2）基于结构的抗炎、抗癌先导化合物发现；3）基于结构的抗菌、抗病毒药物发现。',
     image: importImage('people_xuepinghu.png'),
     education: [
       {
-        description_cn: '2009年9月至2013年6月: 山东农业大学，植物保护学院，学士',
+        description_cn: '2009年9月至2013年6月：山东农业大学，植物保护学院，学士',
         description_en: '2009-2013: Shandong Agricultural University, College of Plant Protection, Bachelor',
       },
       {
-        description_cn: '2013年9月至2018年6月: 中国农业大学，理学院，博士',
+        description_cn: '2013年9月至2018年6月：中国农业大学，理学院，博士',
         description_en: '2013-2018: China Agricultural University, College of Science, PhD',
       },
       {
-        description_cn: '2018年7月至2021年12月: 浙江大学，药学院，博士后',
+        description_cn: '2018年7月至2021年12月：浙江大学，药学院，博士后',
         description_en: '2018-2021: Zhejiang University, School of Pharmacy, Postdoctoral Researcher',
       },
       {
-        description_cn: '2022年1月至今：山东大学，前沿交叉科学青岛研究院，副研究员',
-        description_en: '2022-present: Qingdao Institute for Frontier Science, Shandong University, Associate Researcher',
+        description_cn: '2022年1月至2023年11月：山东大学，前沿交叉科学青岛研究院，副研究员',
+        description_en: '2022-2023: Qingdao Institute for Frontier Science, Shandong University, Associate Researcher',
+      },
+      {
+        description_cn: '2023年12月至今：山东大学，化学与化工学院前沿化学研究院，副研究员',
+        description_en: '2023-present: Institute of Frontier Chemistry, School of Chemistry and Chemical Engineering, Shandong University, Associate Researcher',
       },
     ],
     awards: [
     ],
     papers: [
       {
-        title: 'Xueping Hu, Jinping Pang, Jintu Zhang, Chao Shen, Xin Chai, Ercheng Wang, Haiyi Chen, Xuwen Wang, Mojie Duan, Weitao Fu, Lei Xu, Yu Kang, Dan Li*, Hongguang Xia*, Tingjun Hou*, Discovery of novel GR ligands towards druggable GR antagonist conformations identified by MD Simulations and Markov state model analysis, Advanced Science, 2022, 9, e2102435.',
+        title: 'Hu Xueping#, Pang Jinping#, Zhang Jintu#, Shen Chao, Chai Xin, Wang Ercheng, Chen Haiyi, Wang Xuwen, Duan Mojie, Fu Weitao, Xu Lei, Kang Yu, Li Dan*, Xia Hongguang*, Hou Tingjun*. Discovery of Novel GR Ligands toward Druggable GR Antagonist Conformations Identified by MD Simulations and Markov State Model Analysis. Adv Sci. 2022, 9(3), e2102435.',
         url: '',
       },
       {
-        title: 'Xueping Hu, Jinping Pang, Changwei Chen, Dejun Jiang, Chao Shen, Xin Chai, Liu Yang, Xujun Zhang, Lei Xu, Sunliang Cui, Tingjun Hou, Dan Li*, Discovery of novel non-steroidal selective glucocorticoid receptor modulators by structure- and IGN-based virtual screening, structural optimization, and biological evaluation, European Journal of Medicinal Chemistry, 2022, 237, 114382.',
+        title: 'Hu Xueping#, Pang Jinping#, Chen Changwei, Jiang Dejun, Shen Chao, Chai Xin, Yang Liu, Zhang Xujun, Xu Lei, Cui Sunliang, Hou Tingjun, Li Dan*. Discovery of novel non-steroidal selective glucocorticoid receptor modulators by structure- and IGN-based virtual screening, structural optimization, and biological evaluation. Eur J Med Chem. 2022, 237, 114382.',
         url: '',
       },
       {
-        title: 'Xueping Hu, Liu Yang, Xin Chai, Yixuan Lei, Md Shah Alam, Lu Liu, Chao Shen, Dejun Jiang, Zhe Wang, Zhiyong Liu, Lei Xu, Kanglin Wan, Tianyu Zhang, Yuelan Yin, Dongsheng Cao*, Dan Li*, Tingjun Hou*, Discovery of novel DprE1 inhibitors via computational bioactivity fingerprints and structure-based virtual screening, Acta Pharmacologica Sinica, 2021, in press.',
+        title: 'Hu Xueping#, Chai Xin#, Wang Xuwen#, Duan Mojie, Pang Jinping, Fu Weitao, Li Dan*, Hou Tingjun*, Advances in the computational development of androgen receptor antagonists, Drug Discov Today, 2020, 25, 1453-1461',
         url: '',
       },
       {
-        title: 'Xueping Hu, Xin Chai, Xuwen Wang, Mojie Duan, Jinping Pang, Weitao Fu, Dan Li*, Tingjun Hou*, Advances in the computational development of androgen receptor antagonists, Drug Discovery Today, 2020, 25, 1453-1461.',
+        title: 'Hu Xueping#, Yang Liu#, Chai Xin, Lei Yixuan, Alam Md Shah, Liu Lu, Shen Chao, Jiang Dejun, Wang Zhe, Liu Zhiyong, Xu Lei, Wan Kanglin, Zhang Tianyu, Yin Yuelan, Li Dan*, Cao Dongsheng*, Hou Tingjun*. Discovery of novel DprE1 inhibitors via computational bioactivity fingerprints and structure-based virtual screening. Acta Pharmacol Sin. 2022, 43(6), 1605-1615.',
         url: '',
       },
       {
-        title: 'Xueping Hu, Xiaojuan Ma, Jialin Cui, Haishan Liu, Bin Zhu, Jin Xie, Pei Liang, Li Zhang*, Identification of 1-phenyl-4-cyano-5-aminopyrazoles as novel ecdysone receptor ligands by virtual screening, structural optimization, and biological evaluations, Chemical Biology & Drug Design, 2021, 97, 184-195.',
+        title: 'Yang Liu#, Hu Xueping#, Lu Yang#, Xu Ruolan, Xu Yaping, Ma Wanli, Alam Md Shah, Zhang Tianyu, Chai Xin, Lei Yixuan, Ye Qing, Dong Xiaowu, Kang Yu, Che Jinxin*, Hou Tingjun*, Li Dan*. Discovery of N-(1-(6-Oxo-1,6 -dihydropyrimidine)-pyrazole) Acetamide Derivatives as Novel Noncovalent DprE1 Inhibitors against Mycobacterium tuberculosis. J Med Chem. 2024, 67, 1914-1931',
         url: '',
       },
     ],
@@ -2765,34 +2736,46 @@ export const alumni = [
   {
     name_cn: '田帅珍',
     name_en: 'Shuaizhen Tian',
-    title_cn: '博士后/助理研究员',
-    title_en: 'Postdoctoral Researcher/Assistant Researcher',
+    title_cn: '讲师',
+    title_en: 'Lecturer',
     email: 'tianshuaizhen1@163.com',
-    location_cn: '',
-    location_en: '',
+    location_cn: '济宁学院生命科学与工程学院',
+    location_en: 'School of Life Science and Engineering, Jining University',
     phone: '',
     description_url: '',
     research_direction: '金属蛋白与配体体系的分子动力学模拟以及极化力场的开发。',
     image: importImage('people_shuaizhentian.png'),
     education: [
       {
-        description_cn: '2010年9月至2014年6月：山东师范大学，物电学院，学士',
-        description_en: '2010-2014: Shandong Normal University, School of Physics and Electronics, Bachelor',
+        description_cn: '2010年9月至2014年7月：山东师范大学，物理与电子科学学院，应用物理，工学学士',
+        description_en: '2010-2014: Shandong Normal University, School of Physics and Electronics, Bachelor of Engineering in Applied Physics',
       },
       {
-        description_cn: '2014年9月至2020年6月：华东师范大学，精密光谱科学与技术国家重点实验室，硕博（导师：张增辉教授）',
-        description_en: '2014-2020: East China Normal University, State Key Laboratory of Precision Spectroscopy, Master-PhD Program (Supervisor: Prof. Zenghui Zhang)',
+        description_cn: '2014年9月至2020年7月：华东师范大学，物理与电子科学学院，计算生物，硕博',
+        description_en: '2014-2020: East China Normal University, School of Physics and Electronics, Master-PhD Program in Computational Biology',
       },
       {
-        description_cn: '2020年9月至2022年9月：浙江大学，药学院，博士后（合作导师：侯廷军教授）',
-        description_en: '2020-2022: Zhejiang University, School of Pharmacy, Postdoctoral Researcher (Supervisor: Prof. Tingjun Hou)',
+        description_cn: '2020年9月至2023年3月：浙江大学，药学院',
+        description_en: '2020-2023: Zhejiang University, School of Pharmacy',
+      },
+      {
+        description_cn: '2023年5月至今：济宁学院，生命科学与工程学院，讲师',
+        description_en: '2023-present: School of Life Science and Engineering, Jining University, Lecturer',
       },
     ],
     awards: [
     ],
     papers: [
       {
-        title: 'Shuaizhen Tian, Jinzhe Zeng, XiaoLiu, John Z.H. Zhang and Tong Zhu, Understanding the selectivity of inhibitors toward PI4KIIIα and PI4KIIIβ based molecular modeling, Physical Chemistry Chemical Physics, 2019, 21, 22103-22112.',
+        title: 'Tian, SZ; Zeng JZ; Liu, X; Chen, JZ; Zhang, JZH; Zhu, T. Understanding the selectivity of inhibitors toward PI4KIIIα and PI4KIIIβ based molecular modeling. Phys. Chem. Chem. Phys. 2019, 21, 22103.',
+        url: '',
+      },
+      {
+        title: 'Tian, SZ; Ji, CG; Zhang, JZH. Molecular basis of SMAC-XIAP binding and the effect of electrostatic polarization. J. Biomol. Struct. Dyn. 2021, 39, 743.',
+        url: '',
+      },
+      {
+        title: 'Huang, DD; Tian, SZ; Qi, YF; Zhang, JZH. Binding Modes of Small-molecule Inhibitors to EED Pocket of PRC2. ChemPhysChem. 2020, 21, 263.',
         url: '',
       },
     ],
@@ -3134,7 +3117,7 @@ export const alumni = [
     name_en: 'Dading Huang',
     title_cn: '博士后/助理研究员',
     title_en: 'Postdoctoral Researcher/Assistant Researcher',
-    email: '0621605@zju.edu.cn',
+    email: 'hddaqnu@163.com',
     location_cn: '',
     location_en: '',
     phone: '',
@@ -3152,8 +3135,12 @@ export const alumni = [
         description_en: '2014-2019: East China Normal University, State Key Laboratory of Precision Spectroscopy, Master-PhD Program (Supervisor: Prof. Zenghui Zhang)',
       },
       {
-        description_cn: '2021年8月至今：浙江大学，药学院，博士后（合作导师：侯廷军教授）',
-        description_en: '2021-present: Zhejiang University, School of Pharmacy, Postdoctoral Researcher (Supervisor: Prof. Tingjun Hou)',
+        description_cn: '2021年8月至2023年7月：浙江大学，药学院，博士后（合作导师：侯廷军教授）',
+        description_en: '2021-2023: Zhejiang University, School of Pharmacy, Postdoctoral Researcher (Supervisor: Prof. Tingjun Hou)',
+      },
+      {
+        description_cn: '2023年8月至今：安庆师范大学，生命科学学院，讲师',
+        description_en: '2023-present: Anqing Normal University, School of Life Sciences, Lecturer',
       },
     ],
     awards: [
@@ -3196,27 +3183,39 @@ export const alumni = [
   {
     name_cn: '翁高棋',
     name_en: 'Gaoqi Weng',
-    title_cn: '博士研究生',
-    title_en: 'PhD Student',
-    email: 'wenggaoqi@zju.edu.cn',
+    title_cn: '霍华德·休斯医学研究所和俄勒冈健康与科学大学博士后',
+    title_en: 'Postdoctoral Fellow at Howard Hughes Medical Institute and Oregon Health & Science University',
+    email: 'weng@ohsu.edu',
     location_cn: '',
     location_en: '',
     phone: '',
     description_url: '',
-    research_direction: '基于柔性靶标的虚拟筛选方法学和应用研究。',
-    research_direction_en: 'Methodology and application research of virtual screening based on flexible targets.',
+    research_direction: '机械敏感性离子通道的结构与机制研究。',
+    research_direction_en: 'Research on the structure and mechanism of mechanosensitive ion channels.',
     image: importImage('people_gaoqiweng.png'),
     education: [
       {
-        description_cn: '2018年9月至2023年6月：浙江大学，博士研究生',
-        description_en: '2018-2023: Zhejiang University, PhD Student',
+        description_cn: '2014年9月至2018年6月：浙江大学，药学院，学士',
+        description_en: '2014-2018: Zhejiang University, School of Pharmacy, Bachelor',
+      },
+      {
+        description_cn: '2018年9月至2023年6月：浙江大学，药学院，博士（导师：侯廷军教授）',
+        description_en: '2018-2023: Zhejiang University, School of Pharmacy, PhD (Supervisor: Prof. Tingjun Hou)',
+      },
+      {
+        description_cn: '2023年11月至今：美国霍华德·休斯医学研究所和俄勒冈健康与科学大学Vollum研究所，博士后（导师：Eric Gouaux）',
+        description_en: '2023-present: Howard Hughes Medical Institute and Vollum Institute at Oregon Health & Science University, Postdoctoral Fellow (Supervisor: Eric Gouaux)',
       },
     ],
     awards: [
     ],
     papers: [
       {
-        title: 'Gaoqi Weng, Xuanyan Cai, Dongsheng Cao, Hongyan Du, Chao Shen, Yafeng Deng, Qiaojun He, Bo Yang, Dan Li*, Tingjun Hou*, PROTAC-DB 2.0: an updated database of PROTACs, Nucleic Acids Research, 2022, in press.',
+        title: 'Gaoqi Weng, Xuanyan Cai, Dongsheng Cao, Hongyan Du, Chao Shen, Yafeng Deng, Qiaojun He, Bo Yang, Dan Li*, Tingjun Hou*, PROTAC-DB 2.0: an updated database of PROTACs, Nucleic Acids Research, 2023, 51, D1367-D1372.',
+        url: '',
+      },
+      {
+        title: 'Gaoqi Weng, Chao Shen, Dongsheng Cao, Junbo Gao, Xiaowu Dong, Qiaojun He, Bo Yang, Dan Li*, Jian Wu*, Tingjun Hou*, PROTAC-DB: an online database of PROTACs, Nucleic Acids Research, 2021,49, D1381-D1387.',
         url: '',
       },
       {
@@ -3268,25 +3267,29 @@ export const alumni = [
   {
     name_cn: '叶青',
     name_en: 'Qing Ye',
-    title_cn: '博士研究生',
-    title_en: 'PhD Student',
+    title_cn: '安德森癌症研究中心博士后',
+    title_en: 'Postdoctoral Fellow at MD Anderson Cancer Center',
     email: 'qye@zju.edu.cn',
     location_cn: '',
     location_en: '',
     phone: '',
     description_url: '',
-    research_direction: '基于多模态生物医药数据的药物筛选与靶点发现。',
-    research_direction_en: 'Drug screening and target discovery based on multi-modal biomedical data.',
+    research_direction: '面向多模态生物医药数据的药物靶点发现与筛选方法研究，面向多组学数据融合与挖掘的计算方法开发。',
+    research_direction_en: 'Development of computational methods for drug target discovery and screening based on multimodal biomedical data; Computational method development for integrative analysis and mining of multi-omics data.',
     image: importImage('people_qingye.png'),
     education: [
       {
         description_cn: '2019年9月至2024年6月：浙江大学，博士研究生（共同导师：贺诗波教授）',
-        description_en: '2019-2024: Zhejiang University, PhD Student (Co-supervisor: Prof. Shibo He)',
+        description_en: '2019.9-2024.6: Zhejiang University, PhD Student (Co-supervisor: Prof. Shibo He)',
       },
     ],
     awards: [
     ],
     papers: [
+      {
+        title: 'Qing Ye, Yundian Zeng, Linlong Jiang, Yu Kang, Peichen Pan, Jiming Chen, Yafeng Deng, Haitao Zhao, Shibo He*, Tingjun Hou*, Chang-Yu Hsieh*, A Knowledge-Guided Graph Learning Approach Bridging Phenotype- and Target-Based Drug Discovery, Advanced Science, 2025, 12, 2412402.',
+        url: '',
+      },
       {
         title: 'Qing Ye, Ruolan Xu, Dan Li, Yu Kang, Yafeng Deng, Feng Zhu, Jiming Chen*, Shibo He, Chang-Yu Hsieh*, Tingjun Hou*, Integrating multi-modal deep learning on knowledge graph for the discovery of synergistic drug combinations against infectious diseases, Cell Reports Physical Science, 2023, 8, 101520.',
         url: '',
@@ -3300,6 +3303,260 @@ export const alumni = [
         url: '',
       },
     ],
+  },
+  {
+    name_cn: '吴振兴',
+    name_en: 'Zhenxing Wu',
+    title_cn: '博士后/助理研究员',
+    title_en: 'Postdoctoral Researcher/Assistant Researcher',
+    email: '3140101624@zju.edu.cn',
+    research_direction: ['基于机器学习和人工智能技术的成药性预测研究'],
+    image: importImage('people_zhenxingwu.png'),
+    education: [
+      {
+        description_cn: '2014年9月-2018年6月：浙江大学，药学院，学士',
+        description_en: 'Sep 2014 - Jun 2018: Zhejiang University, School of Pharmacy, Bachelor',
+      },
+      {
+        description_cn: '2018年9月-2023年6月：浙江大学，药学院，博士（导师：侯廷军教授）',
+        description_en: 'Sep 2018 - Jun 2023: Zhejiang University, School of Pharmacy, PhD (Supervisor: Prof. Tingjun Hou)',
+      },
+      {
+        description_cn: '2023年7月至今：浙江大学，药学院，博士后（合作导师：侯廷军教授）',
+        description_en: 'Jul 2023 - present: Zhejiang University, School of Pharmacy, Postdoctoral Researcher (Supervisor: Prof. Tingjun Hou)',
+      },
+    ],
+    awards: [
+    ],
+    papers: [
+      {
+        title: 'Zhenxing Wu, Dejun Jiang, Jike Wang, Xujun Zhang, Hongyan Du, Lurong Pan, Changyu Hsieh*, Dongsheng Cao*, Tingjun Hou*, Knowledge-based BERT: a method to extract molecular features like computational chemists, Briefings in Bioinformatics, 2022, 23, bbac131.',
+        url: '',
+      },
+      {
+        title: 'Zhenxing Wu, Dejun Jiang, Jike Wang, Chang-Yu Hsieh*, Dongsheng Cao*, Tingjun Hou*, Mining Toxicity Information from Large Amounts of Toxicity Data, Journal of Medicinal Chemistry, 2021, 64, 6924-6936.',
+        url: '',
+      },
+      {
+        title: 'Zhenxing Wu, Dejun Jiang, Chang-Yu Hsieh, Guangyong Chen, Ben Liao, Dongsheng Cao*, Tingjun Hou*, Hyperbolic Relational Graph Convolution Networks Plus: a Simple but Highly Efficient QSAR-modeling Method, Briefings in Bioinformatics, 2021, 22, bbab112.',
+        url: '',
+      },
+    ],
+  },
+  {
+    name_cn: '王栋',
+    name_en: 'Zhang San',
+    title_cn: '博士后/助理研究员',
+    title_en: 'Professor',
+    email: 'duke.wang@zju.edu.cn',
+    research_direction: [
+      '基于机器学习的药物筛选方法研究',
+      '基于深度学习的GPCR专一性预测研究'
+    ],
+    image: importImage('people_dongwang.png'),
+    education: [
+      {
+        description_cn: '2010年9月-2014年6月：江苏大学，学士',
+        description_en: 'Sep 2010 - Jun 2014: Jiangsu University, Bachelor',
+      },
+      {
+        description_cn: '2014年9月-2016年6月：华中农业大学，硕士（导师：孔德信 教授）',
+        description_en: 'Sep 2014 - Jun 2016: Huazhong Agricultural University, Master (Supervisor: Prof. Dexin Kong)',
+      },
+      {
+        description_cn: '2016年7月-2017年7月：中科院昆明植物研究所，研究助理',
+        description_en: 'Jul 2016 - Jul 2017: Kunming Institute of Botany, Chinese Academy of Sciences, Research Assistant',
+      },
+      {
+        description_cn: '2017年9月-2021年6月：华中农业大学，博士（导师：孔德信 教授）',
+        description_en: 'Sep 2017 - Jun 2021: Huazhong Agricultural University, PhD (Supervisor: Prof. Dexin Kong)',
+      },
+      {
+        description_cn: '2021年8月至今：浙江大学，博士后（合作导师：侯廷军 教授）',
+        description_en: 'Aug 2021 - present: Zhejiang University, Postdoctoral Researcher (Supervisor: Prof. Tingjun Hou)',
+      },
+    ],
+    awards: [
+    ],
+    papers: [
+      {
+        title: 'Wang, D., Chen, N. H.; Alex G. T.; Jin Y. T.; Wen C. C.; Kong, D. X.*, Accelerating the Identification of Subtype Selective Inhibitors via Three-Dimensional Biologically Relevant Spectrum (BRS-3D): The Monoamine Oxidase Subtypes as a Case Study, Bioorg. Chem., 2020, 106, 104503.',
+        url: '',
+      },
+    ],
+  },
+  {
+    name_cn: '李诗萌',
+    name_en: 'Shimeng Li',
+    title_cn: '博士后/助理研究员',
+    title_en: 'Postdoctoral Researcher/Assistant Researcher',
+    email: 'lishimeng1994@163.com',
+    research_direction: ['基于人工智能的成药性预测'],
+    image: importImage('people_shimengli.png'),
+    education: [
+      {
+        description_cn: '2013年9月-2017年6月：辽宁大学，学士',
+        description_en: 'Sep 2013 - Jun 2017: Liaoning University, Bachelor',
+      },
+      {
+        description_cn: '2017年9月-2023年6月：辽宁大学，博士',
+        description_en: 'Sep 2017 - Jun 2023: Liaoning University, PhD',
+      },
+      {
+        description_cn: '2023年6月至今：浙江大学，药学院，博士后 （合作导师：侯廷军教授）',
+        description_en: 'Jun 2023 - present: Zhejiang University, School of Pharmacy, Postdoctoral Researcher (Supervisor: Prof. Tingjun Hou)',
+      },
+    ],
+    awards: [],
+    papers: [
+      {
+        title: 'Li S, Wang L, Meng J, et al. De Novo design of potential inhibitors against SARS-CoV-2 Mpro[J]. Computers in Biology and Medicine, 2022, 147: 105728.',
+        url: '',
+      },
+    ],
+  },
+  {
+    name_cn: '杜红岩',
+    name_en: 'Hongyan Du',
+    title_cn: '博士研究生（2020.9-2025.6）',
+    title_en: 'PhD Student (Sep 2020 - Jun 2025)',
+    email: 'hongyan_du@zju.edu.cn',
+    research_direction: ['用于共价药物设计、筛选和发现的相关计算方法的开发'],
+    image: importImage('people_hongyandu.png'),
+    education: [],
+    awards: [],
+    papers: [
+      {
+        title: 'Hongyan Du, Dejun Jiang, Junbo Gao, Xujun Zhang, Lingxiao Jiang, Yundian Zeng, Zhenxing Wu, Chao Shen, Lei Xu, Dongsheng Cao*, Tingjun Hou*, Peichen Pan*, Proteome-Wide Profiling of the Covalent-Druggable Cysteines with a Structure-Based Deep Graph Learning Network, Research, 2022, 9873564.',
+        url: '',
+      },
+      {
+        title: 'Hongyan Du, Junbo Gao, Gaoqi Weng, Junjie Ding, Xin Chai, Jinping Pang, Yu Kang, Dan Li, Dongsheng Cao*, Tingjun Hou*, CovalentInDB: a comprehensive database facilitating the discovery of covalent inhibitors, Nucleic Acids Research, 2021, 49(D1), D1122-D1129.',
+        url: '',
+      },
+    ],
+  },
+  {
+    name_cn: '廖佳宁',
+    name_en: 'Jianing Liao',
+    title_cn: '硕博连读研究生（2020.9-2025.6）',
+    title_en: 'Master-PhD Program Student (Sep 2020 - Jun 2025)',
+    email: '22019004@zju.edu.cn',
+    research_direction: ['靶向雄激素受体的药物筛选和生物学测试'],
+    image: importImage('people_jianingliao.png'),
+    education: [],
+    awards: [],
+    papers: [],
+  },
+  {
+    name_cn: '朱屹恒',
+    name_en: 'Yiheng Zhu',
+    title_cn: '博士研究生（2020.9-2025.7）',
+    title_en: 'PhD Student (Sep 2020 - Jul 2025)',
+    email: 'zhuyiheng2020@zju.edu.cn',
+    research_direction: ['分子生成'],
+    image: importImage('people_yihengzhu.png'),
+    education: [
+      {
+        description_cn: '共同导师：吴健教授',
+        description_en: 'Co-supervisor: Prof. Jian Wu',
+      },
+    ],
+    awards: [],
+    papers: [],
+  },
+  {
+    name_cn: '王斯羽',
+    name_en: 'Siyu Wang',
+    title_cn: '硕士研究生（2020.9-2024.3）',
+    title_en: 'Master Student (Sep 2020 - Mar 2024)',
+    email: '12019076@zju.edu.cn',
+    research_direction: ['基于人工智能技术的成药性预测研究'],
+    image: importImage('people_siyuwang.png'),
+    education: [],
+    awards: [],
+    papers: [],
+  },
+  {
+    name_cn: '徐若兰',
+    name_en: 'Ruolan Xu',
+    title_cn: '硕士研究生（2020.9-2023.6）',
+    title_en: 'Master Student (Sep 2020 - Jun 2023)',
+    email: '2837259554@qq.com',
+    research_direction: ['基于机器学习的GPCR个性化打分方法的研究'],
+    image: importImage('people_ruolanxu.png'),
+    education: [
+      {
+        description_cn: '共同导师：康玉副教授',
+        description_en: 'Co-supervisor: Associate Prof. Yu Kang',
+      },
+    ],
+    awards: [],
+    papers: [],
+  },
+  {
+    name_cn: '聂豆',
+    name_en: 'Dou Nie',
+    title_cn: '硕士研究生（2021.9-2024.6）',
+    title_en: 'Master Student (Sep 2021 - Jun 2024)',
+    email: '22119029@zju.edu.cn',
+    research_direction: ['计算机辅助药物设计和机制研究'],
+    image: importImage('people_dounie.png'),
+    education: [
+      {
+        description_cn: '共同导师：康玉副教授',
+        description_en: 'Co-supervisor: Associate Prof. Yu Kang',
+      },
+    ],
+    awards: [],
+    papers: [],
+  },
+  {
+    name_cn: '张昊天',
+    name_en: 'Haotian Zhang',
+    title_cn: '硕士研究生（2022.9-2025.6）',
+    title_en: 'Master Student (Sep 2022 - Jun 2025)',
+    email: 'haotianzhang@zju.edu.cn',
+    research_direction: ['深度几何模型与深度概率模型', '3D分子生成和构象生成'],
+    image: importImage('people_haotianzhang.png'),
+    education: [
+      {
+        description_cn: '个人主页：https://haotianzhangai4science.github.io/',
+        description_en: 'Personal page: https://haotianzhangai4science.github.io/',
+      },
+    ],
+    awards: [],
+    papers: [
+      {
+        title: 'Odin Zhang#, Tianyue Wang#, Gaoqi Weng, Dejun Jiang, Ning Wang, Xiaorui Wang, Huifeng Zhao, Jialu Wu, Ercheng Wang, Guangyong Chen, Yafeng Deng, Peichen Pan, Yu Kang*, Chang-Yu Hsieh*, Tingjun Hou*, Learning on topological surface and geometric structure for 3D molecular generation, Nature Computational Science, 2023, in press.',
+        url: '',
+      },
+      {
+        title: 'Odin Zhang, Jintu Zhang, Jieyu Jin, Xujun Zhang, RenLing Hu, Chao Shen, Hanqun Cao, Hongyan Du, Yu Kang, Yafeng Deng, Furui Liu*, Guangyong Chen*, Chang-Yu Hsieh*, Tingjun Hou*, ResGen is a pocket-aware 3D molecular generation model based on parallel multiscale modelling, Nature Machine Intelligence, 2023, 5, 1020-1030.',
+        url: '',
+      },
+      {
+        title: 'Xujun Zhang#, Odin Zhang#, Chao Shen, Wanglin Qu, Shicheng Chen, Hanqun Cao, Yu Kang, Zhe Wang, Ercheng Wang, Jintu Zhang, Yafeng Deng, Furui Liu, Tianyue Wang, Hongyan Du, Langcheng Wang, Peichen Pan*, Guangyong Chen*, Chang-Yu Hsieh*, Tingjun Hou*, Efficient and accurate large library ligand docking with KarmaDock, Nature Computational Science, 2023, 3, 789-804.',
+        url: '',
+      },
+    ],
+  },
+  {
+    name_cn: '张忆雪',
+    name_en: 'Yixue Zhang',
+    title_cn: '硕士研究生（2022.9-2025.6）',
+    title_en: 'Master Student (Sep 2022 - Jun 2025)',
+    email: 'yixuezhang@zju.edu.cn',
+    research_direction: ['基于人工智能技术和机器学习的成药性预测研究'],
+    image: importImage('people_yixuezhang.png'),
+    education: [
+      {
+        description_cn: '共同导师：康玉副教授',
+        description_en: 'Co-supervisor: Associate Prof. Yu Kang',
+      },
+    ],
+    awards: [],
+    papers: [],
   },
 ]
 

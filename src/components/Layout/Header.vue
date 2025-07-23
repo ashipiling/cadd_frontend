@@ -25,7 +25,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
             </a>
             <div :class="backgroundColor === 'dark' ? 'bg-gray-800/90' : 'bg-white/90'" class="absolute left-0 mt-2 w-48 backdrop-blur-sm shadow-lg rounded-md py-2 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300">
-              <a href="/people#faculty" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
+              <a href="/people" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
                 {{ t('headerFooter.faculty') }}
               </a>
               <a href="/people#postdoc" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
@@ -49,13 +49,13 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
             </a>
             <div :class="backgroundColor === 'dark' ? 'bg-gray-800/90' : 'bg-white/90'" class="absolute left-0 mt-2 w-48 backdrop-blur-sm shadow-lg rounded-md py-2 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300">
-              <a href="/publication#publication" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
+              <a href="/publication" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
                 {{ t('headerFooter.papers') }}
               </a>
               <a href="/publication#software" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                {{ t('headerFooter.softwarePatent') }}
+                {{ t('publications.softwareCopyright') }}
               </a>
-              <a href="/publication#patent" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
+              <a href="/publication#patents" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
                 {{ t('headerFooter.patents') }}
               </a>
             </div>
@@ -66,52 +66,51 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
             </a>
             <div :class="backgroundColor === 'dark' ? 'bg-gray-800/90' : 'bg-white/90'" class="absolute left-0 mt-2 w-48 backdrop-blur-sm shadow-lg rounded-md py-2 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300">
-              <a href="/software#database" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                {{ t('headerFooter.database') }}
+              <a href="/software" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
+                {{ t('software.database') }}
               </a>
-              <a href="/software#molecular" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                {{ t('headerFooter.molecularFeaturization') }}
+              <a href="/software#molecularFeaturization" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
+                {{ t('software.molecularFeaturization') }}
               </a>
-              <a href="/software#qsar" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                {{ t('headerFooter.QSARModeling') }}
+              <a href="/software#QSARModeling" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
+                {{ t('software.QSARModeling') }}
               </a>
-              <a href="/software#admet" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                {{ t('headerFooter.ADMETPrediction') }}
+              <a href="/software#ADMETPrediction" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
+                {{ t('software.ADMETPrediction') }}
               </a>
-              <a href="/software#docking" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                {{ t('headerFooter.proteinLigandDocking') }}
+              <a href="/software#DeNovoDrugDesign" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
+                {{ t('software.DeNovoDrugDesign') }}
               </a>
-              <a href="/software#freeenergy" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                {{ t('headerFooter.bindingFreeEnergyPrediction') }}
+              <a href="/software#bindingFreeEnergyPrediction" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
+                {{ t('software.bindingFreeEnergyPrediction') }}
               </a>
-              <a href="/software#denovo" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                {{ t('headerFooter.DeNovoDrugDesign') }}
+              <a href="/software#proteinLigandDocking" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
+                {{ t('software.proteinLigandDocking') }}
               </a>
-              <a href="/software#ppdocking" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                {{ t('headerFooter.proteinProteinDocking') }}
+              <a href="/software#proteinProteinDocking" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
+                {{ t('software.proteinProteinDocking') }}
               </a>
-              <a href="/software#imgrec" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                {{ t('headerFooter.molecularImageRecognition') }}
+              <a href="/software#proteinPeptideDocking" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
+                {{ t('software.proteinPeptideDocking') }}
               </a>
-              <a href="/software#tools" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                {{ t('headerFooter.drugDesignTools') }}
+              <a href="/software#proteinStructurePrediction" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
+                {{ t('software.proteinStructurePrediction') }}
               </a>
-            </div>
-          </div>
-          <div class="relative group">
-            <a href="/links" :class="backgroundColor === 'dark' ? 'hover:text-blue-400' : 'hover:text-blue-600'" class="flex items-center gap-1">
-              {{ t('headerFooter.links') }}
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
-            </a>
-            <div :class="backgroundColor === 'dark' ? 'bg-gray-800/90' : 'bg-white/90'" class="absolute left-0 mt-2 w-48 backdrop-blur-sm shadow-lg rounded-md py-2 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300">
-              <a href="/links#cooperation_group" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                {{ t('headerFooter.collaborators') }}
+              <a href="/software#molecularImageRecognition" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
+                {{ t('software.molecularImageRecognition') }}
               </a>
-              <a href="/links#important_journal" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                {{ t('headerFooter.importantJournals') }}
+              <a href="/software#reverseSynthesis" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
+                {{ t('software.reverseSynthesis') }}
+              </a>
+              <a href="/software#drugDesignTools" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
+                {{ t('software.drugDesignTools') }}
               </a>
             </div>
           </div>
+          <a href="/honor" :class="backgroundColor === 'dark' ? 'hover:text-blue-400' : 'hover:text-blue-600'">{{ t('headerFooter.honor') }}</a>
+          <a href="/drugflow" :class="backgroundColor === 'dark' ? 'hover:text-blue-400' : 'hover:text-blue-600'">
+            {{ t('headerFooter.drugflow') }}
+          </a>
         </nav>
         
         <!-- Mobile menu button -->
@@ -234,7 +233,7 @@
               <span>{{ t('headerFooter.publications') }}</span>
             </div>
             <div class="mt-1 ml-4 space-y-1">
-              <a href="/publication#publication" 
+              <a href="/publication" 
                  class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
                  :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
                  @click="closeMobileMenu">
@@ -248,7 +247,7 @@
                 <Code class="w-4 h-4 mr-3 opacity-70" />
                 <span>{{ t('headerFooter.softwarePatent') }}</span>
               </a>
-              <a href="/publication#patent" 
+              <a href="/publication#patents" 
                  class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
                  :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
                  @click="closeMobileMenu">
@@ -266,104 +265,117 @@
               <span>{{ t('headerFooter.software') }}</span>
             </div>
             <div class="mt-1 ml-4 space-y-1">
-              <a href="/software#database" 
+              <a href="/software" 
                  class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
                  :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
                  @click="closeMobileMenu">
                 <Database class="w-4 h-4 mr-3 opacity-70" />
-                <span>{{ t('headerFooter.database') }}</span>
+                <span>{{ t('software.database') }}</span>
               </a>
               <!-- Include other software links with appropriate icons -->
-              <a href="/software#molecular" 
+              <a href="/software#molecularFeaturization" 
                  class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
                  :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
                  @click="closeMobileMenu">
                 <Atom class="w-4 h-4 mr-3 opacity-70" />
-                <span>{{ t('headerFooter.molecularFeaturization') }}</span>
+                <span>{{ t('software.molecularFeaturization') }}</span>
               </a>
-              <a href="/software#qsar" 
+              <a href="/software#QSARModeling" 
                  class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
                  :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
                  @click="closeMobileMenu">
                 <Atom class="w-4 h-4 mr-3 opacity-70" />
-                <span>{{ t('headerFooter.QSARModeling') }}</span>
+                <span>{{ t('software.QSARModeling') }}</span>
               </a>
-              <a href="/software#admet" 
+              <a href="/software#ADMETPrediction" 
                  class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
                  :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
                  @click="closeMobileMenu">
                 <Atom class="w-4 h-4 mr-3 opacity-70" />
-                <span>{{ t('headerFooter.ADMETPrediction') }}</span>
+                <span>{{ t('software.ADMETPrediction') }}</span>
               </a>
-              <a href="/software#docking" 
+              <a href="/software#DeNovoDrugDesign" 
                  class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
                  :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
                  @click="closeMobileMenu">
                 <Atom class="w-4 h-4 mr-3 opacity-70" />
-                <span>{{ t('headerFooter.proteinLigandDocking') }}</span>
+                <span>{{ t('software.DeNovoDrugDesign') }}</span>
               </a>
-              <a href="/software#freeenergy" 
+              <a href="/software#bindingFreeEnergyPrediction" 
                  class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
                  :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
                  @click="closeMobileMenu">
                 <Atom class="w-4 h-4 mr-3 opacity-70" />
-                <span>{{ t('headerFooter.bindingFreeEnergyPrediction') }}</span>
+                <span>{{ t('software.bindingFreeEnergyPrediction') }}</span>
               </a>
-              <a href="/software#denovo" 
+              <a href="/software#proteinLigandDocking" 
                  class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
                  :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
                  @click="closeMobileMenu">
                 <Atom class="w-4 h-4 mr-3 opacity-70" />
-                <span>{{ t('headerFooter.DeNovoDrugDesign') }}</span>
+                <span>{{ t('software.proteinLigandDocking') }}</span>
               </a>
-              <a href="/software#ppdocking" 
+              <a href="/software#proteinProteinDocking" 
                  class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
                  :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
                  @click="closeMobileMenu">
                 <Atom class="w-4 h-4 mr-3 opacity-70" />
-                <span>{{ t('headerFooter.proteinProteinDocking') }}</span>
+                <span>{{ t('software.proteinProteinDocking') }}</span>
               </a>
-              <a href="/software#imgrec" 
+              <a href="/software#proteinPeptideDocking" 
                  class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
                  :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
                  @click="closeMobileMenu">
                 <Atom class="w-4 h-4 mr-3 opacity-70" />
-                <span>{{ t('headerFooter.molecularImageRecognition') }}</span>
+                <span>{{ t('software.proteinPeptideDocking') }}</span>
               </a>
-              <a href="/software#tools" 
+              <a href="/software#proteinStructurePrediction" 
                  class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
                  :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
                  @click="closeMobileMenu">
                 <Atom class="w-4 h-4 mr-3 opacity-70" />
-                <span>{{ t('headerFooter.drugDesignTools') }}</span>
+                <span>{{ t('software.proteinStructurePrediction') }}</span>
+              </a>
+              <a href="/software#molecularImageRecognition" 
+                 class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
+                 :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
+                 @click="closeMobileMenu">
+                <Atom class="w-4 h-4 mr-3 opacity-70" />
+                <span>{{ t('software.molecularImageRecognition') }}</span>
+              </a>
+              <a href="/software#reverseSynthesis" 
+                 class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
+                 :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
+                 @click="closeMobileMenu">
+                <Atom class="w-4 h-4 mr-3 opacity-70" />
+                <span>{{ t('software.reverseSynthesis') }}</span>
+              </a>
+              <a href="/software#drugDesignTools" 
+                 class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
+                 :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
+                 @click="closeMobileMenu">
+                <Atom class="w-4 h-4 mr-3 opacity-70" />
+                <span>{{ t('software.drugDesignTools') }}</span>
               </a>
             </div>
           </div>
           
-          <!-- 友情链接 -->
-          <div class="mb-4">
-            <div class="flex items-center py-3 px-4 rounded-lg text-lg font-medium"
-                 :class="backgroundColor === 'dark' ? 'text-white bg-gray-800/50' : 'text-gray-900 bg-gray-100/80'">
-              <Link class="w-5 h-5 mr-3" />
-              <span>{{ t('headerFooter.links') }}</span>
-            </div>
-            <div class="mt-1 ml-4 space-y-1">
-              <a href="/links#cooperation_group" 
-                 class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
-                 :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
-                 @click="closeMobileMenu">
-                <Users2 class="w-4 h-4 mr-3 opacity-70" />
-                <span>{{ t('headerFooter.collaborators') }}</span>
-              </a>
-              <a href="/links#important_journal" 
-                 class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
-                 :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
-                 @click="closeMobileMenu">
-                <Newspaper class="w-4 h-4 mr-3 opacity-70" />
-                <span>{{ t('headerFooter.importantJournals') }}</span>
-              </a>
-            </div>
-          </div>
+          <!-- 合照与荣誉 -->
+          <a href="/honor" 
+             class="flex items-center py-3 px-4 rounded-lg transition-colors duration-200" 
+             :class="backgroundColor === 'dark' ? 'text-white hover:bg-gray-800' : 'text-gray-900 hover:bg-gray-100'"
+             @click="closeMobileMenu">
+            <Award class="w-5 h-5 mr-3" />
+            <span class="font-medium">{{ t('headerFooter.honor') }}</span>
+          </a>
+
+          <a href="/drugflow" 
+             class="flex items-center py-3 px-4 rounded-lg transition-colors duration-200" 
+             :class="backgroundColor === 'dark' ? 'text-white hover:bg-gray-800' : 'text-gray-900 hover:bg-gray-100'"
+             @click="closeMobileMenu">
+            <Rocket class="w-5 h-5 mr-3" />
+            <span class="font-medium">{{ t('headerFooter.drugflow') }}</span>
+          </a>
           
           <!-- Language toggle in mobile menu -->
           <div class="mt-6 mb-4 py-4 rounded-lg"
@@ -397,7 +409,7 @@ import { Button } from '@/components/ui/button'
 import { 
   Menu, X, Home, Users, User, UserSquare, GraduationCap, Backpack, 
   History, FileText, BookOpen, Code, Award, Laptop, Database, Atom, 
-  Link, Users2, Newspaper, Globe 
+  Link, Users2, Newspaper, Globe, Rocket
 } from 'lucide-vue-next'
 import { useI18n } from 'vue-i18n'
 const { locale } = useI18n()
