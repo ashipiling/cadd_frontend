@@ -61,7 +61,7 @@
         <!-- Research Papers Sections by Year -->
         <div id="papers" v-for="[year, yearPapers] in Object.entries(papers).sort(([a], [b]) => Number(b) - Number(a))" :key="`year-section-${year}`">
           <section :id="`year-${year}`" class="mb-16 scroll-mt-20">
-            <h2 class="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200">{{ year == '2024' ? t('publications.researchPapers') : year + t('publications.year') }}</h2>
+            <h2 class="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200">{{ year == '2025' ? t('publications.researchPapers') : year + t('publications.year') }}</h2>
             <div class="grid grid-cols-1 gap-4">
               <div v-for="paper in (yearPapers as any[])" :key="`paper-${paper.id}`" class="bg-white rounded-xl p-5 shadow-md border border-gray-100 hover:shadow-lg hover:border-primary/20 transition-all">
                 <div class="flex items-start">

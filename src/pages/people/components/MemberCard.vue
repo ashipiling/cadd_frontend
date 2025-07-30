@@ -2,41 +2,61 @@
   <HoverCard>
     <HoverCardTrigger asChild>
       <div 
-        class="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-md cursor-pointer"
+        class="group bg-white/80 backdrop-blur-sm rounded-xl shadow-lg border border-gray-200/50 overflow-hidden transition-all duration-500 hover:scale-[1.02] cursor-pointer hover:border-blue-300/30"
       >
         <!-- Basic info (always visible) - horizontal layout -->
-        <div class="p-6 flex items-start">
+        <div class="p-4 flex items-start space-x-4">
           <!-- Left side - image -->
-          <img :src="member.image" :alt="language === 'en-US' ? member.name_en : member.name_cn" class="w-32 object-cover rounded-md mr-4" />
+          <div class="relative">
+            <img 
+              :src="member.image" 
+              :alt="language === 'en-US' ? member.name_en : member.name_cn" 
+              class="w-32 object-cover rounded-md transition-all duration-300" 
+            />
+          </div>
           
           <!-- Right side - info -->
-          <div class="flex-1">
-            <h3 class="text-lg font-semibold">{{ language === 'en-US' ? member.name_en : member.name_cn }}</h3>
-            <p class="text-xs text-gray-500 mt-1">{{ language === 'en-US' ? member.title_en : member.title_cn }}</p>
-            
-            <!-- Research Direction (hide for alumni) -->
-            <div v-if="type !== 'alumni' && (language === 'en-US' ? member.research_direction_en : member.research_direction)" class="mt-2">
-              <h4 class="text-xs font-semibold uppercase text-gray-500 mb-1">{{ language === 'en-US' ? 'Research Direction' : '研究方向' }}</h4>
-              <!-- If research_direction is an array -->
-              <ul v-if="Array.isArray(language === 'en-US' ? member.research_direction_en : member.research_direction)" class="text-xs text-gray-700 list-disc pl-4">
-                <li v-for="(direction, index) in (language === 'en-US' ? member.research_direction_en : member.research_direction)" :key="index" class="mb-1">
-                  {{ direction }}
-                </li>
-              </ul>
-              <!-- If research_direction is a string -->
-              <p v-else class="text-xs text-gray-700">{{ language === 'en-US' ? member.research_direction_en : member.research_direction }}</p>
-            </div>
-            
-            <!-- Contact info -->
-            <div class="text-sm mt-4">
-              <div v-if="member.email" class="flex items-center text-gray-700 text-xs mb-1">
-                <MailIcon class="h-3 w-3 mr-2" />
-                <span>{{ member.email }}</span>
+          <div class="flex-1 min-w-0">
+            <div class="space-y-3">
+              <div>
+                <h3 class="text-xl font-bold text-gray-900 group-hover:text-blue-700 transition-colors duration-300">
+                  {{ language === 'en-US' ? member.name_en : member.name_cn }}
+                </h3>
+                <p class="text-sm text-blue-600 font-medium mt-1 inline-block">
+                  {{ language === 'en-US' ? member.title_en : member.title_cn }}
+                </p>
               </div>
               
-              <div v-if="language === 'en-US' ? member.location_en : member.location_cn" class="flex items-center text-gray-700 text-xs mb-1">
-                <MapPinIcon class="h-3 w-3 mr-2" />
-                <span>{{ language === 'en-US' ? member.location_en : member.location_cn }}</span>
+              <!-- Research Direction (hide for alumni) -->
+              <div v-if="type !== 'alumni' && (language === 'en-US' ? member.research_direction_en : member.research_direction)" class="mt-3 space-y-2">
+                <div class="text-xs text-gray-700 flex items-center gap-2 justify-start">
+                  <FlaskConicalIcon class="h-4 w-4 flex-shrink-0" />
+                  <span>{{ language === 'en-US' ? 'Research Direction' : '研究方向' }}</span>
+                </div>
+                <!-- If research_direction is an array -->
+                <div v-if="Array.isArray(language === 'en-US' ? member.research_direction_en : member.research_direction)" class="text-xs text-gray-700 space-y-1">
+                  <div v-for="(direction, index) in (language === 'en-US' ? member.research_direction_en : member.research_direction)" :key="index" class="flex items-start">
+                    <span class="w-1 h-1 bg-gray-700 rounded-full mt-1 ml-1.5 mr-3.5 flex-shrink-0"></span>
+                    <span class="text-xs text-gray-700">{{ direction }}</span>
+                  </div>
+                </div>
+                <!-- If research_direction is a string -->
+                <p v-else class="text-xs text-gray-700">{{ language === 'en-US' ? member.research_direction_en : member.research_direction }}</p>
+              </div>
+              
+              <!-- Contact info -->
+              <div class="space-y-2">
+                <div v-if="language === 'en-US' ? member.location_en : member.location_cn" 
+                  class="flex items-center text-gray-700 text-xs justify-start gap-2">
+                  <MapPinIcon class="h-4 w-4 flex-shrink-0" />
+                  <span>{{ language === 'en-US' ? member.location_en : member.location_cn }}</span>
+                </div>
+
+                <div v-if="member.email"
+                  class="text-xs text-gray-700 flex items-center justify-start gap-2">
+                  <MailIcon class="h-4 w-4 flex-shrink-0" />
+                  <span>{{ member.email }}</span>
+                </div>
               </div>
             </div>
           </div>
@@ -92,7 +112,7 @@
 import { ref, computed } from 'vue'
 import { Button } from '@/components/ui/button'
 import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card'
-import { MailIcon, PhoneIcon, MapPinIcon, ExternalLinkIcon } from 'lucide-vue-next'
+import { MailIcon, PhoneIcon, MapPinIcon, ExternalLinkIcon, FlaskConicalIcon } from 'lucide-vue-next'
 
 const props = defineProps({
   member: {

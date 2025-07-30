@@ -49,7 +49,10 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
             </a>
             <div :class="backgroundColor === 'dark' ? 'bg-gray-800/90' : 'bg-white/90'" class="absolute left-0 mt-2 w-48 backdrop-blur-sm shadow-lg rounded-md py-2 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300">
-              <a href="/publication" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
+              <a href="/publication#books" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
+                {{ t('publications.books') }}
+              </a>
+              <a href="/publication#papers" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
                 {{ t('headerFooter.papers') }}
               </a>
               <a href="/publication#software" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
@@ -67,7 +70,7 @@
             </a>
             <div :class="backgroundColor === 'dark' ? 'bg-gray-800/90' : 'bg-white/90'" class="absolute left-0 mt-2 w-48 backdrop-blur-sm shadow-lg rounded-md py-2 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300">
               <a href="/software" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
-                {{ t('software.database') }}
+                {{ t('software.databases') }}
               </a>
               <a href="/software#molecularFeaturization" :class="backgroundColor === 'dark' ? 'text-gray-100 hover:bg-gray-700 hover:text-blue-400' : 'text-gray-800 hover:bg-gray-100 hover:text-blue-600'" class="block px-4 py-2">
                 {{ t('software.molecularFeaturization') }}
@@ -233,7 +236,14 @@
               <span>{{ t('headerFooter.publications') }}</span>
             </div>
             <div class="mt-1 ml-4 space-y-1">
-              <a href="/publication" 
+              <a href="/publication#books" 
+                 class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
+                 :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
+                 @click="closeMobileMenu">
+                <BookOpen class="w-4 h-4 mr-3 opacity-70" />
+                <span>{{ t('publications.books') }}</span>
+              </a>
+              <a href="/publication#papers" 
                  class="flex items-center py-2 px-4 rounded-lg transition-colors duration-200" 
                  :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
                  @click="closeMobileMenu">
@@ -270,7 +280,7 @@
                  :class="backgroundColor === 'dark' ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
                  @click="closeMobileMenu">
                 <Database class="w-4 h-4 mr-3 opacity-70" />
-                <span>{{ t('software.database') }}</span>
+                <span>{{ t('software.databases') }}</span>
               </a>
               <!-- Include other software links with appropriate icons -->
               <a href="/software#molecularFeaturization" 

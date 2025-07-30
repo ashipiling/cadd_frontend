@@ -39,6 +39,7 @@ export default {
     collaborators: '合作课题组',
     importantJournals: '重要期刊',
     language: '语言',
+    totalVisits: '总访问量',
     
     // Footer 专用翻译
     labName: 'Hou Lab',
@@ -76,7 +77,7 @@ export default {
     read_original: '阅读原文',
     publishedPapers: '发表论文',
     appliedPatents: '发明专利',
-    softwarePlatforms: '软件平台',
+    softwarePlatforms: '程序开发',
     // DrugFlow部分
     drugflow: {
       title: 'DrugFlow',
@@ -194,6 +195,22 @@ export default {
         }
       },
       
+      // 平台功能滚动展示
+      platformFeatures: {
+        docking: '分子对接',
+        docking_en: 'Molecular Docking',
+        admet: 'ADMET预测',
+        admet_en: 'ADMET Prediction',
+        molecularFactory: '分子生成工厂',
+        molecularFactory_en: 'Molecular Factory',
+        qsar: 'QSAR建模',
+        qsar_en: 'QSAR Modeling',
+        virtualScreening: '虚拟筛选',
+        virtualScreening_en: 'Virtual Screening',
+        structureExtraction: '结构提取',
+        structureExtraction_en: 'Structure Extraction'
+      },
+
       // 行动召唤
       cta: {
         title: '开启AI药物发现之旅',
@@ -225,7 +242,7 @@ export default {
 
     // 软件平台部分
     softwarePlatform: {
-      title: '软件平台',
+      title: '程序开发',
       subtitle: '我们开发的计算药物设计软件与平台'
     }
   },
@@ -567,7 +584,7 @@ export default {
   },
   
   software: {
-    title: '软件平台',
+    title: '程序开发',
     subtitle: '我们开发的计算药物设计软件与平台',
     databases: '数据库',
     molecularFeaturization: '分子表征',

@@ -1,59 +1,48 @@
 <template>
   <PageFrame :headerBackgroundColor="headerBackgroundColor">
     <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center bg-gradient-to-br from-indigo-950 via-blue-900 to-purple-900 overflow-hidden">
-      <!-- Enhanced blue accents -->
-      <div class="absolute top-1/4 left-1/6 w-[32rem] h-[32rem] bg-blue-500/20 rounded-full blur-3xl"></div>
-      <div class="absolute bottom-1/3 right-1/5 w-96 h-96 bg-indigo-400/20 rounded-full blur-3xl"></div>
-      <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-purple-400/20 rounded-full blur-2xl"></div>
-      <div class="container mx-auto px-4 md:px-8 relative z-10">
-        <div class="max-w-7xl mx-auto">
-          <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-20 items-center">
-            <!-- Left Content -->
-            <div class="lg:col-span-2 reveal-item lg:pl-8 xl:pl-12" ref="heroContent">
-              <div class="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-primary/20 to-blue-500/20 text-white text-sm font-medium mb-8 border border-primary/30 backdrop-blur-sm">
-                <span class="w-2 h-2 bg-primary rounded-full mr-2 animate-pulse"></span>
-                {{ t('drugflow.hero.badge') }}
-              </div>
-              <h1 class="text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-8 leading-tight">
-                <span class="bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent drop-shadow-lg">Drug</span><span class="drop-shadow-lg">Flow</span>
-              </h1>
-              <p class="text-xl lg:text-2xl text-gray-200 mb-10 leading-relaxed drop-shadow-sm">
-                {{ t('drugflow.hero.description') }}
-              </p>
-              <div class="flex flex-col sm:flex-row gap-6">
-                <Button size="lg" class="text-lg px-10 py-5 bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1" asChild>
-                  <a href="https://drugflow.com" target="_blank">
-                    {{ t('drugflow.hero.getStarted') }}
-                    <ArrowRight class="ml-2 h-5 w-5" />
-                  </a>
-                </Button>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  class="text-lg px-10 py-5 bg-white/10 text-white border-none
-                         hover:bg-white/20 backdrop-blur-sm 
-                         transition-all duration-300 transform hover:scale-105 hover:-translate-y-1
-                         shadow-lg hover:shadow-xl"
-                  @click="scrollToFeatures"
-                >
-                  {{ t('drugflow.hero.learnMore') }}
-                  <ChevronDown class="ml-2 h-5 w-5 animate-bounce" />
-                </Button>
-              </div>
+    <section class="relative min-h-screen flex items-center overflow-hidden">
+      <!-- Background image with gradient overlay - similar to carousel style -->
+      <div class="absolute inset-0 bg-gradient-to-b from-blue-700/70 to-gray-900/90 z-10 overflow-hidden">
+        <img 
+          :src="heroBackgroundImage" 
+          alt="DrugFlow Platform Interface" 
+          class="w-full h-full object-cover"
+        />
+      </div>
+      
+      <div class="absolute inset-0 z-20 flex items-center">
+        <div class="container mx-auto px-4 md:px-24 mt-20">
+          <div class="max-w-full md:max-w-3xl text-center md:text-left">
+            <div class="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-primary/20 to-blue-500/20 text-white text-sm font-medium mb-8 border border-primary/30 backdrop-blur-sm">
+              <span class="w-2 h-2 bg-primary rounded-full mr-2 animate-pulse"></span>
+              {{ t('drugflow.hero.badge') }}
             </div>
-            
-            <!-- Right Content - Platform Preview -->
-            <div class="lg:col-span-3 reveal-item lg:mt-16 xl:mt-20" ref="heroImage">
-              <div class="relative group">
-                <div class="relative overflow-hidden">
-                  <img 
-                    src="@/assets/imgs/drugflow_cover.png" 
-                    alt="DrugFlow Platform Interface" 
-                    class="w-full h-auto"
-                  />
-                </div>
-              </div>
+            <h1 class="text-3xl md:text-8xl mb-6 text-white tracking-wide max-w-[660px] font-bold animate-fade-in-up">
+              <span class="bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent drop-shadow-lg">Drug</span><span class="drop-shadow-lg">Flow</span>
+            </h1>
+            <p class="text-base md:text-xl text-gray-300 mb-10 max-w-[550px] font-light animate-fade-in-up animation-delay-200">
+              {{ t('drugflow.hero.description') }}
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 mb-36">
+              <Button size="lg" class="text-lg px-10 py-5 bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1" asChild>
+                <a href="https://drugflow.com" target="_blank">
+                  {{ t('drugflow.hero.getStarted') }}
+                  <ArrowRight class="ml-2 h-5 w-5" />
+                </a>
+              </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                class="text-lg px-10 py-5 bg-white/10 text-white border-none
+                       hover:bg-white/20 backdrop-blur-sm 
+                       transition-all duration-300 transform hover:scale-105 hover:-translate-y-1
+                       shadow-lg hover:shadow-xl"
+                @click="scrollToFeatures"
+              >
+                {{ t('drugflow.hero.learnMore') }}
+                <ChevronDown class="ml-2 h-5 w-5 animate-bounce" />
+              </Button>
             </div>
           </div>
         </div>
@@ -185,6 +174,7 @@
 import { ref, onMounted, onUnmounted, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { Button } from '@/components/ui/button'
+// @ts-ignore
 import PageFrame from '@/components/Layout/page_frame.vue'
 import { 
   FlaskConical, 
@@ -220,6 +210,9 @@ const featuresGrid = ref(null)
 const useCasesTitle = ref(null)
 const useCasesGrid = ref(null)
 const ctaSection = ref(null)
+
+// Hero background image
+const heroBackgroundImage = new URL('@/assets/imgs/drugflow_cover.jpg', import.meta.url).href
 
 // Statistics data
 const statistics = computed(() => [
@@ -359,6 +352,16 @@ const useCases = computed(() => [
   }
 ])
 
+// Platform features for scrollable section
+const platformFeatures = computed(() => [
+  { id: 1, name: t('drugflow.platformFeatures.docking'), name_en: t('drugflow.platformFeatures.docking_en') },
+  { id: 2, name: t('drugflow.platformFeatures.admet'), name_en: t('drugflow.platformFeatures.admet_en') },
+  { id: 3, name: t('drugflow.platformFeatures.molecularFactory'), name_en: t('drugflow.platformFeatures.molecularFactory_en') },
+  { id: 4, name: t('drugflow.platformFeatures.qsar'), name_en: t('drugflow.platformFeatures.qsar_en') },
+  { id: 5, name: t('drugflow.platformFeatures.virtualScreening'), name_en: t('drugflow.platformFeatures.virtualScreening_en') },
+  { id: 6, name: t('drugflow.platformFeatures.structureExtraction'), name_en: t('drugflow.platformFeatures.structureExtraction_en') }
+])
+
 // Scroll to features section
 const scrollToFeatures = () => {
   const element = document.getElementById('features')
@@ -456,7 +459,7 @@ onUnmounted(() => {
   transform: translateY(0);
 }
 
-/* Simple clean background - no patterns needed */
+/* Background image styling similar to carousel */
 
 /* Enhanced shadow for hero image */
 .shadow-3xl {
@@ -494,6 +497,50 @@ onUnmounted(() => {
 .reveal-item:nth-child(6) { transition-delay: 0.6s; }
 
 /* Clean and simple styling */
+
+/* 添加横向滚动动画 */
+@keyframes scroll-horizontal {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    /* 将内容向左移动其自身宽度的一半（因为我们复制了内容） */
+    transform: translateX(-50%);
+  }
+}
+
+/* 添加淡入向上动画 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards; /* 应用动画 */
+  opacity: 0; /* 初始状态为透明 */
+}
+
+/* 辅助类，用于添加延迟 */
+.animation-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animate-scroll-horizontal {
+  /* 应用动画：名称 时长 速度曲线 循环次数 */
+  animation: scroll-horizontal 25s linear infinite; /* 调整 25s 来改变滚动速度 */
+  display: inline-block; /* 确保容器宽度适应内容 */
+}
+
+/* 鼠标悬停时暂停动画 (可选) */
+.group:hover .pause-animation {
+  animation-play-state: paused;
+}
 </style>
 
 <route lang="yaml">

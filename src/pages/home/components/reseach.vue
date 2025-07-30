@@ -55,19 +55,35 @@
             </div>
             <div class="clear-both"></div>
           </div>
-        </div>
-        
-        <!-- Bottom section: References full width -->
-        <div v-if="currentItem?.references && currentItem.references.length > 0" class="mt-8 border-t border-slate-700 pt-6">
-          <h4 class="text-xl font-semibold mb-3 text-gray-100">{{ t('software.reference') }}</h4>
-          <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2 text-gray-300 text-sm">
-            <li v-for="(ref, idx) in currentItem.references" :key="idx" class="list-decimal ml-5">
-              {{ ref }}
-            </li>
-          </ul>
+          
+          <!-- References section -->
+          <div v-if="currentItem?.references && currentItem.references.length > 0" class="mt-12 pt-8 border-t border-slate-700">
+            <div class="mb-6">
+              <h4 class="text-xl font-semibold text-white flex items-center gap-2">
+                <div class="w-1 h-6 bg-primary rounded-full"></div>
+                {{ t('software.reference') }}
+              </h4>
+            </div>
+            
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-4">
+              <div 
+                v-for="(ref, idx) in currentItem.references" 
+                :key="idx" 
+                class="bg-slate-700/50 rounded-lg p-4 border border-slate-600/50 hover:border-slate-500 transition-colors"
+              >
+                <div class="flex items-start gap-3">
+                  <span class="inline-flex items-center justify-center w-6 h-6 bg-primary/20 text-primary text-xs font-semibold rounded-full flex-shrink-0 mt-0.5">
+                    {{ idx + 1 }}
+                  </span>
+                  <p class="text-gray-300 text-sm leading-relaxed">
+                    {{ ref }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </ScrollArea>
-      
     </DialogContent>
   </Dialog>
 </template>
@@ -218,7 +234,7 @@ const researchItems = [
     title_cn: '重要靶点的药物分子设计',
     title_en: 'Drug Molecule Design for Important Targets',
     description_cn: '先导化合物的发现和优化是新药开发中不可或缺的关键环节。我们通过整合计算模拟以及体内/体外生物活性评价，针对多个重要药物靶点进行了先导化合物的筛选与优化，广泛涉足药物临床前开发的各个阶段，加快药物发现和开发的速度。',
-    description_en: '',
+    description_en: 'The discovery and optimization of lead compounds are essential and indispensable stages in the development of new drugs. We have conducted lead compound screening and optimization against multiple important drug targets (such as AR, GR, ALK, PI3K, MIF, and LTK) by integrating computational simulations and in vivo/in vitro bioactivity assays, and have extensively involved in various stages of drug preclinical development, accelerating the speed of drug discovery and development.',
     image: 'research_cover_3.jpg',
     extended: [
       {
@@ -255,7 +271,7 @@ const researchItems = [
     title_cn: '基于多尺度分子模拟的靶标-配体识别机制研究',
     title_en: 'Research on Target-Ligand Recognition Mechanisms Based on Multiscale Molecular Simulations',
     description_cn: '传统实验方法无法描述配体−靶标之间的动态识别过程。全原子模拟（包括常规动力学模拟和增强采样动力学模拟）可以辅助实验技术捕捉原子层次的动力学和热力学作用机制，揭示复杂的分子机制，如药物分子耐药性机制等。',
-    description_en: '',
+    description_en: 'Traditional experimental methods cannot describe the dynamic recognition process between ligands and targets. All-atom simulations (including conventional molecular dynamics simulations and enhanced sampling dynamics simulations) can assist experimental techniques in capturing atomic-level dynamic and thermodynamic mechanisms, revealing complex molecular mechanisms such as drug molecule resistance mechanisms.',
     image: 'research_cover_4.jpg',
     extended: [
       {

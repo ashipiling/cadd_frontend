@@ -165,7 +165,7 @@ const getMemberName = (member: any) => {
 }
 
 const getMemberTitle = (member: any) => {
-  if (member.name_cn === '侯廷军' || member.name_cn === '谢昌谕' || member.name_cn === '李丹') {
+  if (member.name_cn === '侯廷军' || member.name_cn === '谢昌谕' || member.name_cn === '李 丹') {
     return locale.value === 'en-US' ? ' Professor' : '教授'
   } else {
     return locale.value === 'en-US' ? ' Researcher' : '研究员'

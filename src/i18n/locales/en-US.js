@@ -39,7 +39,7 @@ export default {
     collaborators: 'Collaborators',
     importantJournals: 'Important Journals',
     language: 'Language',
-    
+    totalVisits: 'Total Visits',
     // Footer Specific Translations
     labName: 'Hou Lab',
     labSubtitle: 'Drug Design and Computational Biology Group',
@@ -76,7 +76,7 @@ export default {
     read_original: 'View Details',
     publishedPapers: 'Published Papers',
     appliedPatents: 'Applied Patents',
-    softwarePlatforms: 'Software Platforms',
+    softwarePlatforms: 'Software',
     // DrugFlow Section
     drugflow: {
       title: 'DrugFlow',
@@ -194,6 +194,22 @@ export default {
         }
       },
       
+      // Platform Features Scrolling Display
+      platformFeatures: {
+        docking: 'Molecular Docking',
+        docking_en: 'Molecular Docking',
+        admet: 'ADMET Prediction',
+        admet_en: 'ADMET Prediction',
+        molecularFactory: 'Molecular Factory',
+        molecularFactory_en: 'Molecular Factory',
+        qsar: 'QSAR Modeling',
+        qsar_en: 'QSAR Modeling',
+        virtualScreening: 'Virtual Screening',
+        virtualScreening_en: 'Virtual Screening',
+        structureExtraction: 'Structure Extraction',
+        structureExtraction_en: 'Structure Extraction'
+      },
+
       // Call to Action
       cta: {
         title: 'Start Your AI Drug Discovery Journey',
@@ -225,7 +241,7 @@ export default {
 
     // Software Platform Section
     softwarePlatform: {
-      title: 'Software Platform',
+      title: 'Software',
       subtitle: 'Computational drug design software and platforms we developed'
     }
   },
@@ -566,7 +582,7 @@ export default {
   },
   
   software: {
-    title: 'Software Platform',
+    title: 'Software',
     subtitle: 'Computational drug design software and platforms we developed',
     databases: 'Database',
     molecularFeaturization: 'Molecular Featurization',

@@ -34,6 +34,7 @@
         <div class="mb-6">
           <h4 class="font-medium mb-4" :class="backgroundColor === 'dark' ? 'text-white' : 'text-gray-800'">{{ t('headerFooter.publications') }}</h4>
           <ul class="space-y-2 text-sm" :class="backgroundColor === 'dark' ? 'text-gray-400' : 'text-gray-600'">
+            <li><a href="/publication#books" :class="backgroundColor === 'dark' ? 'hover:text-blue-400' : 'hover:text-blue-600'">{{ t('publications.books') }}</a></li>
             <li><a href="/publication#publication" :class="backgroundColor === 'dark' ? 'hover:text-blue-400' : 'hover:text-blue-600'">{{ t('headerFooter.papers') }}</a></li>
             <li><a href="/publication#software" :class="backgroundColor === 'dark' ? 'hover:text-blue-400' : 'hover:text-blue-600'">{{ t('publications.softwareCopyright') }}</a></li>
             <li><a href="/publication#patent" :class="backgroundColor === 'dark' ? 'hover:text-blue-400' : 'hover:text-blue-600'">{{ t('headerFooter.patents') }}</a></li>
