@@ -473,7 +473,7 @@ export default {
     journal: '期刊',
     authors: '作者',
     viewDetails: '查看详情',
-    researchPapers: '研究论文',
+    researchPapers: '发表论文',
     domesticPapers: '国内论文',
     softwareCopyright: '软件著作权',
     registrationNumber: '登记号',

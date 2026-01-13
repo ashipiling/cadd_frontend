@@ -439,103 +439,131 @@ export const faculty = [
     ],
     research_direction: [
       {
-        description_cn: '创新型（新靶点、新结构、新的筛选思路和策略）小分子药物的设计和发现。针对相应靶点，通过分子对接、分子动力学模拟和自由能计算等计算机辅助药物设计方法发现潜在的候选活性化合物；对候选化合物进行酶、细胞或细菌活性评价，并且通过生化和分子生物学手段进行深入的分子水平的论证和研究。目前研究体系主要包括：(1). 以卡介苗菌株BCG为模式菌，设计和发现抗结核杆菌药物；(2).针对雄激素受体，设计和发现抗前列腺癌药物。',
-        description_en: 'Design and discovery of innovative small molecule drugs (new targets, new structures, new screening ideas and strategies). Using computer-aided drug design methods such as molecular docking, molecular dynamics simulation and free energy calculations to discover potential candidate active compounds for corresponding targets; evaluating enzymatic, cellular or bacterial activities of candidate compounds, and conducting in-depth studies at the molecular level through biochemical and molecular biological methods. Current research systems mainly include: (1) Design and discovery of anti-tuberculosis drugs using BCG strain as a model; (2) Design and discovery of anti-prostate cancer drugs targeting the androgen receptor.',
+        description_cn: '创新型（新靶点、新结构、新的筛选思路和策略）小分子药物的设计和发现。针对相应靶点，通过分子对接、分子动力学模拟和自由能计算等计算机辅助药物设计方法发现潜在的候选活性化合物；对候选化合物进行酶、细胞或细菌活性评价，并且通过生化和分子生物学手段进行深入的分子水平的论证和研究。目前研究体系主要包括：(1). 以卡介苗菌株BCG为模式菌，设计和发现抗结核杆菌药物；(2).针对雄激素受体，设计和发现抗前列腺癌药物；(3).针对糖皮质激素受体，设计和发现抗炎调节剂。',
+        description_en: 'Design and discovery of innovative small molecule drugs (new targets, new structures, new screening ideas and strategies). Using computer-aided drug design methods such as molecular docking, molecular dynamics simulation and free energy calculations to discover potential candidate active compounds for corresponding targets; evaluating enzymatic, cellular or bacterial activities of candidate compounds, and conducting in-depth studies at the molecular level through biochemical and molecular biological methods. Current research systems mainly include: (1) Design and discovery of anti-tuberculosis drugs using BCG strain as a model; (2) Design and discovery of anti-prostate cancer drugs targeting the androgen receptor; (3) Design and discovery of anti-inflammatory modulators targeting the glucocorticoid receptor.',
       },
     ],
     awards: [
-      {
-        description_cn: '2024年，2024年科睿唯安全球高被引科学家',
-        description_en: '2024, 2024, Global Highly Cited Researcher',
-      },
     ],
     papers: [
       {
-        title: 'Wang XY, Chai X, Shan LH, Xu XH, Xu L, Hou TJ, Sun HY*, Li D*, A Potent New-scaffold Androgen Receptor Antagonist Discovered on the Basis of a MIEC-SVM Model, Acta Pharmacol Sin, 2024, 45, 1978-1991.',
+        title: 'Chai X, Wang XY, Cai LT, Chen HY, Wang SY, Liao JN, Wang HT, Zhou YX, Xu L, Shan LH, Xu XH, Yang YH, He JZ, Fu YQ, Hou TJ,* Sheng R,* Li D*. Unraveling the Efficacy of AR Antagonists Bearing N‑(4-Benzyloxy)phenyl)piperidine-1-sulfonamide Scaffold in Prostate Cancer Therapy by Targeting LBP Mutations. J Med Chem. 2025 Jun 12, 68:11962-11978.',
         url: '',
       },
       {
-        title: 'Sun Y, Wang HT, Li YR, Li ZX, Mao ZH, Zhang MY, Shao YX, Ye JQ, Li D*, Shan LH*, The Design, Synthesis and Bioactivity Evaluation of Novel Androgen Receptor Degraders Based on Hydrophobic Tagging, Bioorg Chem, 2024, 146, 107309.',
+        title: 'Liao JN, Liao JB, Wang Y, Wang XY, Chai X, Wang HT, Xu L, Shan LH, Xu XH, Fu WT, Pan PC, Hou TJ, Sheng R*, Li D*. Discovery of N‑(1,2,4-Thiadiazol-5-yl)benzo[b]oxepine-4-carboxamide Derivatives as Novel Antiresistance Androgen Receptor Antagonists. J Med Chem. 2025 Feb, 68:3445-3459.',
         url: '',
       },
       {
-        title: 'Chen HY, Zhou YX, Wang XY, Chai X, Wang Z, Wang EC, Xu L, Hou TJ*, Li D*, Duan MJ*, Discovery of Novel Anti-Resistance AR Antagonists Guided by Funnel Metadynamics Simulation, Adv Sci, 2024, 11, 2309261.',
+        title: 'Yuan LE, Liao JN, Qin YY, Cai LT, Zhang MK, Liao JB, Li D*, Hou TJ, Sheng R*. Discovery of novel tetrahydroquinoline derivatives as potent, selective, and orally Available AR antagonists. Eur J Med Chem. 2025 Jul, 291: 117566.',
         url: '',
       },
       {
-        title: 'Yang L, Hu XP, Lu Y, Xu RL, Xu YP, Ma WL, Alam MS, Zhang TY, Chai X, Lei YX, Ye Q, Dong XW, Kang Y, Che JX*, Hou TJ*, Li D*, Discovery of N-(1-(6-oxo-1,6-dihydropyrimidine)-pyrazole) Acetamide Derivatives as Novel Noncovalent DprE1 Inhibitors against Mycobacterium tuberculosis, J Med Chem, 2024, 67, 1914-1931.',
+        title: 'Ge JX, Li SM, Weng GQ, Wang HT, Fang MJ, Sun HY, Deng YF, Hsieh CY, Li D*, Hou TJ*. PROTAC-DB 3.0: an Updated Database of PROTACs with Extended Pharmacokinetic Parameters. Nucleic Acids Res. 2025 Jan 6, 53(D1): D1510−D1515.',
         url: '',
       },
       {
-        title: 'Zhong HY, Wang XY, Chen SC, Wang Z, Wang HT, Xu L, Hou TJ, Yao XJ*, Li D*, Pan PC*, Discovery of Novel Inhibitors of BRD4 for Treating Prostate Cancer: A Comprehensive Case Study for Considering Water Networks in Virtual Screening and Drug Design, J Med Chem, 2024, 67, 138−151.',
+        title: 'Wang HT, Wang XW, Zhong HY, Cai LT, Fu WT, Chai X, Liao JN, Sheng R, Shan LH, Xu XH, Xu L, Pan PC*, Hou TJ*, Li D*. Discovery of 5-Nitro-N-(3-(trifluoromethyl) phenyl) pyridin-2-amine as a Novel Pure Androgen Receptor Antagonist against Antiandrogen Resistance. J Med Chem. 2024 Nov, 67:20514-20530.',
         url: '',
       },
       {
-        title: 'Fu W, Yang H, Hu CX, Liao JN, Gong Z, Zhang MK, Yang S, Ye SX, Lei YX, Sheng R, Zhang ZG, Yao XJ, Tang C*, Li D*, Hou TJ*, Small-Molecule Inhibition of Androgen Receptor Dimerization as a Strategy against Prostate Cancer, ACS Cent Sci, 2023, 9, 675-684.',
+        title: 'Liao JB, Liao JN, Zhang MK, Yu YZ, Cai LT, Le KX, Fu WT, Qin YY, Hou TJ, Li D*, Sheng R*. Identification of Oral Bioavailable Coumarin Derivatives as Potential AR Antagonists Targeting Prostate Cancer. J Med Chem. 2024 Nov, 67: 19395−19416.',
         url: '',
       },
       {
-        title: 'Li D, Bao XD, Pang JP, Hu XP, Wang LL, Wang JJ, Yang ZX, Xu L, Wang SY, Weng QJ*, Cui SL*, Hou TJ*, Discovery and Optimization of N-acyl-6-sulfonamide-tetrahydroquinoline Derivatives as Novel Non-steroidal Selective Glucocorticoid Receptor Modulators, J Med Chem, 2022, 65, 15710–15724.',
+        title: 'Liao JN, Hu CX, Fu WT, Liao JB, Chai X, Shan LH, Xu XH, Hou TJ, Sheng R*, Li D*. Discovery of Thiadiazoleamide Derivatives as Potent, Selective, and Orally Available Antagonists Disrupting Androgen Receptor Homodimer. J Med Chem. 2024 Sep, 67, 17520−17541.',
         url: '',
       },
       {
-        title: 'Weng GQ, Cai XY, Cao DS, Du HY, Shen C, Deng YF, He QJ, Yang B, Li D*, Hou TJ*, PROTAC-DB 2.0: an updated database of PROTACs, Nucleic Acids Res, 2023, 51(D1), D1367-D1372.',
+        title: 'Wang XY, Chai X, Shan LH, Xu XH, Xu L, Hou TJ, Sun HY*, Li D*. A Potent New-scaffold Androgen Receptor Antagonist Discovered on the Basis of a MIEC-SVM Model. Acta Pharmacol Sin. 2024 Sep, 45:1978-1991.',
         url: '',
       },
       {
-        title: 'Chen CW, Chai X, Hu XP, Lou SY, Li D*, Hou TJ*, Cui SL*, Discovery of 2-(1-(3-Chloro-4-cyanophenyl)-1H-pyrazol-3-yl)acetamides as Potent, Selective, and Orally Available Antagonists Targeting the Androgen Receptor, J Med Chem, 2022, 65, 13074-13093.',
+        title: 'Sun Y, Wang HT, Li YR, Li ZX, Mao ZH, Zhang MY, Shao YX, Ye JQ, Li D*, Shan LH*. The Design, Synthesis and Bioactivity Evaluation of Novel Androgen Receptor Degraders Based on Hydrophobic Tagging. Bioorg Chem. 2024 March, 146:107309.',
         url: '',
       },
       {
-        title: 'Hu XP, Pang JP, Chen CW, Jiang DJ, Shen C, Chai X, Yang L, Zhang XJ, Xu L, Cui SL, Hou TJ, Li D*, Discovery of novel non-steroidal selective glucocorticoid receptor modulators by structure-and IGN-based virtual screening, structural optimization, and biological evaluation, Eur J Med Chem, 2022, 237, 114382.',
+        title: 'Chen HY, Zhou YX, Wang XY, Chai X, Wang Z, Wang EC, Xu L, Hou TJ*, Li D*, Duan MJ*. Discovery of Novel Anti-Resistance AR Antagonists Guided by Funnel Metadynamics Simulation. Adv Sci. 2024 March, 11:2309261.',
         url: '',
       },
       {
-        title: 'Pang JP, Hu XP, Wan YX, Liao JN, Chai X, Wang XW, Shen C, Wang JJ, Zhang LL, Wang ZY, Zhu F, Weng QJ, Xu L, Hou TJ, Li D*, Discovery of a novel nonsteroidal selective glucocorticoid receptor modulator by virtual screening and bioassays, Acta Pharmacol Sin, 2022, 43, 2429-2438.',
+        title: 'Yang L, Hu XP, Lu Y, Xu RL, Xu YP, Ma WL, Alam MS, Zhang TY, Chai X, Lei YX, Ye Q, Dong XW, Kang Y, Che JX*, Hou TJ *, Li D*. Discovery of N-(1-(6-oxo-1,6-dihydropyrimidine)-pyrazole) Acetamide Derivatives as Novel Noncovalent DprE1 Inhibitors against Mycobacterium tuberculosis. J Med Chem. 2024 Feb, 67:1914-1931.',
         url: '',
       },
       {
-        title: 'Chai X, Sun HY, Zhou WF, Chn CW, Shan LH, Yang YH, He JZ, Pang JP, Yang L, Wang XY, Cui SL, Fu YQ, Xu XH, Xu L, Yao XJ, Li D*, Hou TJ*, Discovery of N-(4-(Benzyloxy)-phenyl)-sulfonamide Derivatives as novel antagonists of the human androgen receptor targeting the activation function 2, J Med Chem, 2022, 65, 2507-2521.',
+        title: 'Zhong HY, Wang XY, Chen SC, Wang Z, Wang HT, Xu L, Hou TJ, Yao XJ*, Li D*, Pan PC*. Discovery of Novel Inhibitors of BRD4 for Treating Prostate Cancer: A Comprehensive Case Study for Considering Water Networks in Virtual Screening and Drug Design. J Med Chem. 2024 Jan, 67:138−151.',
         url: '',
       },
       {
-        title: 'Hu XP, Yang L, Chai X, Lei YX, Shah Alam M, Liu L, Shen C, Jiang DJ, Wang Z, Liu ZY, Xu L, Wan KL, Zhang TY, Yin YL, Cao DS*, Li D*, Hou TJ*, Discovery of novel DprE1 inhibitors via computational bioactivity fingerprints and structure-based virtual screening, Acta Pharmacol Sin, 2022, 43, 1605-1615.',
+        title: 'Fu WT, Yang H, Hu CX, Liao JN, Gong Z, Zhang MK, Yang S, Ye SX, Lei YX, Sheng R, Zhang ZG, Yao XJ, Tang C*, Li D*, Hou TJ*. Small-Molecule Inhibition of AR Dimerization as a Strategy Against Prostate Cancer. ACS Cent Sci. 2023 March 8, 9(4):675-684.',
         url: '',
       },
       {
-        title: 'Hu XP, Pang JP, Zhang JT, Shen C, Chai X, Wang EC, Chen HY, Wang XW, Duan MJ, Fu WT, Xu L, Kang Y, Li D*, Xia HG*, Hou TJ*, Discovery of novel GR ligands towards druggable GR antagonist conformations identified by MD Simulations and Markov state model analysis, Adv Sci, 2022, 9, 2102435.',
+        title: 'Chai X, Hu XP, Wang XY, Wang HT, Pang JP, Zhou WF, Liao JN, Shan LH, Xu XH, Xia HG*, Hou TJ*, Li D*. Computationally Guided Discovery of Novel Non-steroidal AR-GR Dual Antagonists Demonstrating Potency Against Antiandrogen Resistance. Acta Pharmacol Sin. 2023 July, 44(7):1500-1518.',
         url: '',
       },
       {
-        title: 'Fu WT, Zhang MK, Liao JN, Tang Q, Lei YX, Gong Z, Shan LH, Duan MJ, Chai X, Pang JP, Tang C, Wang XW, Xu XH, Li D*, Sheng R*, Hou TJ*, Discovery of a novel androgen receptor antagonist manifesting evidence to disrupt the dimerization of the ligand-binding domain via attenuating the hydrogen-bonding network, J Med Chem, 2021, 64, 17221-17238.',
+        title: 'Weng GQ, Cai XY, Cao DS, Du HY, Shen C, Deng YF, He QJ, Yang B, Li D*, Hou TJ*. PROTAC-DB 2.0: an Updated Database of PROTACs. Nucleic Acids Res. 2023 Jan, 51(D1): D1367-D1372.',
         url: '',
       },
       {
-        title: 'Ye Q, Chai X, Jiang DJ, Yang L, Shen C, Zhang XJ, Li D*, Cao DS*, Hou T*, Identification of Active Molecules against Mycobacterium Tuberculosis through Machine Learning, Brief Bioinform, 2021, 22, bbab068.',
+        title: 'Li D†, Bao XD†, Pang JP†, Hu XP†, Wang LL†, Wang JJ, Yang ZX, Xu L, Wang SY, Weng QJ*, Cui SL*, Hou TJ*. Discovery and Optimization of N-acyl-6-sulfonamide-tetrahydroquinoline Derivatives as Novel Non-steroidal Selective Glucocorticoid Receptor Modulators. J Med Chem. 2022 Nov, 65:15710-15724.',
         url: '',
       },
       {
-        title: 'Pang JP, Shen C, Zhou WF, Wang YX, Shan LH, Chai X, Shao Y, Hu XP, Zhu F, Zhu DY, Xiao L, Xu L, Xu XH, Li D*, Hou T*, Discovery of Novel Antagonists Targeting the DNA Binding Domain of Androgen Receptor by Integrated Docking-Based Virtual Screening and Bioassays, Acta Pharmacol Sin, 2022, 43, 229-239.',
+        title: 'Chen CW, Chai X, Hu XP, Lou SY, Li D*, Hou TJ*, Cui SL*. Discovery of 2-(1-(3-Chloro-4-cyanophenyl)-1H-pyrazol-3-yl) acetamides as Potent, Selective, and Orally Available Antagonists Targeting the Androgen Receptor. J Med Chem. 2022 Oct, 65:13074-13093.',
         url: '',
       },
       {
-        title: 'Weng GQ, Shen C, Cao DS, Gao JB, Dong XW, He QJ, Yang B, Li D*, Wu J,* Hou TJ*, PROTAC-DB: an Online Database of PROTACs, Nucleic Acids Res, 2021, 49 (D1), D1381-D1387.',
+        title: 'Lei YX, Fei PY, Song B, Shi WJ, Luo C, Luo DH, Li D*, Chen W*, Zheng J*. A Loosened Gating Mechanism of RIG-I Leads to Autoimmune Disorders. Nucleic Acids Res. 2022 Jun, 50:5850-5863.',
         url: '',
       },
       {
-        title: 'Tang Q, Fu WT, Zhang MK, Wang EC, Shan LH, Chai X, Pang JP, Wang XW, Xu XH, Xu L, Li D*, Sheng R*, Hou TJ*, Novel Androgen Receptor Antagonist Identified by Structure-based Virtual Screening, Structural Optimization, and Biological Evaluation, Eur J Med Chem, 2020, 192, 112156.',
+        title: 'Hu XP, Yang L, Chai X, Lei YX, Alam MS, Liu L, Shen C, Jiang DJ, Wang Z, Liu ZY, Xu L, Wan KL, Zhang TY, Yin YL, Li D*, Cao DS*, Hou TJ*. Discovery of Novel DprE1 Inhibitors via Computational Bioactivity Fingerprints and Structure-based Virtual Screening. Acta Pharmacol Sin. 2022 Jun, 43:1605-1615.',
         url: '',
       },
       {
-        title: 'Hu XP, Chai X, Wang XW, Duan MJ, Pang JP, Fu WT, Li D*, Hou TJ*, Advances in the Computational Development of Androgen Receptor Antagonists, Drug Discov Today, 2020, 25, 1453-61.',
+        title: 'Hu XP, Pang JP, Chen CW, Jiang DJ, Shen C, Chai X, Yang L, Zhang XJ, Xu L, Cui SL, Hou TJ, Li D*. Discovery of Novel Non-steroidal Selective Glucocorticoid Receptor Modulators by Structure- and IGN-based Virtual Screening, Structural Optimization, and Biological Evaluation. Eur J Med Chem. 2022 Apr, 237:114382.',
         url: '',
       },
       {
-        title: 'Li D, Zhou WF, Pang JP, Tang Q, Zhong BL, Shen C, Xiao L, Hou TJ*, A Magic Drug Target: Androgen Receptor, Med Res Rev, 2019, 39, 1485-1514.',
+        title: 'Chai X, Sun HY, Zhou WF, Chen CW, Shan LH, Yang YH, He JZ, Pang JP, Yang L, Wang XY, Cui SL, Fu YQ, Xu XH, Xu L, Yao XJ, Li D*, Hou TJ*. Discovery of N-(4-(benzyloxy)-phenyl)-sulfonamide Derivatives as Novel Antagonists of Human Androgen Receptor Targeting the Activation Function 2. J Med Chem. 2022 Feb, 65:2507-2521.',
         url: '',
       },
       {
-        title: 'Zhou WF, Duan MJ, Fu WT, Pang JP, Tang Q, Sun HY, Xu L, Chang S, Li D*, Hou, TJ*, Discovery of Novel Androgen Receptor Ligands by Structure-based Virtual Screening and Bioassays, Genomics Proteomics Bioinformatics, 2018, 16, 416-27.',
+        title: 'Pang JP, Hu XP, Wang YX, Liao JN, Chai X, Wang XW, Shen C, Wang JJ, Zhang LL, Wang XY, Zhu F, Weng QJ, Xu L, Hou TJ, Li D*. Discovery of a Novel Nonsteroidal Selective Glucocorticoid Receptor Modulator by Virtual Screening and Bioassays. Acta Pharmacol Sin. 2022 Sep, 43:2429-2438.',
+        url: '',
+      },
+      {
+        title: 'Hu XP, Pang JP, Zhang JT, Shen C, Chai X, Wang EC, Chen HY, Wang XW, Duan MJ, Fu WT, Xu L, Kang Y, Li D*, Xia HG*, Hou TJ*. Discovery of Novel GR Ligands toward Druggable GR Antagonist Conformations Identified by MD Simulations and Markov State Model Analysis. Adv Sci. 2022 Jan, 9:2102435.',
+        url: '',
+      },
+      {
+        title: 'Yang L, Hu XP, Chai X, Ye Q, Pang JP, Li D*, Hou TJ*. Opportunities for Overcoming Tuberculosis: Emerging Targets and Their Inhibitors. Drug Discov Today. 2022 Jan, 27: 326-336.',
+        url: '',
+      },
+      {
+        title: 'Fu WT, Zhang MK, Liao JN, Tang Q, Lei YX, Gong Z, Shan LH, Duan MJ, Chai X, Pang JP, Tang C, Wang XW, Xu XH, Li D*, Sheng R*, Hou TJ*. Discovery of a Novel Androgen Receptor Antagonist Manifesting Evidence to Disrupt the Dimerization of the Ligand-Binding Domain via Attenuating the Hydrogen-Bonding Network Between the Two Monomers. J Med Chem. 2021 Dec, 64: 17221-38.',
+        url: '',
+      },
+      {
+        title: 'Ye Q, Chai X, Jiang DJ, Yang L, Shen C, Zhang XJ, Li D*, Cao DS*, Hou TJ*. Identification of Active Molecules against Mycobacterium Tuberculosis through Machine Learning. Brief Bioinform. 2021 Sep, 22: 1-15.',
+        url: '',
+      },
+      {
+        title: 'Pang JP, Shen C, Zhou WF, Wang YX, Shan LH, Chai X, Shao Y, Hu XP, Zhu F, Zhu DY, Xiao L, Xu L, Xu XH, Li D*, Hou TJ*. Discovery of Novel Antagonists Targeting the DNA Binding Domain of Androgen Receptor by Integrated Docking-Based Virtual Screening and Bioassays. Acta Pharmacol Sin. 2022 Jan, 43: 229-239.',
+        url: '',
+      },
+      {
+        title: 'Weng GQ, Shen C, Cao DS, Gao J, Dong X, He QJ, Yang B, Li D*, Wu J*, Hou TJ*. PROTAC-DB: an Online Database of PROTACs. Nucleic Acids Res. 2021 Jan, 49: D1381-D1387.',
+        url: '',
+      },
+      {
+        title: 'Tang Q, Fu WT, Zhang MK, Wang EC, Shan LH, Chai X, Pang JP, Wang XW, Xu XH, Xu L, Li D*, Sheng R*, Hou TJ*. Novel Androgen Receptor Antagonist Identified by Structure-based Virtual Screening, Structural Optimization, and Biological Evaluation. Eur J Med Chem. 2020 Apr, 192: 112156.',
+        url: '',
+      },
+      {
+        title: 'Hu XP, Chai X, Wang XW, Duan MJ, Pang JP, Fu WT, Li D*, Hou TJ*. Advances in the Computational Development of Androgen Receptor Antagonists. Drug Discov Today. 2020 Aug, 25: 1453-61.',
         url: '',
       },
     ],
@@ -1276,7 +1304,7 @@ export const postdoc = [
     title_cn: '博士后/助理研究员',
     title_en: 'Postdoctoral Researcher/Assistant Researcher',
     email: 'jwangliu@163.com',
-    research_direction: ['基于大语言模型的医药信息挖掘/基于计算机辅助的药物设计'],
+    research_direction: ['基于大语言模型的药物设计方法研究'],
     image: importImage('people_jiewang.jpg'),
     education: [
       {
@@ -1314,23 +1342,7 @@ export const postdoc = [
 ]
 
 export const graduate = [
-  {
-    name_cn: '曾韵典',
-    name_en: 'Yundian Zeng',
-    title_cn: '博士研究生（2022.02～2025.12）',
-    title_en: 'PhD Student (Feb 2022 ~ Dec 2025)',
-    email: '12232003@zju.edu.cn',
-    research_direction: ['基于深度学习的多组学数据挖掘和药物设计'],
-    image: importImage('people_yundianzeng.png'),
-    education: [
-      {
-        description_cn: '共同导师：贺诗波教授',
-        description_en: 'Co-supervisor: Prof. Shibo He',
-      },
-    ],
-    awards: [],
-    papers: [],
-  },
+  // 2021.09入学的博士研究生
   {
     name_cn: '赵奕淏',
     name_en: 'Yihao Zhao',
@@ -1399,44 +1411,6 @@ export const graduate = [
     papers: [],
   },
   {
-    name_cn: '谷书凯',
-    name_en: 'Shukai Gu',
-    title_cn: '博士研究生 （2023.09～2026.06）',
-    title_en: 'PhD Student (Sep 2023 ~ Jun 2026)',
-    email: '3160101168@zju.edu.cn',
-    research_direction: ['基于人工智能的虚拟筛选策略研究'],
-    image: importImage('people_shukaigu.png'),
-    education: [
-      {
-        description_cn: '共同导师：刘焕香教授',
-        description_en: 'Co-supervisor: Prof. Huanxiang Liu',
-      },
-    ],
-    awards: [],
-    papers: [
-      {
-        title: 'Gu, S., Shen, C., Zhang, X. et al. Benchmarking AI-powered docking methods from the perspective of virtual screening. Nat Mach Intell 7, 509–520 (2025).',
-        url: '',
-      },
-      {
-        title: 'Gu, S., Bao, L., Yang, Y. et al. AMGC is a multiple-task graph neutral network for epigenetic target profiling. Cell Reports Physical Science, Volume 5, Issue 3, 101850',
-        url: '',
-      },
-      {
-        title: 'Gu, S., Yang, Y., Zhao, Y. et al. Evaluation of AlphaFold2 Structures for Hit Identification across Multiple Scenarios. J. Chem. Inf. Model. 2024, 64, 9, 3630–3639.',
-        url: '',
-      },
-      {
-        title: 'Gu, S., Shen, C., Yu, J. et al. Can molecular dynamics simulations improve predictions of protein-ligand binding affinity with machine learning? Briefings in Bioinformatics, Volume 24, Issue 2, March 2023, bbad008.',
-        url: '',
-      },
-      {
-        title: 'Gu, S., Liu, H., Liu, L. et al. Artificial intelligence methods in kinase target profiling: Advances and challenges. Drug Discovery Today. Volume 28, Issue 11, November 2023, 103796',
-        url: '',
-      },
-    ],
-  },
-  {
     name_cn: '陈世诚',
     name_en: 'Shicheng Chen',
     title_cn: '博士研究生（2021.09～2026.06）',
@@ -1482,23 +1456,6 @@ export const graduate = [
       {
         description_cn: '共同导师：郑明月研究员',
         description_en: 'Co-supervisor: Researcher Mingyue Zheng',
-      },
-    ],
-    awards: [],
-    papers: [],
-  },
-  {
-    name_cn: '金婕妤',
-    name_en: 'Jieyu Jin',
-    title_cn: '博士研究生（2024.09～2027.06）',
-    title_en: 'PhD Student (Sep 2024 ~ Jun 2027)',
-    email: '22119149@zju.edu.cn',
-    research_direction: ['基于人工智能技术的成药性预测研究'],
-    image: importImage('people_jieyujin.png'),
-    education: [
-      {
-        description_cn: '共同导师：姚小军教授',
-        description_en: 'Co-supervisor: Prof. Xiaojun Yao',
       },
     ],
     awards: [],
@@ -1555,6 +1512,25 @@ export const graduate = [
       },
     ],
   },
+  // 2022.02入学的博士研究生
+  {
+    name_cn: '曾韵典',
+    name_en: 'Yundian Zeng',
+    title_cn: '博士研究生（2022.02～2025.12）',
+    title_en: 'PhD Student (Feb 2022 ~ Dec 2025)',
+    email: '12232003@zju.edu.cn',
+    research_direction: ['基于深度学习的多组学数据挖掘和药物设计'],
+    image: importImage('people_yundianzeng.png'),
+    education: [
+      {
+        description_cn: '共同导师：贺诗波教授',
+        description_en: 'Co-supervisor: Prof. Shibo He',
+      },
+    ],
+    awards: [],
+    papers: [],
+  },
+  // 2022.09入学的博士研究生
   {
     name_cn: '赵慧锋',
     name_en: 'Huifeng Zhao',
@@ -1639,35 +1615,6 @@ export const graduate = [
     papers: [],
   },
   {
-    name_cn: '祝 凯',
-    name_en: 'Kai Zhu',
-    title_cn: '博士研究生（2023.09～2028.06）',
-    title_en: 'PhD Student (Sep 2023 ~ Jun 2028)',
-    email: '22319143@zju.edu.cn',
-    research_direction: ['基于机器学习的增强采样'],
-    image: importImage('people_kaizhu.png'),
-    education: [],
-    awards: [],
-    papers: [],
-  },
-  {
-    name_cn: '方美静',
-    name_en: 'Meijing Fang',
-    title_cn: '博士研究生（2023.09～2028.06）',
-    title_en: 'PhD Student (Sep 2023 ~ Jun 2028)',
-    email: 'fangmj2022@163.com',
-    research_direction: ['基于大模型的药物设计'],
-    image: importImage('people_meijingfang.png'),
-    education: [
-      {
-        description_cn: '共同导师：吴健教授',
-        description_en: 'Co-supervisor: Prof. Jian Wu',
-      },
-    ],
-    awards: [],
-    papers: [],
-  },
-  {
     name_cn: '王华婷',
     name_en: 'Huating Wang',
     title_cn: '博士研究生（2022.09～2027.06）',
@@ -1708,6 +1655,82 @@ export const graduate = [
       description_cn: '共同导师：天津大学高峰教授',
       description_en: 'Co-supervisor: Prof. Gaofeng Gao, Tianjin University',
     }],
+    awards: [],
+    papers: [],
+  },
+  // 2022.09入学的硕士研究生
+  {
+    name_cn: '周雨欣',
+    name_en: 'Yuxin Zhou',
+    title_cn: '博士研究生（2022.09～2027.06）',
+    title_en: 'PhD Student (Sep 2022 ~ Jun 2027)',
+    email: '22219184@zju.edu.cn',
+    research_direction: ['靶向糖皮质激素受体的药物筛选与生物活性评价'],
+    image: importImage('people_yuxinzhou.png'),
+    education: [],
+    awards: [],
+    papers: [],
+  },
+  // 2023.09入学的博士研究生
+  {
+    name_cn: '谷书凯',
+    name_en: 'Shukai Gu',
+    title_cn: '博士研究生 （2023.09～2026.06）',
+    title_en: 'PhD Student (Sep 2023 ~ Jun 2026)',
+    email: '3160101168@zju.edu.cn',
+    research_direction: ['基于人工智能的虚拟筛选策略研究'],
+    image: importImage('people_shukaigu.png'),
+    education: [
+      {
+        description_cn: '共同导师：刘焕香教授',
+        description_en: 'Co-supervisor: Prof. Huanxiang Liu',
+      },
+    ],
+    awards: [],
+    papers: [
+      {
+        title: 'Gu, S., Shen, C., Zhang, X. et al. Benchmarking AI-powered docking methods from the perspective of virtual screening. Nat Mach Intell 7, 509–520 (2025).',
+        url: '',
+      },
+      {
+        title: 'Gu, S., Bao, L., Yang, Y. et al. AMGC is a multiple-task graph neutral network for epigenetic target profiling. Cell Reports Physical Science, Volume 5, Issue 3, 101850',
+        url: '',
+      },
+      {
+        title: 'Gu, S., Yang, Y., Zhao, Y. et al. Evaluation of AlphaFold2 Structures for Hit Identification across Multiple Scenarios. J. Chem. Inf. Model. 2024, 64, 9, 3630–3639.',
+        url: '',
+      },
+      {
+        title: 'Gu, S., Shen, C., Yu, J. et al. Can molecular dynamics simulations improve predictions of protein-ligand binding affinity with machine learning? Briefings in Bioinformatics, Volume 24, Issue 2, March 2023, bbad008.',
+        url: '',
+      },
+      {
+        title: 'Gu, S., Liu, H., Liu, L. et al. Artificial intelligence methods in kinase target profiling: Advances and challenges. Drug Discovery Today. Volume 28, Issue 11, November 2023, 103796',
+        url: '',
+      },
+    ],
+  },
+  {
+    name_cn: '祝 凯',
+    name_en: 'Kai Zhu',
+    title_cn: '博士研究生（2023.09～2028.06）',
+    title_en: 'PhD Student (Sep 2023 ~ Jun 2028)',
+    email: '22319143@zju.edu.cn',
+    research_direction: ['基于机器学习的增强采样'],
+    image: importImage('people_kaizhu.png'),
+    education: [],
+    awards: [],
+    papers: [],
+  },
+  {
+    name_cn: '方美静',
+    name_en: 'Meijing Fang',
+    title_cn: '博士研究生（2023.09～2028.06）',
+    title_en: 'PhD Student (Sep 2023 ~ Jun 2028)',
+    email: 'fangmj2022@163.com',
+    research_direction: ['基于大模型的药物设计'],
+    image: importImage('people_meijingfang.png'),
+    education: [],
     awards: [],
     papers: [],
   },
@@ -1764,6 +1787,130 @@ export const graduate = [
         url: '',
       },
     ],
+  },
+  // 2023.09入学的硕士研究生和剩余博士生将继续在下一部分排序
+  {
+    name_cn: '苏 群',
+    name_en: 'Qun Su',
+    title_cn: '博士研究生（2023.09～2028.06）',
+    title_en: 'PhD Student (Sep 2023 ~ Jun 2028)',
+    email: 'qunsu01@gmail.com',
+    research_direction: [
+      '机器学习原子间势/几何图神经网络开发/分子生成'
+    ],
+    image: importImage('people_qunsu.png'),
+    education: [],
+    awards: [],
+    papers: [
+      {
+        title: 'Qun Su, Kai Zhu, Qiaolin Gou, Jintu Zhang, Renling Hu, Yurong Li, Yongze Wang, Hui Zhang, Ziyi You, Linlong Jiang, Yu Kang, Jike Wang, Chang-Yu Hsieh, Tingjun Hou. A Scalable and Quantum-Accurate Foundation Model for Biomolecular Force Field via Linearly Tensorized Quadrangle Attention',
+        url: 'https://arxiv.org/abs/2507.00884',
+      },
+      {
+        title: 'Qun Su, Jike Wang, Qiaolin Gou, Renling Hu, … Robust protein–ligand interaction modeling through integrating physical laws and geometric knowledge for absolute binding free energy calculation',
+        url: '',
+      },
+      {
+        title: 'Qun Su, Hui Zhang, Qiaolin Gou, Huiyong Sun, Meijing Fang, ... LumiCharge: Spherical Harmonic Convolutional Networks for Atomic Charge Prediction in Drug Discovery',
+        url: '',
+      },
+      {
+        title: 'Qiaolin Gou, Qun Su, Jike Wang, Hui Zhang, Huiyong Sun, Xujun Zhang, … ChargeNet: E(3) Equivariant Graph Attention Network for Atomic Charge Prediction',
+        url: '',
+      }
+    ],
+  },
+  {
+    name_cn: '刘毅飞',
+    name_en: 'Yifei Liu',
+    title_cn: '硕士研究生（2023.09～2026.06）',
+    title_en: 'Master Student (Sep 2023 ~ Jun 2026)',
+    email: 'yifeiliu@zju.edu.cn',
+    research_direction: ['基于机器学习的分子生成'],
+    image: importImage('people_yifeiliu.jpg'),
+    education: [],
+    awards: [],
+    papers: [
+      {
+        title: 'Yifei Liu, Yiheng Zhu, Jike Wang, Renling Hu, Chao Shen, Wanglin Qu, Gaoang Wang, Qun Su, Yuchen Zhu, Yu Kang*, Peichen Pan*, Chang-Yu Hsieh*, Tingjun Hou*, A Multi-Objective Molecular Generation Method Based on Pareto Algorithm and Monte Carlo Tree Search, Advanced Science, 2025, 12, e2410640.',
+        url: '',
+      },
+    ],
+  },
+  {
+    name_cn: '程颖娟',
+    name_en: 'Yingjuan Cheng',
+    title_cn: '硕士研究生（2023.09～2026.03）',
+    title_en: 'Master Student (Sep 2023 ~ Mar 2026)',
+    email: '22319108@zju.edu.cn',
+    research_direction: ['图深度学习的组学下游应用研究'],
+    image: importImage('people_yingjuancheng.png'),
+    education: [],
+    awards: [],
+    papers: [],
+  },
+  {
+    name_cn: '郑阳阳',
+    name_en: 'Yangyang Zheng',
+    title_cn: '硕士研究生（2023.09～2026.06）',
+    title_en: 'Master Student (Sep 2023 ~ Jun 2026)',
+    email: '22319032@zju.edu.cn',
+    research_direction: ['新型雄激素受体拮抗剂的发现与生物活性评价'],
+    image: importImage('people_yangyangzheng.png'),
+    education: [],
+    awards: [],
+    papers: [],
+  },
+  {
+    name_cn: '程圣韬',
+    name_en: 'Shengtao Cheng',
+    title_cn: '硕士研究生（2023.09～2026.03）',
+    title_en: 'Master Student (Sep 2023 ~ Mar 2026)',
+    email: 'michaelcheng@zju.edu.cn',
+    research_direction: ['基于人工智能的抗体药物设计'],
+    image: importImage('people_shengtaocheng.png'),
+    education: [],
+    awards: [],
+    papers: [],
+  },
+  {
+    name_cn: '蒋麟龙',
+    name_en: 'Linlong Jiang',
+    title_cn: '硕士研究生（2023.09～2026.06）',
+    title_en: 'Master Student (Sep 2023 ~ Jun 2026)',
+    email: '3190104199@zju.edu.cn',
+    research_direction: ['基于人工智能的蛋白质相关研究'],
+    image: importImage('people_linlongjiang.png'),
+    education: [],
+    awards: [],
+    papers: [
+      {
+        title: 'Linlong Jiang, Ke Zhang, Kai Zhu, Hui Zhang, Chao Shen*, Tingjun Hou*, From Traditional Methods to Deep Learning Approaches: Advances in Protein-Protein Docking, Wiley Interdisciplinary Reviews-Computational Molecular Science, 2025, 15, e70016.',
+        url: '',
+      },
+      {
+        title: 'Xujun Zhang#, Linlong Jiang#, Gaoqi Weng#, Chao Shen, Odin Zhang, Mingquan Liu, Chen Zhang, Shukai Gu, Jike Wang, Xiaorui Wang, Hongyan Du, Hui Zhang, Ke Zhang, Ercheng Wang*, Tingjun Hou*, HawkDock version 2: an updated web server to predict and analyze the structures of protein-protein complexes, Nucleic acids research, 53(W1), W306–W315.',
+        url: '',
+      },
+    ],
+  },
+  // 2024.09入学的博士研究生
+  {
+    name_cn: '金婕妤',
+    name_en: 'Jieyu Jin',
+    title_cn: '博士研究生（2024.09～2027.06）',
+    title_en: 'PhD Student (Sep 2024 ~ Jun 2027)',
+    email: '22119149@zju.edu.cn',
+    research_direction: ['基于人工智能技术的成药性预测研究'],
+    image: importImage('people_jieyujin.png'),
+    education: [
+      {
+        description_cn: '共同导师：姚小军教授',
+        description_en: 'Co-supervisor: Prof. Xiaojun Yao',
+      },
+    ],
+    awards: [],
+    papers: [],
   },
   {
     name_cn: '苟巧林',
@@ -1824,84 +1971,6 @@ export const graduate = [
     email: '22419024@zju.edu.cn',
     research_direction: ['基于深度学习预测抗体可开发性'],
     image: importImage('people_lintang.png'),
-    education: [],
-    awards: [],
-    papers: [],
-  },
-  {
-    name_cn: '胡如碧',
-    name_en: 'Rubi Hu',
-    title_cn: '博士研究生（2025.09～2030.06）',
-    title_en: 'PhD Student (Sep 2025 ~ Jun 2030)',
-    email: 'hurubi@zju.edu.cn',
-    research_direction: ['靶向NPM-TYK2融合基因的抑制剂发现和活性评价'],
-    image: importImage('people_rubihu.png'),
-    education: [],
-    awards: [],
-    papers: [],
-  },
-  {
-    name_cn: '周雨欣',
-    name_en: 'Yuxin Zhou',
-    title_cn: '硕士研究生（2022.09～2025.06）',
-    title_en: 'Master Student (Sep 2022 ~ Jun 2025)',
-    email: '22219184@zju.edu.cn',
-    research_direction: ['靶向糖皮质激素受体的药物筛选与生物活性评价'],
-    image: importImage('people_yuxinzhou.png'),
-    education: [],
-    awards: [],
-    papers: [],
-  },
-  {
-    name_cn: '苏 群',
-    name_en: 'Qun Su',
-    title_cn: '硕士研究生（2023.09～2026.06）',
-    title_en: 'Master Student (Sep 2023 ~ Jun 2026)',
-    email: 'lingcon01@163.com',
-    research_direction: ['基于机器学习和人工智能技术的药物设计方法开发和应用'],
-    image: importImage('people_qunsu.png'),
-    education: [],
-    awards: [],
-    papers: [],
-  },
-  {
-    name_cn: '刘毅飞',
-    name_en: 'Yifei Liu',
-    title_cn: '硕士研究生（2023.09～2026.06）',
-    title_en: 'Master Student (Sep 2023 ~ Jun 2026)',
-    email: 'yifeiliu@zju.edu.cn',
-    research_direction: ['基于机器学习的分子生成'],
-    image: importImage('people_yifeiliu.png'),
-    education: [],
-    awards: [],
-    papers: [
-      {
-        title: 'Yifei Liu, Yiheng Zhu, Jike Wang, Renling Hu, Chao Shen, Wanglin Qu, Gaoang Wang, Qun Su, Yuchen Zhu, Yu Kang*, Peichen Pan*, Chang-Yu Hsieh*, Tingjun Hou*, A Multi-Objective Molecular Generation Method Based on Pareto Algorithm and Monte Carlo Tree Search, Advanced Science, 2025, 12, e2410640.',
-        url: '',
-      },
-    ],
-  },
-  
-  {
-    name_cn: '程颖娟',
-    name_en: 'Yingjuan Cheng',
-    title_cn: '硕士研究生（2023.09～2026.03）',
-    title_en: 'Master Student (Sep 2023 ~ Mar 2026)',
-    email: '22319108@zju.edu.cn',
-    research_direction: ['图深度学习的组学下游应用研究'],
-    image: importImage('people_yingjuancheng.png'),
-    education: [],
-    awards: [],
-    papers: [],
-  },
-  {
-    name_cn: '郑阳阳',
-    name_en: 'Yangyang Zheng',
-    title_cn: '硕士研究生（2023.09～2026.06）',
-    title_en: 'Master Student (Sep 2023 ~ Jun 2026)',
-    email: '22319032@zju.edu.cn',
-    research_direction: ['新型雄激素受体拮抗剂的发现与生物活性评价'],
-    image: importImage('people_yangyangzheng.png'),
     education: [],
     awards: [],
     papers: [],
@@ -2049,12 +2118,24 @@ export const graduate = [
     papers: [],
   },
   {
+    name_cn: '胡如碧',
+    name_en: 'Rubi Hu',
+    title_cn: '博士研究生（2025.09～2030.06）',
+    title_en: 'PhD Student (Sep 2025 ~ Jun 2030)',
+    email: 'hurubi@zju.edu.cn',
+    research_direction: ['靶向NPM-TYK2融合基因的抑制剂发现和活性评价'],
+    image: importImage('people_rubihu.png'),
+    education: [],
+    awards: [],
+    papers: [],
+  },
+  {
     name_cn: '王青韩',
     name_en: 'Qinghan Wang', 
     title_cn: '硕士研究生（2025.09～2028.06）',
     title_en: 'Master Student (Sep 2025 ~ Jun 2028)',
     email: '22519009@zju.edu.cn',
-    research_direction: ['分子生成', 'AI蛋白设计'],
+    research_direction: ['分子生成/AI蛋白设计'],
     image: importImage('people_qinghanwang.png'),
     education: [],
     awards: [],
@@ -2098,18 +2179,6 @@ export const graduate = [
     papers: [],
   },
   {
-    name_cn: '程圣韬',
-    name_en: 'Shengtao Cheng',
-    title_cn: '硕士研究生（2023.09～2026.03）',
-    title_en: 'Master Student (Sep 2023 ~ Mar 2026)',
-    email: 'michaelcheng@zju.edu.cn',
-    research_direction: ['基于人工智能的抗体药物设计'],
-    image: importImage('people_shengtaocheng.png'),
-    education: [],
-    awards: [],
-    papers: [],
-  },
-  {
     name_cn: '胡小龙',
     name_en: 'Xiaolong Hu',
     title_cn: '硕士研究生（2025.09～2028.03）',
@@ -2122,32 +2191,10 @@ export const graduate = [
     papers: [],
   },
   {
-    name_cn: '蒋麟龙',
-    name_en: 'Linlong Jiang',
-    title_cn: '硕士研究生（2023.09～2026.06）',
-    title_en: 'Master Student (Sep 2023 ~ Jun 2026)',
-    email: '3190104199@zju.edu.cn',
-    research_direction: ['基于人工智能的蛋白质相关研究'],
-    image: importImage('people_linlongjiang.png'),
-    education: [],
-    awards: [],
-    papers: [
-      {
-        title: 'Linlong Jiang, Ke Zhang, Kai Zhu, Hui Zhang, Chao Shen*, Tingjun Hou*, From Traditional Methods to Deep Learning Approaches: Advances in Protein-Protein Docking, Wiley Interdisciplinary Reviews-Computational Molecular Science, 2025, 15, e70016.',
-        url: '',
-      },
-      {
-        title: 'Xujun Zhang#, Linlong Jiang#, Gaoqi Weng#, Chao Shen, Odin Zhang, Mingquan Liu, Chen Zhang, Shukai Gu, Jike Wang, Xiaorui Wang, Hongyan Du, Hui Zhang, Ke Zhang, Ercheng Wang*, Tingjun Hou*, HawkDock version 2: an updated web server to predict and analyze the structures of protein-protein complexes, Nucleic acids research, 53(W1), W306–W315.',
-        url: '',
-      },
-    ],
-  },
-  
-  {
     name_cn: '李 时',
     name_en: 'Shi Li',
-    title_cn: '硕士研究生（2025.09～2028.09）',
-    title_en: 'Graduate Student (Sep 2025 ~ Sep 2028)',
+    title_cn: '硕士研究生（2025.09～2028.06）',
+    title_en: 'Graduate Student (Sep 2025 ~ Jun 2028)',
     email: 'ShiYue314@outlook.com',
     research_direction: ['分子对接'],
     image: importImage('people_shili.png'),
@@ -2159,13 +2206,25 @@ export const graduate = [
 
 export const undergraduate = [
   {
-    name_cn: '沈 欣',
-    name_en: 'Xin Shen',
-    title_cn: '本科生（2023.12～2027.09）',
-    title_en: 'Undergraduate (Dec 2023 ~ Sep 2027)',
-    email: 'shenxin2702@zju.edu.cn',
-    research_direction: ['血脑屏障穿透肽的机器学习训练方法'],
-    image: importImage('people_xinshen.png'),
+    name_cn: '许兢菁',
+    name_en: 'Jingjing Xu',
+    title_cn: '本科生（2021.09～2026.06）',
+    title_en: 'Undergraduate (Sep 2021 ~ Jun 2026)',
+    email: 'xujj21@m.fudan.edu.cn',
+    research_direction: ['药物重定位的知识图谱'],
+    image: importImage('people_jingjingxu.png'),
+    education: [],
+    awards: [],
+    papers: [],
+  },
+  {
+    name_cn: '杜 刚',
+    name_en: 'Gang Du',
+    title_cn: '本科生（2022.09～2026.06）',
+    title_en: 'Undergraduate (Sep 2022 ~ Jun 2026)',
+    email: 'ganged@zju.edu.cn',
+    research_direction: ['几何图神经网络、分子对接、蛋白设计'],
+    image: importImage('people_gangdu.png'),
     education: [],
     awards: [],
     papers: [],
@@ -2195,18 +2254,7 @@ export const undergraduate = [
     awards: [],
     papers: [],
   },
-  {
-    name_cn: '木晨璋',
-    name_en: 'Chenzhang Mu',
-    title_cn: '本科生（2023.09～2027.06）',
-    title_en: 'Undergraduate (Sep 2023 ~ Jun 2027)',
-    email: 'Promistars@163.com',
-    research_direction: ['人工智能辅助药物设计'],
-    image: importImage('people_chenzhangmu.png'),
-    education: [],
-    awards: [],
-    papers: [],
-  },
+  
   {
     name_cn: '傅科智',
     name_en: 'Kezhi Fu',
@@ -2260,30 +2308,6 @@ export const undergraduate = [
     papers: [],
   },
   {
-    name_cn: '杜 刚',
-    name_en: 'Gang Du',
-    title_cn: '本科生（2022.07～2026.06）',
-    title_en: 'Undergraduate (Jul 2022 - present)',
-    email: 'ganged@zju.edu.cn',
-    research_direction: ['几何图神经网络、分子对接、蛋白设计'],
-    image: importImage('people_gangdu.png'),
-    education: [],
-    awards: [],
-    papers: [],
-  },
-  {
-    name_cn: '许兢菁',
-    name_en: 'Jingjing Xu',
-    title_cn: '本科生（2021.09～2026.06）',
-    title_en: 'Undergraduate (Sep 2021 ~ Jun 2026)',
-    email: 'xujj21@m.fudan.edu.cn',
-    research_direction: ['药物重定位的知识图谱'],
-    image: importImage('people_jingjingxu.png'),
-    education: [],
-    awards: [],
-    papers: [],
-  },
-  {
     name_cn: '陈俞伽',
     name_en: 'Yujia Chen',
     title_cn: '本科生（2022.09～2026.06）',
@@ -2303,6 +2327,30 @@ export const undergraduate = [
     email: 'kamijoumikoto12311@gmail.com',
     research_direction: ['基于大模型与生成式模型在药物设计领域的方法开发'],
     image: importImage('people_yiyangshen.png'),
+    education: [],
+    awards: [],
+    papers: [],
+  },
+  {
+    name_cn: '木晨璋',
+    name_en: 'Chenzhang Mu',
+    title_cn: '本科生（2023.09～2027.06）',
+    title_en: 'Undergraduate (Sep 2023 ~ Jun 2027)',
+    email: 'Promistars@163.com',
+    research_direction: ['人工智能辅助药物设计'],
+    image: importImage('people_chenzhangmu.png'),
+    education: [],
+    awards: [],
+    papers: [],
+  },
+  {
+    name_cn: '沈 欣',
+    name_en: 'Xin Shen',
+    title_cn: '本科生（2023.09～2027.06）',
+    title_en: 'Undergraduate (Sep 2023 ~ Jun 2027)',
+    email: 'shenxin2702@zju.edu.cn',
+    research_direction: ['血脑屏障穿透肽的机器学习训练方法'],
+    image: importImage('people_xinshen.png'),
     education: [],
     awards: [],
     papers: [],
@@ -3833,9 +3881,6 @@ export const alumni = [
       }
     ],
   },
-
-
-
   {
     name_cn: '张昊天',
     name_en: 'Haotian Zhang',
@@ -3903,6 +3948,18 @@ export const alumni = [
 
 export const simple_alumni = [
   {
+    name_cn: '张忆雪',
+    name_en: 'Yixue Zhang',
+    title_cn: '硕士研究生，2022.9-2025.6',
+    title_en: 'Master Student, 2022.9-2025.6',
+  },
+  {
+    name_cn: '聂豆',
+    name_en: 'Dou Nie',
+    title_cn: '硕士研究生，2021.9-2024.6',
+    title_en: 'Master Student, 2021.9-2024.6',
+  },
+  {
     name_cn: '熊启松',
     name_en: 'Qisong Xiong',
     title_cn: '硕士研究生，2021.9-2024.6',
@@ -3921,6 +3978,12 @@ export const simple_alumni = [
     title_en: 'Master Student, 2021.9-2024.3',
   },
   {
+    name_cn: '徐若兰',
+    name_en: 'Ruolan Xu',
+    title_cn: '硕士研究生，2020.9-2023.6',
+    title_en: 'Master Student, 2020.9-2023.6',
+  },
+  {
     name_cn: '鲍灵杰',
     name_en: 'Lingjie Bao',
     title_cn: '硕士研究生，2020.9-2023.6',
@@ -3931,6 +3994,18 @@ export const simple_alumni = [
     name_en: 'Kun Li',
     title_cn: '硕士研究生，2020.9-2023.6，现在中南大学（在读）',
     title_en: 'Master Student, 2020.9-2023.6, currently at Central South University (studying)',
+  },
+  {
+    name_cn: '陈景志',
+    name_en: 'Jingzhi Chen',
+    title_cn: '博士后，2020.9-2023.7',
+    title_en: 'Postdoctoral Researcher, 2020.9-2023.7',
+  },
+  {
+    name_cn: '王斯羽',
+    name_en: 'Siyu Wang',
+    title_cn: '硕士研究生，2020.9-2024.6',
+    title_en: 'Master Student, 2020.9-2024.6',
   },
   {
     name_cn: '于佳卉',
@@ -3955,6 +4030,12 @@ export const simple_alumni = [
     name_en: 'Hao Yang',
     title_cn: '硕士研究生，2019.9-2022.3',
     title_en: 'Master Student, 2019.9-2022.3',
+  },
+  {
+    name_cn: '高俊博',
+    name_en: 'Junbo Gao',
+    title_cn: '博士后，2018-2021',
+    title_en: 'Postdoctoral Researcher, 2018-2021',
   },
   {
     name_cn: '雷艺璇',
@@ -3993,6 +4074,18 @@ export const simple_alumni = [
     title_en: 'Master Student, 2016-2019',
   },
   {
+    name_cn: '王旭文',
+    name_en: 'Xuwen Wang',
+    title_cn: '博士研究生，2016-2020',
+    title_en: 'PhD Student, 2016-2020',
+  },
+  {
+    name_cn: '尚俊',
+    name_en: 'Jun Shang',
+    title_cn: '硕士研究生，2015-2017',
+    title_en: 'Master Student, 2015-2017',
+  },
+  {
     name_cn: '封婷',
     name_en: 'Ting Feng',
     title_cn: '硕士研究生，2015-2018',
@@ -4003,6 +4096,12 @@ export const simple_alumni = [
     name_en: 'Shuangquan Wang',
     title_cn: '硕士研究生，2014-2017',
     title_en: 'Master Student, 2014-2017',
+  },
+  {
+    name_cn: '周文方',
+    name_en: 'Wenfang Zhou',
+    title_cn: '博士研究生，2013-2018',
+    title_en: 'PhD Student, 2013-2018',
   },
   {
     name_cn: '石华丽',
@@ -4045,59 +4144,5 @@ export const simple_alumni = [
     name_en: 'Dongyue Cao',
     title_cn: '硕士研究生，2009-2012',
     title_en: 'Master Student, 2009-2012',
-  },
-  {
-    name_cn: '周文方',
-    name_en: 'Wenfang Zhou',
-    title_cn: '博士研究生，2013-2018',
-    title_en: 'PhD Student, 2013-2018',
-  },
-  {
-    name_cn: '王旭文',
-    name_en: 'Xuwen Wang',
-    title_cn: '博士研究生，2016-2020',
-    title_en: 'PhD Student, 2016-2020',
-  },
-  {
-    name_cn: '尚俊',
-    name_en: 'Jun Shang',
-    title_cn: '硕士研究生，2015-2017',
-    title_en: 'Master Student, 2015-2017',
-  },
-  {
-    name_cn: '高俊博',
-    name_en: 'Junbo Gao',
-    title_cn: '博士后，2018-2021',
-    title_en: 'Postdoctoral Researcher, 2018-2021',
-  },
-  {
-    name_cn: '陈景志',
-    name_en: 'Jingzhi Chen',
-    title_cn: '博士后，2020.9-2023.7',
-    title_en: 'Postdoctoral Researcher, 2020.9-2023.7',
-  },
-  {
-    name_cn: '王斯羽',
-    name_en: 'Siyu Wang',
-    title_cn: '硕士研究生，2020.9-2024.6',
-    title_en: 'Master Student, 2020.9-2024.6',
-  },
-  {
-    name_cn: '徐若兰',
-    name_en: 'Ruolan Xu',
-    title_cn: '硕士研究生，2020.9-2023.6',
-    title_en: 'Master Student, 2020.9-2023.6',
-  },
-  {
-    name_cn: '聂豆',
-    name_en: 'Dou Nie',
-    title_cn: '硕士研究生，2021.9-2024.6',
-    title_en: 'Master Student, 2021.9-2024.6',
-  },
-  {
-    name_cn: '张忆雪',
-    name_en: 'Yixue Zhang',
-    title_cn: '硕士研究生，2022.9-2025.6',
-    title_en: 'Master Student, 2022.9-2025.6',
-  },
+  }
 ]

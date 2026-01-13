@@ -472,7 +472,7 @@ export default {
     journal: 'Journal',
     authors: 'Authors',
     viewDetails: 'View Details',
-    researchPapers: 'Research Papers',
+    researchPapers: 'Papers',
     domesticPapers: 'Domestic Papers',
     softwareCopyright: 'Software Copyright',
     registrationNumber: 'Registration Number',

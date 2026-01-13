@@ -34,135 +34,257 @@ export const books = [
 
 // Research Papers by year
 export const papers = {
+  "2026": [
+    {
+      id: 606,
+      title: "Kai Zhu, Enrico Trizio, Jintu Zhang, Renling Hu, Linlong Jiang, Tingjun Hou*, Luigi Bonati*, Enhanced Sampling in the Age of Machine Learning: Algorithms and Applications, Chemical Reviews, 2026, in press.",
+      link: "#"
+    },
+    {
+      id: 605,
+      title: "Xiaorui Wang, Xiaodan Yin, Xujun Zhang, Huifeng Zhao, Shukai Gu, Zhenxing Wu, Odin Zhang, Wenjia Qian, Yuansheng Huang, Yuquan Li, Dejun Jiang, Mingyang Wang, Huanxiang Liu, Xiaojun Yao*, Chang-Yu Hsieh*, Tingjun Hou*, A virtual platform for automated hybrid organic-enzymatic synthesis planning, Nature Communications, 2025, in press.",
+      link: "#"
+    },
+    {
+      id: 604,
+      title: "Yuchen Zhu, Shuwang Li, Jihong Chen, Donghai Zhao, Xiaorui Wang, Yitong Li, Yifei Liu, Yue Kong, Beichen Zhang, Chang Liu, Tingjun Hou*, Chang-Yu Hsieh*, SynGFN: learning across chemical space with generative flow-based molecular discovery, Nature Computational Science, 2026, in press.",
+      link: "#"
+    },
+    {
+      id: 603,
+      title: "Hui Zhang, Xujun Zhang, Qun Su, Yangyang Zheng, Linlong Jiang, Kai Zhu, Qiaolin Gou, Odin Zhang, Shi Li, Bo Peng, Shaokai Ni, Yushen Du, Jiayi Tang, Yu Kang, Chang-Yu Hsieh, Dan Li*, Wenteng Chen*, Tingjun Hou*, Peichen Pan*, MetalloDock: decoding metalloprotein-ligand interactions via physics-aware deep learning for metalloprotein drug discovery, Journal of the American Chemical Society, 2026, in press.",
+      link: "#"
+    },
+    {
+      id: 602,
+      title: "Minchuan Jiang, Tianyue Liu, Muzammal Hussain, Yixin Luo, Rui Zheng, Tingjun Hou*, Xiaoyun Lu*, Yang Zhou*, Macrocycle-DB: a comprehensive database for macrocycle-based drug discovery, Nucleic Acids Research, 2026, in press.",
+      link: "#"
+    },
+    {
+      id: 601,
+      title: "Xiaodong Bao, Yuxin Zhou, Zhaoxu Yang, Yongxin Zhong, Xueping Hu, Zhibin Li, Jie Li, Li Xiao, Tingjun Hou, Qinjie Weng, Jiajia Wang*, Sunliang Cui*, Dan Li*, Discovery of Novel Nonsteroidal SGRMs of Sulfonamide-2-Oxo-Tetrahydroquinoline Derivatives by Carbonyl Migration, Journal of Medicinal Chemistry, 2026, in press.",
+      link: "#"
+    },
+    {
+      id: 600,
+      title: "Tianyue Wang, Xujun Zhang, Langcheng Wang, Odin Zhang, Jike Wang, Ercheng Wang, Jialu Wu, Renling Hu, Jingxuan Ge, Shimeng Li, Qun Su, Jiajun Yu, Tingjun Hou, Tong Zhu*, Chang-Yu Hsieh*, Yu Kang*, AutoLoop is an autoregressive deep learning method for protein loop prediction with high accuracy, Cell Reports Physical Science, 2026, in press.",
+      link: "#"
+    },
+    {
+      id: 599,
+      title: "Yingying Wang, Gaoang Wang, Qing You, Yifei Liu, Wanglin Qu, Yihong Chen, Chenzhang Mu, Xi Zhou, Min Liu, Wei Yang*, Tingjun Hou*, Discovery of a novel Nav1.5 inhibitor reducing cardiac conduction via structure-based virtual screening and assays, Acta Pharmacologica Sinica, 2026, in press.",
+      link: "#"
+    },
+    {
+      id: 598,
+      title: "Chao Shen*, Xujun Zhang, Shukai Gu, Odin Zhang, Qinghan Wang, Gang Du, Yihao Zhao, Linlong Jiang, Peichen Pan, Yu Kang, Qingwei Zhao, Chang-Yu Hsieh, Tingjun Hou*, Unlocking the application potential of AlphaFold3-like approaches in virtual screening, Chemical Science, 2026, in press.",
+      link: "#"
+    },
+    {
+      id: 597,
+      title: "Renling Hu, Jialu Wu, Qun Su, Shimeng Li, Yang Li, Tianyue Wang, Yu Kang, Tong Zhu, Chang-Yu Hsieh*, Tingjun Hou*, LamNet: an alchemical-path-aware graph neural network to accelerate binding free energy calculations for drug discovery and beyond, National Science Review, 2026, in press.",
+      link: "#"
+    },
+    {
+      id: 596,
+      title: "Yihao Zhao, Ying Wang, Chao Shen, Dejun Jiang, Shukai Gu, Huifeng Zhao, Ziyi You, Tingjun Hou*, Yu Kang*, Graph-based deep learning approach for high-throughput protein-DNA interaction scoring, Acta Pharmacologica Sinica, 2026, in press.",
+      link: "#"
+    },
+    {
+      id: 595,
+      title: "Dejun Jiang, Huifeng Zhao, Hongyan Du, Yu Kang, Peichen Pan, Zhenxing Wu, Yundian Zeng, Odin Zhang, Xiaorui Wang, Jike Wang, Yuansheng Huang, Yihao Zhao, Chang-Yu Hsieh*, Dongsheng Cao*, Huiyong Sun*, Tingjun Hou*, Harnessing deep statistical potential for biophysical scoring of protein-peptide interactions, Acta Pharmacologica Sinica, 2026, in press.",
+      link: "#"
+    },
+  ],
   "2025": [
     {
+      id: 594,
+      title: "Odin Zhang, Haitao Lin, Xujun Zhang, Xiaorui Wang, Zhenxing Wu, Qing Ye, Weibo Zhao, Jike Wang, Kejun Ying, Yu Kang, Chang-Yu Hsieh*, Tingjun Hou*, Graph Neural Networks in Modern AI-Aided Drug Discovery, Chemical Reviews, 2025, 125, 10001-10103.",
+      link: "#"
+    },
+    {
+      id: 593,
+      title: "Ying Xiong, Aowen Wang, Yu Kang, Chao Shen, Chang-Yu Hsieh*, Tingjun Hou*, mRNABERT: advancing mRNA sequence design with a universal language model and comprehensive dataset, Nature Communications, 2025, 16, 10371.",
+      link: "#"
+    },
+    {
+      id: 592,
+      title: "Odin Zhang, Jieyu Jin, Zhenxing Wu, Jintu Zhang, Po Yuan, Haitao Lin, Haiyang Zhong, Xujun Zhang, Chenqing Hua, Weibo Zhao, Zhengshuo Zhang, Kejun Ying, Yufei Huang, Huifeng Zhao, Yuntao Yu, Yu Kang, Peichen Pan, Jike Wang, Dong Guo*, Shuangjia Zheng*, Chang-Yu Hsieh*, Tingjun Hou*, ECloudGen: Leveraging Electron Clouds as a Latent Variable to Scale Up Structure-based Molecular Design, Nature Computational Science, 2025, 5, 1017-1028.",
+      link: "#"
+    },
+    {
+      id: 591,
+      title: "Huifeng Zhao, Odin Zhang*, Dejun Jiang, Zhenxing Wu, Hongyan Du, Xiaorui Wang, Yihao Zhao, Yuansheng Huang, Jingxuan Ge, Tingjun Hou*, Yu Kang*, Protein-peptide docking with a rational and accurate diffusion generative model, Nature Machine Intelligence, 2025, 7, 1308-1321.",
+      link: "#"
+    },
+    {
+      id: 590,
+      title: "Bowen Wang, Junyou Li, Donghao Zhou, Lanqing Li, Jinpeng Li, Ercheng Wang, Jianye Hao, Liang Shi, Chengqiang Lu, Jiezhong Qiu, Tingjun Hou*, Dongsheng Cao*, Guangyong Chen*, PhengAnn Heng, Unified and Explainable Molecular Representation Learning for Imperfectly Annotated Data from the Hypergraph View, Nature Communications, 2025, 16, 8717.",
+      link: "#"
+    },
+    {
+      id: 589,
+      title: "Shicheng Chen, Odin Zhang, Chenran Jiang, Huifeng Zhao, Xujun Zhang, Mengting Chen, Yun Liu, Qun Su, Zhenxing Wu, Xinyue Wang, Wanglin Qu, Yuanyi Ye, Xin Chai, Ning Wang, Tianyue Wang, Yuan An, Guanlin Wu, Qianqian Yang, Jiean Chen, Wei Xie, Haitao Lin, Dan Li, Chang-Yu Hsieh*, Yong Huang*, Yu Kang*, Tingjun Hou*, Peichen Pan*, Deep lead optimization enveloped in protein pocket and its application in designing potent and selective ligands targeting LTK protein, Nature Machine Intelligence, 2025, 7, 448-458.",
+      link: "#"
+    },
+    {
+      id: 589,
+      title: "Shukai Gu, Chao Shen, Xujun Zhang, Huiyong Sun, Heng Cai, Hao Luo, Huifeng Zhao, Bo Liu, Hongyan Du, Yihao Zhao, Chenggong Fu, Silong Zhai, Yafeng Deng, Huanxiang Liu, Tingjun Hou*, Yu Kang*, Benchmarking AI-powered docking methods from the perspective of virtual screening, Nature Machine Intelligence, 2025, 7, 509-520.",
+      link: "#"
+    },
+    {
+      id: 588,
+      title: "Jike Wang, Rui Qin, Mingyang Wang, Meijing Fang, Yangyang Zhang, Yuchen Zhu, Qun Su, Qiaolin Gou, Chao Shen, Odin Zhang, Zhenxing Wu, Dejun Jiang, Xujun Zhang, Huifeng Zhao, Jingxuan Ge, Zhourui Wu, Yu Kang*, Chang-Yu Hsieh*, Tingjun Hou*, Token-Mol 1.0: tokenized drug design with large language models, Nature Communications, 2025, 16, 4416.",
+      link: "#"
+    },
+    {
+      id: 587,
+      title: "Yue Wan, Jialu Wu, Tingjun Hou*, Chang-Yu Hsieh*, Xiaowei Jia*, Multi-channel learning for integrating structural hierarchies into context-dependent molecular representation, Nature Communications, 2025, 16, 413.",
+      link: "#"
+    },
+    {
+      id: 586,
+      title: "Yafeng Deng, Xinda Zhao, Hanyu Sun, Yu Chen, Xiaorui Wang, Xi Xue, Liangning Li, Jianfei Song, Chang-Yu Hsieh, Tingjun Hou, Xiandao Pan, Taghrid Alomar, Xiangyang Ji, Xiaojian Wang, RSGPT: A Generative Transformer Model for Retrosynthesis Planning Pre-trained on Ten Billion Datapoints, Nature Communications, 2025, 16, 7012.",
+      link: "#"
+    },
+    {
+      id: 585,
+      title: "Jike Wang, Jianwen Feng, Yu Kang, Peichen Pan, Jingxuan Ge, Yan Wang, Mingyang Wang, Zhenxing Wu, Xingcai Zhang, Jiameng Yu, Xujun Zhang, Tianyue Wang, Lirong Wen, Guangning Yan, Yafeng Deng, Hui Shi, Chang-Yu Hsieh*, Zhihui Jiang*, Tingjun Hou*, Discovery of antimicrobial peptides with notable antibacterial potency by an LLM-based foundation model, Science Advances, 2025, 11, eads8932.",
+      link: "#"
+    },
+    {
       id: 584,
-      title: "Odin Zhang, Jieyu Jin, Zhenxing Wu, Jintu Zhang, Po Yuan, Haitao Lin, Haiyang Zhong, Xujun Zhang, Chenqing Hua, Weibo Zhao, Zhengshuo Zhang, Kejun Ying, Yufei Huang, Huifeng Zhao, Yuntao Yu, Yu Kang, Peichen Pan, Jike Wang, Dong Guo*, Shuangjia Zheng*, Chang-Yu Hsieh*, Tingjun Hou*, ECloudGen: Leveraging Electron Clouds as a Latent Variable to Scale Up Structure-based Molecular Design, Nature Computational Science, 2025, accepted",
+      title: "Kexin Xu, Jingxuan Ge, Rongfan Tang, Tingjun Hou*, Huiyong Sun*, Dynamic characteristics of proteolysis-targeting chimera systems revealed by in silico computations, Current Opinion in Structural Biology, 2025, 95, 103151.",
       link: "#"
     },
     {
       id: 583,
-      title: "Huifeng Zhao, Odin Zhang*, Dejun Jiang, Zhenxing Wu, Hongyan Du, Xiaorui Wang, Yihao Zhao, Yuansheng Huang, Jingxuan Ge, Tingjun Hou*, Yu Kang*, RAPiDock: Pushing the Boundaries of Protein-peptide Docking with Rational and Accurate Diffusion Generative Model, Nature Machine Intelligence, 2025, accepted",
+      title: "Kun Li, Jiacai Yi, Qing Ye, Xixi Yang, Long Yu, Youchao Deng, Chengkun Wu, Tingjun Hou*, Dejun Jiang*, Dongsheng Cao*, A fused deep learning approach to transform drug repositioning, Communications Chemistry, 2025, 8, 334.",
       link: "#"
     },
     {
       id: 582,
-      title: "Bowen Wang, Junyou Li, Donghao Zhou, Lanqing Li, Jinpeng Li, Ercheng Wang, Jianye Hao, Liang Shi, Chengqiang Lu, Jiezhong Qiu, Tingjun Hou*, Dongsheng Cao*, Guangyong Chen*, PhengAnn Heng, Unified and Explainable Molecular Representation Learning for Imperfectly Annotated Data from the Hypergraph View, Nature Communications, 2025, accepted",
+      title: "Xi Xue, Xiangying Liu, Xue Liu, Hanyu Sun, Shize Li, Kai Chen, Hanmiao Xu, Liangning Li, Chengxia Mao, Jingjie Yan, Peilan Yang, Baolian Wang, Tingjun Hou*, Tingting Du*, Xiaojian Wang*, One-shot rational Design of Covalent Drugs with CovalentLab, 2025, 5, 5676-5689.",
       link: "#"
     },
     {
       id: 581,
-      title: "Shicheng Chen, Odin Zhang, Chenran Jiang, Huifeng Zhao, Xujun Zhang, Mengting Chen, Yun Liu, Qun Su, Zhenxing Wu, Xinyue Wang, Wanglin Qu, Yuanyi Ye, Xin Chai, Ning Wang, Tianyue Wang, Yuan An, Guanlin Wu, Qianqian Yang, Jiean Chen, Wei Xie, Haitao Lin, Dan Li, Chang-Yu Hsieh*, Yong Huang*, Yu Kang*, Tingjun Hou*, Peichen Pan*, Deep lead optimization enveloped in protein pocket and its application in designing potent and selective ligands targeting LTK protein, Nature Machine Intelligence, 2025, 7, 448-458. ",
+      title: "Shi Li, Hongyan Du, Hui Zhang, Xujun Zhang, Yuanyi Ye, Chao Shen*, Tingjun Hou*, Peichen Pan*, Accelerating Covalent Drug Discovery: Recent Advances in Covalent Docking Tools, Wiley Interdisciplinary Reviews: Computational Molecular Science, 2025, 15, e70062.",
+      link: "#"
+    },
+    {
+      id: 581,
+      title: "Huifeng Zhao, Jianxiang Huang, Gaoqi Weng, Dejun Jiang, Renling Hu, Yu Kang*, Tingjun Hou*, Improving the predictive performance of binding affinities and poses for protein-cyclic peptide complexes through fine-tuned MM/PBSA(GBSA)-based methods, Briefings in Bioinformatics, 2025, 26, bbaf632.",
       link: "#"
     },
     {
       id: 580,
-      title: "Shukai Gu, Chao Shen, Xujun Zhang, Huiyong Sun, Heng Cai, Hao Luo, Huifeng Zhao, Bo Liu, Hongyan Du, Yihao Zhao, Chenggong Fu, Silong Zhai, Yafeng Deng, Huanxiang Liu, Tingjun Hou*, Yu Kang*, Benchmarking AI-powered docking methods from the perspective of virtual screening, Nature Machine Intelligence, 2025, 7, 509-520. ",
+      title: "Xiaotian Kong, Yushan Zou, Peng Cao, Yuxuan Dong, Keran Li, Xi Zhang, Yubo Liu, Sijin Wu, Sheng Tian, Chunhua Li*, Tingjun Hou*, Allosteric Cooperativity Mechanism Investigation of Orthosteric and Allosteric Ligands in Modulating AR Activity: A Molecular Dynamics Study, Journal of Chemical Information and Modeling, 2025, 65, 11297-11313.",
       link: "#"
     },
     {
       id: 579,
-      title: "Jike Wang, Rui Qin, Mingyang Wang, Meijing Fang, Yangyang Zhang, Yuchen Zhu, Qun Su, Qiaolin Gou, Chao Shen, Odin Zhang, Zhenxing Wu, Dejun Jiang, Xujun Zhang, Huifeng Zhao, Jingxuan Ge, Zhourui Wu, Yu Kang*, Chang-Yu Hsieh*, Tingjun Hou*, Token-Mol 1.0: tokenized drug design with large language models, Nature Communications, 2025, 16, 4416. ",
+      title: "Linlong Jiang, Ke Zhang, Kai Zhu, Ying Wang, Yu Kang*, Tingjun Hou*, Revisiting protein-protein docking: a systematic evaluation framework, Journal of Chemical Information and Modeling, 2025, 65, 10573-10587.",
       link: "#"
     },
     {
       id: 578,
-      title: "Yue Wan, Jialu Wu, Tingjun Hou*, Chang-Yu Hsieh*, Xiaowei Jia*, Multi-channel learning for integrating structural hierarchies into context-dependent molecular representation, Nature Communications, 2025, 16, 413. ",
+      title: "Jinbiao Liao, Jianing Liao, Yanzhen Yu, Kaixin Le, Wei Hou, Lvtao Cai, Geng Chen, Tingjun Hou, Dan Li*, Rong Sheng*, Discovery of N-(thiazol-2-yl) Furanamide Derivatives as Potent Orally Efficacious AR Antagonists with Low BBB Permeability, Journal of Medicinal Chemistry, 2025, 68, 19688-19713.",
       link: "#"
     },
     {
       id: 577,
-      title: "Yafeng Deng, Xinda Zhao, Hanyu Sun, Yu Chen, Xiaorui Wang, Xi Xue, Liangning Li, Jianfei Song, Chang-Yu Hsieh, Tingjun Hou, Xiandao Pan, Taghrid Alomar, Xiangyang Ji, Xiaojian Wang, RSGPT: A Generative Transformer Model for Retrosynthesis Planning Pre-trained on Ten Billion Datapoints, Nature Communications, 2025, accepted",
+      title: "Shuaiyan Li, Xiaorui Wang, Yuchen Zhu, Jingxuan Ge, Donghai Zhao, Hongxia Xu, Tingjun Hou*, Chang-Yu Hsieh*, PepBAN: A Deep Learning Framework with Bilinear Attention and Adversarial Learning for Peptide–Protein Interaction Prediction, Journal of Chemical Information and Modeling, 2025, 65, 9061-9074.",
       link: "#"
     },
     {
       id: 576,
-      title: "Jike Wang, Jianwen Feng, Yu Kang, Peichen Pan, Jingxuan Ge, Yan Wang, Mingyang Wang, Zhenxing Wu, Xingcai Zhang, Jiameng Yu, Xujun Zhang, Tianyue Wang, Lirong Wen, Guangning Yan, Yafeng Deng, Hui Shi, Chang-Yu Hsieh*, Zhihui Jiang*, Tingjun Hou*, Discovery of antimicrobial peptides with notable antibacterial potency by an LLM-based foundation model, Science Advances, 2025, 11, eads8932. ",
+      title: "Tingting Fu, Kuo Zhang, Tingjun Hou*, Caisheng Wu*, Feng Zhu*, Artificial intelligence empowering the full spectrum of drug discovery, Journal of Pharmaceutical Analysis, 2025, 15, 1-3.",
       link: "#"
     },
     {
       id: 575,
-      title: "Chao Shen, Hongyan Du, Xujun Zhang, Shukai Gu, Heng Cai, Yu Kang, Peichen Pan, Qingwei Zhao, Tingjun Hou*, CarsiDock-Cov: A deep learning-guided approach for automated covalent docking and screening, Acta Pharmaceutica Sinica B, 2025, accepted",
+      title: "Chao Shen, Hongyan Du, Xujun Zhang, Shukai Gu, Heng Cai, Yu Kang, Peichen Pan, Qingwei Zhao, Tingjun Hou*, CarsiDock-Cov: A deep learning-guided approach for automated covalent docking and screening, Acta Pharmaceutica Sinica B, 2025, 15, 5758-5771.",
       link: "#"
     },
     {
       id: 574,
-      title: "Ze-Yu Sun, Jiayi Yuan, Divya Jaiswal, Jingxuan Ge, Tianjian Liang, Jiahui Wei, Jinghong Cao, Yulong Li, Xiaojie Chu, Yan Chen*, Ying Xue*, Wei Li*, Tingjun Hou*, Zhiwei Feng*, AntiBMPNN: Structure-Guided Graph Neural Networks for Precision Antibody Engineering, Advanced Science, 2025, in press. ",
+      title: "Zeyu Sun, Jiayi Yuan, Divya Jaiswal, Jingxuan Ge, Tianjian Liang, Jiahui Wei, Jinghong Cao, Yulong Li, Xiaojie Chu, Yan Chen*, Ying Xue*, Wei Li*, Tingjun Hou*, Zhiwei Feng*, AntiBMPNN: Structure-Guided Graph Neural Networks for Precision Antibody Engineering, Advanced Science, 2025, 12, e04278.",
       link: "#"
     },
     {
       id: 573,
-      title: "Jialu Wu, Yiheng Zhu, Xiaorui Wang, Yitong Li, Mingze Yin, Tianyue Wang, Yuqiang Han, Yu Kang, Yafeng Deng, Jian Wu*, Chang-Yu Hsieh*, Tingjun Hou*, HiCLR: Knowledge-Induced Hierarchical Contrastive Learning with Retrosynthesis Prediction Yields a Reaction Foundation Model, JACS Au, 2025, in press. ",
+      title: "Jialu Wu, Yiheng Zhu, Xiaorui Wang, Yitong Li, Mingze Yin, Tianyue Wang, Yuqiang Han, Yu Kang, Yafeng Deng, Jian Wu*, Chang-Yu Hsieh*, Tingjun Hou*, HiCLR: Knowledge-Induced Hierarchical Contrastive Learning with Retrosynthesis Prediction Yields a Reaction Foundation Model, JACS Au, 2025, 5, 3140-3155.",
       link: "#"
     },
     {
       id: 572,
-      title: "Zhijiang Yang, Liangliang Wang, Tengxin Huang, Yunfan Wang, Mingchi Gao, Tingjun Hou*, Junjie Ding*, Junhua Xiao*, Q-GEM: Quantum Chemistry Knowledge Fusion Geometry-Enhanced Molecular Representation for Property Prediction, Advanced Science, 2025, in press. ",
+      title: "Zhijiang Yang, Liangliang Wang, Tengxin Huang, Yunfan Wang, Mingchi Gao, Tingjun Hou*, Junjie Ding*, Junhua Xiao*, Q-GEM: Quantum Chemistry Knowledge Fusion Geometry-Enhanced Molecular Representation for Property Prediction, Advanced Science, 2025, 12, e04867.",
       link: "#"
     },
     {
       id: 571,
-      title: "Qiaolin Gou, Qun Su, Jike Wang, Hui Zhang, Huiyong Sun, Xujun Zhang, Linlong Jiang, Meijing Fang, Yu Kang, Huanxiang Liu*, Tingjun Hou*, Chang-Yu Hsieh*, ChargeNet: E(3) Equivariant Graph Attention Network for Atomic Charge Prediction, Journal of Chemical Information and Modeling, 2025, in press. ",
+      title: "Qiaolin Gou, Qun Su, Jike Wang, Hui Zhang, Huiyong Sun, Xujun Zhang, Linlong Jiang, Meijing Fang, Yu Kang, Huanxiang Liu*, Tingjun Hou*, Chang-Yu Hsieh*, ChargeNet: E(3) Equivariant Graph Attention Network for Atomic Charge Prediction, Journal of Chemical Information and Modeling, 2025, 65, 10364-10374.",
       link: "#"
     },
     {
       id: 570,
-      title: "Qun Su, Hui Zhang, Qiaolin Gou, Huiyong Sun, Meijing Fang, Xujun Zhang, Renling Hu, Yu Kang, Chang-Yu Hsieh, Jike Wang*, Tingjun Hou*, LumiCharge: Spherical Harmonic Convolutional Networks for Atomic Charge Prediction in Drug Discovery, Journal of Physical Chemistry Letters, 2025, 16, 6334-6344. ",
+      title: "Qun Su, Hui Zhang, Qiaolin Gou, Huiyong Sun, Meijing Fang, Xujun Zhang, Renling Hu, Yu Kang, Chang-Yu Hsieh, Jike Wang*, Tingjun Hou*, LumiCharge: Spherical Harmonic Convolutional Networks for Atomic Charge Prediction in Drug Discovery, Journal of Physical Chemistry Letters, 2025, 16, 6334-6344.",
       link: "#"
     },
     {
       id: 569,
-      title: "Xiabin Chen, Yishuang Li, Jianzhuang Yao, Xiaoxuan Li, Hualing Li, Zelin Wu, Qi Hu, Nuo Xu, Tingjun Hou, Jiye Wang, Shurong Hou*, Biochemical and Functional Characterization of E. coli Aminopeptidase N: A New Role as a 6-Monoacetylmorphine Hydrolase, Biomolecules, 2025, 15, 822. ",
+      title: "Xiabin Chen, Yishuang Li, Jianzhuang Yao, Xiaoxuan Li, Hualing Li, Zelin Wu, Qi Hu, Nuo Xu, Tingjun Hou, Jiye Wang, Shurong Hou*, Biochemical and Functional Characterization of E. coli Aminopeptidase N: A New Role as a 6-Monoacetylmorphine Hydrolase, Biomolecules, 2025, 15, 822.",
       link: "#"
     },
     {
       id: 568,
-      title: "Xin Chai, Xinyue Wang, Lvtao Cai, Haiyi Chen, Siyu Wang, Jianing Liao, Huating Wang, Yuxin Zhou, Lei Xu, Luhu Shan, Xiaohong Xu, Yuhui Yang, Junzhao He, Yaqin Fu, Tingjun Hou*, Rong Sheng*, Dan Li*, Unraveling the Efficacy of AR Antagonists Bearing N-(4-(Benzyloxy)phenyl)piperidine-1-sulfonamide Scaffold in Prostate Cancer Therapy by Targeting LBP Mutations, Journal of Medicinal Chemistry, 2025, 68, 11962-11978. ",
+      title: "Xin Chai, Xinyue Wang, Lvtao Cai, Haiyi Chen, Siyu Wang, Jianing Liao, Huating Wang, Yuxin Zhou, Lei Xu, Luhu Shan, Xiaohong Xu, Yuhui Yang, Junzhao He, Yaqin Fu, Tingjun Hou*, Rong Sheng*, Dan Li*, Unraveling the Efficacy of AR Antagonists Bearing N-(4-(Benzyloxy)phenyl)piperidine-1-sulfonamide Scaffold in Prostate Cancer Therapy by Targeting LBP Mutations, Journal of Medicinal Chemistry, 2025, 68, 11962-11978.",
       link: "#"
     },
     {
       id: 567,
-      title: "Kaimo Yang, Dejun Jiang, Qirui Deng, Sutong Xiang, Jingxuan Ge, Kexin Xu, Zhiliang Jiang, Zihao Wang, Chen Yin, Youqiao Qian, Tingjun Hou*, Huiyong Sun*, A Unified Deep Graph Model for Identifying the Molecular Categories of Ligands Targeting Nuclear Receptors, Journal of Chemical Information and Modeling, 2025, 65, 5481-5494. ",
+      title: "Kaimo Yang, Dejun Jiang, Qirui Deng, Sutong Xiang, Jingxuan Ge, Kexin Xu, Zhiliang Jiang, Zihao Wang, Chen Yin, Youqiao Qian, Tingjun Hou*, Huiyong Sun*, A Unified Deep Graph Model for Identifying the Molecular Categories of Ligands Targeting Nuclear Receptors, Journal of Chemical Information and Modeling, 2025, 65, 5481-5494.",
       link: "#"
     },
     {
       id: 566,
-      title: "Jianchao Zhang, Congli Chen, Xiao Chen, Kefan Liao, Fengming Li, Xiaoxiao Song, Chaowei Liu, Ming-Yuan Su, Huiyong Sun, Tingjun Hou, Chris Soon Heng Tan, Lijing Fang, Hai Rao, Linker-free PROTACs efficiently induce the degradation of oncoproteins, Nature Communications, 2025, 16, 4794. ",
+      title: "Jianchao Zhang, Congli Chen, Xiao Chen, Kefan Liao, Fengming Li, Xiaoxiao Song, Chaowei Liu, Ming-Yuan Su, Huiyong Sun, Tingjun Hou, Chris Soon Heng Tan, Lijing Fang, Hai Rao, Linker-free PROTACs efficiently induce the degradation of oncoproteins, Nature Communications, 2025, 16, 4794.",
       link: "#"
     },
     {
       id: 565,
-      title: "Mingze Yin, Hanjing Zhou, Jialu Wu, Yiheng Zhu, Yuxuan Zhan, Zitai Kong, Hongxia Xu, Chang-Yu Hsieh, Jintai Chen, Tingjun Hou*, Jian Wu*, S2ALM: Sequence-Structure Pre-trained Large Language Model for Comprehensive Antibody Representation Learning, Research, 2025, 0721. ",
+      title: "Mingze Yin, Hanjing Zhou, Jialu Wu, Yiheng Zhu, Yuxuan Zhan, Zitai Kong, Hongxia Xu, Chang-Yu Hsieh, Jintai Chen, Tingjun Hou*, Jian Wu*, S2ALM: Sequence-Structure Pre-trained Large Language Model for Comprehensive Antibody Representation Learning, Research, 2025, 0721.",
       link: "#"
     },
     {
       id: 564,
-      title: "Xujun Zhang, Linlong Jiang, Gaoqi Weng, Chao Shen, Odin Zhang, Mingquan Liu, Chen Zhang, Shukai Gu, Jike Wang, Xiaorui Wang, Hongyan Du, Hui Zhang, Ke Zhang, Ercheng Wang*, Tingjun Hou*, HawkDock version 2: an updated web server to predict and analyze the structures of protein-protein complexes, Nucleic Acids Research, 2025, in press. ",
+      title: "Xujun Zhang, Linlong Jiang, Gaoqi Weng, Chao Shen, Odin Zhang, Mingquan Liu, Chen Zhang, Shukai Gu, Jike Wang, Xiaorui Wang, Hongyan Du, Hui Zhang, Ke Zhang, Ercheng Wang*, Tingjun Hou*, HawkDock version 2: an updated web server to predict and analyze the structures of protein-protein complexes, Nucleic Acids Research, 2025, 53(W1), W306-W315.",
       link: "#"
     },
     {
       id: 563,
-      title: "Jingxuan Ge, Jike Wang, Qing Ye, Liqiang Pan, Yu Kang, Chao Shen, Yafeng Deng, Chang-Yu Hsieh*, Tingjun Hou*, TRAP: a contrastive learning-enhanced framework for robust TCR-pMHC binding prediction with improved generalizability, Chemical Science, 2025, 16, 9881-9894. ",
+      title: "Jingxuan Ge, Jike Wang, Qing Ye, Liqiang Pan, Yu Kang, Chao Shen, Yafeng Deng, Chang-Yu Hsieh*, Tingjun Hou*, TRAP: a contrastive learning-enhanced framework for robust TCR-pMHC binding prediction with improved generalizability, Chemical Science, 2025, 16, 9881-9894.",
       link: "#"
     },
     {
       id: 562,
-      title: "Xi Zhou, Haiyi Chen, Shuijiao Peng, Yuxin Si, Gaoang Wang, Li Yang, Qing Zhou, Minjuan Lu, Qiaoling Xie, Xi He, Meijing Wu, Xin Xiao, Xiaoqing Luo, Xujun Feng, Wenxing Wang, Sen Luo, Yaqi Li, Jiaxin Qin, Minzhi Chen, Qianqian Zhang, Weijun Hu, Songping Liang, Tingjun Hou*, Zhonghua Liu*, Inherent fast inactivation particle of Nav channels as a new binding site for a neurotoxin, EMBO Journal, 2025, 44, 3180-3209. ",
+      title: "Xi Zhou, Haiyi Chen, Shuijiao Peng, Yuxin Si, Gaoang Wang, Li Yang, Qing Zhou, Minjuan Lu, Qiaoling Xie, Xi He, Meijing Wu, Xin Xiao, Xiaoqing Luo, Xujun Feng, Wenxing Wang, Sen Luo, Yaqi Li, Jiaxin Qin, Minzhi Chen, Qianqian Zhang, Weijun Hu, Songping Liang, Tingjun Hou*, Zhonghua Liu*, Inherent fast inactivation particle of Nav channels as a new binding site for a neurotoxin, EMBO Journal, 2025, 44, 3180-3209.",
       link: "#"
     },
     {
       id: 561,
-      title: "Mingze Yin, Hanjing Zhou, Yiheng Zhu, Jialu Wu, Wei Wu, Mingyang Li, Kun Fu, Zheng Wang, Chang-Yu Hsieh, Tingjun Hou, Jian Wu, Synergy of GFlowNet and Protein Language Model Makes a Diverse Antibody Designer, Proceedings of the AAAI Conference on Artificial Intelligence, 2025, 39, 21. ",
+      title: "Mingze Yin, Hanjing Zhou, Yiheng Zhu, Jialu Wu, Wei Wu, Mingyang Li, Kun Fu, Zheng Wang, Chang-Yu Hsieh*, Tingjun Hou*, Jian Wu*, Synergy of GFlowNet and Protein Language Model Makes a Diverse Antibody Designer, Proceedings of the AAAI Conference on Artificial Intelligence, 2025, 39, 21.",
       link: "#"
     },
     {
       id: 560,
-      title: "Yifei Liu, Yiheng Zhu, Jike Wang, Renling Hu, Chao Shen, Wanglin Qu, Gaoang Wang, Qun Su, Yuchen Zhu, Yu Kang*, Peichen Pan*, Chang-Yu Hsieh*, Tingjun Hou*, A Multi-Objective Molecular Generation Method Based on Pareto Algorithm and Monte Carlo Tree Search, Advanced Science, 2025, 12, e2410640. ",
+      title: "Yifei Liu, Yiheng Zhu, Jike Wang, Renling Hu, Chao Shen, Wanglin Qu, Gaoang Wang, Qun Su, Yuchen Zhu, Yu Kang*, Peichen Pan*, Chang-Yu Hsieh*, Tingjun Hou*, A Multi-Objective Molecular Generation Method Based on Pareto Algorithm and Monte Carlo Tree Search, Advanced Science, 2025, 12, e2410640.",
       link: "#"
     },
     {
       id: 559,
-      title: "Yixue Zhang, Jialu Wu, Yu Kang*, Tingjun Hou*, A Multimodal Contrastive Learning Framework for Predicting P-Glycoprotein Substrates and Inhibitors, Journal of Pharmaceutical Analysis, 2025, in press. ",
+      title: "Yixue Zhang, Jialu Wu, Yu Kang*, Tingjun Hou*, A Multimodal Contrastive Learning Framework for Predicting P-Glycoprotein Substrates and Inhibitors, Journal of Pharmaceutical Analysis, 2025, 15, 101313.",
       link: "#"
     },
     {
