@@ -71,9 +71,6 @@
                   <div>
                     <p class="text-gray-800 font-medium">
                       {{ paper.title }}
-                      <a :href="paper.link" class="inline-flex items-center text-primary hover:underline text-sm ml-2">
-                        <span>{{ t('publications.viewDetails') }}</span>
-                      </a>
                     </p>
                   </div>
                 </div>
