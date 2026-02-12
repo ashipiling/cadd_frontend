@@ -45,6 +45,7 @@
           <h4 class="font-medium mb-4" :class="backgroundColor === 'dark' ? 'text-white' : 'text-gray-800'">{{ t('headerFooter.software') }}</h4>
           <ul class="space-y-2 text-sm" :class="backgroundColor === 'dark' ? 'text-gray-400' : 'text-gray-600'">
             <li><a href="/drugflow" :class="backgroundColor === 'dark' ? 'hover:text-blue-400' : 'hover:text-blue-600'">{{ t('headerFooter.drugflow') }}</a></li>
+            <li><a href="/odesign" :class="backgroundColor === 'dark' ? 'hover:text-blue-400' : 'hover:text-blue-600'">ODesign</a></li>
             <li><a href="/software#databases" :class="backgroundColor === 'dark' ? 'hover:text-blue-400' : 'hover:text-blue-600'">{{ t('software.databases') }}</a></li>
             <li><a href="/software#molecularFeaturization" :class="backgroundColor === 'dark' ? 'hover:text-blue-400' : 'hover:text-blue-600'">{{ t('software.molecularFeaturization') }}</a></li>
             <li><a href="/software#QSARModeling" :class="backgroundColor === 'dark' ? 'hover:text-blue-400' : 'hover:text-blue-600'">{{ t('software.QSARModeling') }}</a></li>

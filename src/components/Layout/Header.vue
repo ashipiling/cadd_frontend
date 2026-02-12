@@ -114,6 +114,9 @@
           <a href="/drugflow" :class="backgroundColor === 'dark' ? 'hover:text-blue-400' : 'hover:text-blue-600'">
             {{ t('headerFooter.drugflow') }}
           </a>
+          <a href="/odesign" :class="backgroundColor === 'dark' ? 'hover:text-blue-400' : 'hover:text-blue-600'">
+            ODesign
+          </a>
         </nav>
         
         <!-- Mobile menu button -->
@@ -386,6 +389,13 @@
             <Rocket class="w-5 h-5 mr-3" />
             <span class="font-medium">{{ t('headerFooter.drugflow') }}</span>
           </a>
+          <a href="/odesign" 
+             class="flex items-center py-3 px-4 rounded-lg transition-colors duration-200" 
+             :class="backgroundColor === 'dark' ? 'text-white hover:bg-gray-800' : 'text-gray-900 hover:bg-gray-100'"
+             @click="closeMobileMenu">
+            <Palette class="w-5 h-5 mr-3" />
+            <span class="font-medium">ODesign</span>
+          </a>
           
           <!-- Language toggle in mobile menu -->
           <div class="mt-6 mb-4 py-4 rounded-lg"
@@ -419,7 +429,7 @@ import { Button } from '@/components/ui/button'
 import { 
   Menu, X, Home, Users, User, UserSquare, GraduationCap, Backpack, 
   History, FileText, BookOpen, Code, Award, Laptop, Database, Atom, 
-  Link, Users2, Newspaper, Globe, Rocket
+  Link, Users2, Newspaper, Globe, Rocket, Palette
 } from 'lucide-vue-next'
 import { useI18n } from 'vue-i18n'
 const { locale } = useI18n()
