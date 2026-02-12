@@ -42,7 +42,7 @@ export const papers = {
     },
     {
       id: 605,
-      title: "Xiaorui Wang, Xiaodan Yin, Xujun Zhang, Huifeng Zhao, Shukai Gu, Zhenxing Wu, Odin Zhang, Wenjia Qian, Yuansheng Huang, Yuquan Li, Dejun Jiang, Mingyang Wang, Huanxiang Liu, Xiaojun Yao*, Chang-Yu Hsieh*, Tingjun Hou*, A virtual platform for automated hybrid organic-enzymatic synthesis planning, Nature Communications, 2025, in press.",
+      title: "Xiaorui Wang, Xiaodan Yin, Xujun Zhang, Huifeng Zhao, Shukai Gu, Zhenxing Wu, Odin Zhang, Wenjia Qian, Yuansheng Huang, Yuquan Li, Dejun Jiang, Mingyang Wang, Huanxiang Liu, Xiaojun Yao*, Chang-Yu Hsieh*, Tingjun Hou*, A virtual platform for automated hybrid organic-enzymatic synthesis planning, Nature Communications, 2026, in press.",
       link: "#"
     },
     {

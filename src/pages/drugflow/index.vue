@@ -74,30 +74,30 @@
     </section>
 
     <!-- Core Features Section -->
-    <section id="features" class="py-24 bg-gradient-to-b from-gray-50 to-white">
+    <section id="features" class="py-24 bg-slate-50">
       <div class="container mx-auto px-4 md:px-8">
         <div class="max-w-6xl mx-auto">
           <div class="text-center mb-16 reveal-item" ref="featuresTitle">
             <h2 class="text-4xl font-bold mb-4">{{ t('drugflow.features.title') }}</h2>
-            <p class="text-xl text-gray-600">{{ t('drugflow.features.subtitle') }}</p>
+            <p class="text-xl text-slate-600">{{ t('drugflow.features.subtitle') }}</p>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal-item" ref="featuresGrid">
             <div v-for="(feature, index) in coreFeatures" :key="index"
-                 class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group">
-              <div class="h-48 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center">
+                 class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-md hover:border-blue-200 transition-all duration-300 group">
+              <div class="h-48 overflow-hidden bg-slate-50 flex items-center justify-center border-b border-slate-100">
                 <img :src="feature.image" :alt="feature.title" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300" />
               </div>
               <div class="p-6">
                 <div class="flex items-center mb-4">
-                  <div class="p-2 rounded-lg mr-3" :class="feature.iconBg">
-                    <component :is="feature.icon" class="h-6 w-6" :class="feature.iconColor" />
+                  <div class="p-2 rounded-lg mr-3 bg-blue-50">
+                    <component :is="feature.icon" class="h-6 w-6 text-blue-600" />
                   </div>
                   <h3 class="text-xl font-bold">{{ feature.title }}</h3>
                 </div>
-                <p class="text-gray-600 mb-4 leading-relaxed">{{ feature.description }}</p>
+                <p class="text-slate-600 mb-4 leading-relaxed">{{ feature.description }}</p>
                 <a :href="feature.link" target="_blank" 
-                   class="inline-flex items-center text-primary hover:text-primary/80 font-medium group-hover:translate-x-1 transition-transform duration-300">
+                   class="inline-flex items-center text-blue-700 hover:text-blue-600 font-medium group-hover:translate-x-0.5 transition-transform duration-300">
                   {{ t('drugflow.features.viewDetails') }}
                   <ArrowRight class="ml-1 h-4 w-4" />
                 </a>

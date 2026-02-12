@@ -28,7 +28,7 @@ const { t } = useI18n()
 // Add a template ref for the section element
 const sectionRef = ref<HTMLElement | null>(null);
 
-const targetPapers = 580;
+const targetPapers = 600;
 const targetPatents = 50;
 const targetPlatforms = 40;
 
