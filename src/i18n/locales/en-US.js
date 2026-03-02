@@ -21,7 +21,7 @@ export default {
     patents: 'Patents',
     software: 'Software',
     softwarePatent: 'Software Patent',
-    drugflow: 'DrugFlow Platform',
+    drugflow: 'DrugFlow',
     database: 'Database',
     molecularFeaturization: 'Molecular Featurization',
     QSARModeling: 'QSAR Modeling',

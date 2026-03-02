@@ -21,7 +21,7 @@ export default {
     patents: '发明专利',
     software: '程序开发',
     softwarePatent: '软件专利',
-    drugflow: 'DrugFlow 平台',
+    drugflow: 'DrugFlow',
     database: '数据库',
     molecularFeaturization: '分子表征',
     QSARModeling: 'QSAR建模',
