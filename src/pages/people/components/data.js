@@ -405,36 +405,28 @@ export const faculty = [
     image: importImage('people_danli.jpg'),
     education: [
       {
-        description_cn: '1996年9月至2000年6月：中国药科大学，药学院，学士',
-        description_en: '1996-2000: China Pharmaceutical University, School of Pharmacy, Bachelor',
+        description_cn: '1996年至2004年：中国药科大学，药学院药物化学系，学士、硕士',
+        description_en:
+          '1996-2004: China Pharmaceutical University, School of Pharmacy, Department of Medicinal Chemistry, Bachelor and Master',
       },
       {
-        description_cn: '2001年9月至2004年6月：中国药科大学，药学院药物化学系，硕士',
-        description_en: '2001-2004: China Pharmaceutical University, Department of Medicinal Chemistry, Master',
+        description_cn: '2005年至2010年：德国马堡大学，药学院药物化学系，博士、博士后',
+        description_en:
+          '2005-2010: University of Marburg, Germany, School of Pharmacy, Department of Medicinal Chemistry, PhD and Postdoctoral Researcher',
       },
       {
-        description_cn: '2005年2月至2009年4月：德国马堡大学，药学院药物化学系，博士',
-        description_en: '2005-2009: University of Marburg, Germany, Department of Medicinal Chemistry, PhD',
+        description_cn: '2010年至2013年：德国吉森大学，生物化学系，洪堡学者',
+        description_en:
+          '2010-2013: University of Giessen, Germany, Department of Biochemistry, Humboldt Scholar',
       },
       {
-        description_cn: '2009年5月至2010年2月：德国马堡大学，药学院药物化学系，博士后',
-        description_en: '2009-2010: University of Marburg, Germany, Department of Medicinal Chemistry, Postdoctoral Researcher',
-      },
-      {
-        description_cn: '2010年7月至2013年5月：德国吉森大学，生物化学系，洪堡学者',
-        description_en: '2010-2013: University of Giessen, Germany, Department of Biochemistry, Humboldt Scholar',
-      },
-      {
-        description_cn: '2013年5月至2013年12月：浙江大学，药学院，教师',
-        description_en: '2013-2013: Zhejiang University, School of Pharmacy, Faculty',
-      },
-      {
-        description_cn: '2013年12月至2022年12月：浙江大学，药学院，副教授',
-        description_en: '2013-2022: Zhejiang University, School of Pharmacy, Associate Professor',
+        description_cn: '2013年至2022年：浙江大学，药学院，副教授',
+        description_en: '2013–2022: Zhejiang University, School of Pharmacy, Associate Professor',
       },
       {
         description_cn: '2022年12月至今：浙江大学，药学院，教授',
-        description_en: '2022-present: Zhejiang University, School of Pharmacy, Professor',
+        description_en:
+          'Dec. 2022-present: Zhejiang University, School of Pharmacy, Professor',
       },
     ],
     research_direction: [
@@ -786,6 +778,103 @@ export const faculty = [
     ],
   },
   {
+    name_cn: '王極可',
+    name_en: 'Jike Wang',
+    title_cn: '百人计划研究员、博士生导师',
+    title_en: 'Hundred-Talents Plan Research Fellow, PhD Supervisor',
+    location_cn: '浙江大学紫金港校区纳米楼224室',
+    location_en: 'Room 224, Nano Building, Zijingang Campus, Zhejiang University',
+    email: 'jikewang@zju.edu.cn',
+    image: importImage('people_jikewang.jpg'),
+    education: [
+      {
+        description_cn: '2012年至2016年：黄冈师范学院计算机学院，软件工程，学士',
+        description_en: '2012 - 2016: Huanggang Normal University, School of Computer Science, Software Engineering, Bachelor',
+      },
+      {
+        description_cn: '2016年至2022年：武汉大学计算机学院，软件工程，博士',
+        description_en: '2016 - 2022: Wuhan University, School of Computer Science, Software Engineering, PhD',
+      },
+      {
+        description_cn: '2023年至2026年：浙江大学药学院，博士后（合作导师：侯廷军）',
+        description_en: '2023 - 2026: Zhejiang University, School of Pharmacy, Postdoctoral Fellow (Supervisor: Prof. Tingjun Hou)',
+      },
+      {
+        description_cn: '2026年5月至今：浙江大学药学院，百人计划研究员',
+        description_en: 'May 2026 - present: Zhejiang University, School of Pharmacy, Hundred-Talents Plan Research Fellow',
+      },
+    ],
+    research_direction: [
+      {
+        description_cn: '智能药学，人工智能，药物设计大模型，智能体',
+        description_en: 'Intelligent pharmacy, artificial intelligence, drug-design foundation models, intelligent agents',
+      },
+    ],
+    awards: [],
+    papers: [
+      {
+        title: 'Jike Wang#, Chang-Yu Hsieh#, Mingyang Wang#, Xiaorui Wang, Zhenxing Wu, Dejun Jiang, Benben Liao, Xujun Zhang, Bo Yang, Qiaojun He, Dongsheng Cao*, Xi Chen*, Tingjun Hou*, Multi-constraint molecular generation based on conditional transformer, knowledge distillation and reinforcement learning, Nature Machine Intelligence, 2021, 3, 914-922.',
+        url: '',
+      },
+      {
+        title: 'Jike Wang#, Rui Qin#, Mingyang Wang#, Meijing Fang, Yangyang Zhang, Yuchen Zhu, Qun Su, Qiaolin Gou, Chao Shen, Odin Zhang, Zhenxing Wu, Dejun Jiang, Xujun Zhang, Huifeng Zhao, Jingxuan Ge, Zhourui Wu, Yu Kang*, Chang-Yu Hsieh*, Tingjun Hou*, Token-Mol 1.0: Tokenized drug design with language model, Nature Communications, 2025, 16, 4416.',
+        url: '',
+      },
+      {
+        title: 'Jike Wang#, Jianwen Feng#, Yu Kang#, Peichen Pan, Jingxuan Ge, Yan Wang, Mingyang Wang, Zhenxing Wu, Xingcai Zhang, Jiameng Yu, Xujun Zhang, Tianyue Wang, Lirong Wen, Guangning Yan, Yafeng Deng, Hui Shi, Chang-Yu Hsieh*, Zhihui Jiang*, Tingjun Hou*, Discovery of antimicrobial peptides with notable antibacterial potency by an LLM-based foundation model, Science Advances, 2025, 11, eads8932.',
+        url: '',
+      },
+      {
+        title: 'Mingyang Wang#, Shuai Li#, Jike Wang#, Odin Zhang, Hongyan Du, Dejun Jiang, Zhenxing Wu, Yafeng Deng, Yu Kang, Peichen Pan, Dan Li, Xiaorui Wang, Tingjun Hou*, Chang-Yu Hsieh*, ClickGen: Directed Exploration of Synthesizable Chemical Space Leading to the Rapid Synthesis of Novel and Active Lead Compounds via Modular Reactions and Reinforcement Learning, Nature Communications, 2024, 15, 10127.',
+        url: '',
+      },
+      {
+        title: 'Qun Su#, Kai Zhu#, Qiaolin Gou#, Jintu Zhang, Renling Hu, Yurong Li, Yongze Wang, Hui Zhang, Ziyi You, Linlong Jiang, Yu Kang, Jike Wang*, Chang-Yu Hsieh*, Tingjun Hou*, A Scalable and Quantum-Accurate Foundation Model for Biomolecular Force Field via Linearly Tensorized Quadrangle Attention, Nature Communications, 2026, 17, 3639.',
+        url: '',
+      },
+      {
+        title: 'Jike Wang#, Hao Luo, Rui Qin, Mingyang Wang, Xiaozhe Wan, Meijing Fang, Odin Zhang, Qiaolin Gou, Qun Su, Chao Shen, Ziyi You, Liwei Liu*, Chang-Yu Hsieh*, Tingjun Hou*, Yu Kang*, 3DSMILES-GPT: 3D Molecular Pocket-based Generation with Token-only Large Language Model, Chemical Science, 2024, 16, 637-648.',
+        url: '',
+      },
+      {
+        title: 'Jie Yue#, Bingxin Peng#, Yu Chen#, Jieyu Jin#, Xinda Zhao, Chao Shen, Xiangyang Ji, Chang-Yu Hsieh, Jianfei Song, Tingjun Hou*, Yafeng Deng*, Jike Wang*, Unlocking comprehensive molecular design across all scenarios with large language model and unordered chemical language, Chemical Science, 2024, 15, 13727-13740.',
+        url: '',
+      },
+      {
+        title: 'Jike Wang#, Xiaorui Wang#, Huiyong Sun, Mingyang Wang, Yundian Zeng, Dejun Jiang, Zhenxing Wu, Zeyi Liu, Ben Liao, Xiaojun Yao, Chang-Yu Hsieh*, Dongsheng Cao*, Xi Chen*, Tingjun Hou*, ChemistGA: A Chemical Synthesizable Accessible Molecular Generation Algorithm for Real-World Drug Discovery, Journal of Medicinal Chemistry, 2022, 65, 12482-12496.',
+        url: '',
+      },
+      {
+        title: 'Jike Wang, Dongsheng Cao, Cunchen Tang, Lei Xu, Qiaojun He, Bo Yang, Xi Chen, Huiyong Sun, Tingjun Hou, DeepAtomicCharge: a new graph convolutional network-based architecture for accurate prediction of atomic charges, Briefings in Bioinformatics, 2021, 22, bbaa183.',
+        url: '',
+      },
+      {
+        title: 'Jike Wang#, Yundian Zeng#, Huiyong Sun, Junmei Wang, Xiaorui Wang, Ruofan Jin, Mingyang Wang, Xujun Zhang, Dongsheng Cao, Xi Chen*, Chang-Yu Hsieh*, Tingjun Hou*, Molecular Generation with Reduced Labeling through Constraint Architecture, Journal of Chemical Information and Modeling, 2024, 64, 1213-1228.',
+        url: '',
+      },
+      {
+        title: 'Jike Wang#, Huiyong Sun#, Jiawen Chen, Dejun Jiang, Zhe Wang, Zhenxing Wu, Xi Chen*, Dongsheng Cao*, Tingjun Hou*, DeepChargePredictor: a web server for predicting QM-based atomic charges via state-of-the-art machine-learning algorithms, Bioinformatics, 2021, 37, 4255-4257.',
+        url: '',
+      },
+      {
+        title: 'Jike Wang, Dongsheng Cao, Cunchen Tang, Xi Chen*, Huiyong Sun*, Tingjun Hou*, Fast and accurate prediction of partial charges using Atom-Path-Descriptor-based machine learning, Bioinformatics, 2020, 36, 4721-4728.',
+        url: '',
+      },
+      {
+        title: 'Qun Su#, Jike Wang#, Qiaolin Gou, Renling Hu, Linlong Jiang, Hui Zhang, Tianyue Wang, Yifei Liu, Chao Shen, Yu Kang, Chang-Yu Hsieh*, Tingjun Hou*, Robust protein-ligand interaction modeling through integrating physical laws and geometric knowledge for absolute binding free energy calculation, Chemical Science, 2025, 16, 5043-5057.',
+        url: '',
+      },
+      {
+        title: 'Mingyang Wang#, Jike Wang#, Gaoqi Weng, Yu Kang, Peichen Pan, Dan Li, Yafeng Deng, Honglin Li*, Chang-Yu Hsieh*, Tingjun Hou*, ReMODE: a deep learning-based web server for target-specific drug design, Journal of Cheminformatics, 2022, 14, 84.',
+        url: '',
+      },
+      {
+        title: 'Qun Su#, Hui Zhang#, Qiaolin Gou#, Huiyong Sun, Meijing Fang, Xujun Zhang, Renling Hu, Yu Kang, Chang-Yu Hsieh, Jike Wang*, Tingjun Hou*, LumiCharge: Spherical Harmonic Convolutional Networks for Atomic Charge Prediction in Drug Discovery, The Journal of Physical Chemistry Letters, 2025, 16, 6334-6344.',
+        url: '',
+      },
+    ],
+  },
+  {
     name_cn: '沈 超',
     name_en: 'Chao Shen',
     title_cn: '特聘研究员',
@@ -951,48 +1040,6 @@ export const postdoc = [
       },
       {
         title: 'Ying Wang, Baichun Hu, YuSheng Peng, Xin Xiong, Wenhua Jing, Jian Wang*, Huiyuan Gao*. In Silico Exploration of the Molecular Mechanism of Cassane Diterpenoids on Anti-inflammatory and Immunomodulatory Activity, Journal of chemical information and modeling, 2019, 59, 2309-2323.',
-        url: '',
-      },
-    ],
-  },
-  {
-    name_cn: '王極可',
-    name_en: 'Jike Wang',
-    title_cn: '博士后/助理研究员',
-    title_en: 'Postdoctoral Researcher/Assistant Researcher',
-    email: 'jikewang@zju.edu.cn',
-    research_direction: ['基于机器学习和人工智能技术的药物设计方法开发和应用'],
-    image: importImage('people_jikewang.png'),
-    education: [
-      {
-        description_cn: '2016年9月-2022年12月：武汉大学，计算机学院，博士',
-        description_en: 'Sep 2016 - Dec 2022: Wuhan University, School of Computer Science, PhD',
-      },
-      {
-        description_cn: '2023年12月至今：浙江大学，药学院，博士后（合作导师：侯廷军教授）',
-        description_en: 'Dec 2023 - present: Zhejiang University, School of Pharmacy, Postdoctoral Researcher (Supervisor: Prof. Tingjun Hou)',
-      },
-    ],
-    awards: [],
-    papers: [
-      {
-        title: 'Jike Wang, Chang-Yu Hsieh, Mingyang Wang, Xiaorui Wang, Zhenxing Wu, Dejun Jiang, Benben Liao, Xujun Zhang, Bo Yang, Qiaojun He, Dongsheng Cao*, Xi Chen*, Tingjun Hou*, Multi-constraint molecular generation based on conditional transformer, knowledge distillation and reinforcement learning, Nature Machine Intelligence, 2021, 3, 914-922.',
-        url: '',
-      },
-      {
-        title: 'Jike Wang, Rui Qin, Mingyang Wang, Meijing Fang, Yangyang Zhang, Yuchen Zhu, Qun Su, Qiaolin Gou, Chao Shen, Odin Zhang, Zhenxing Wu, Dejun Jiang, Xujun Zhang, Huifeng Zhao, Jingxuan Ge, Zhourui Wu, Yu Kang*, Chang-Yu Hsieh*, Tingjun Hou*, Token-Mo1.0: Tokenized drug design with language model, Nature Communications, 2025, 16, 4416.',
-        url: '',
-      },
-      {
-        title: 'Jike Wang, Jianwen Feng, Yu Kang, Peichen Pan, Jingxuan Ge, Yan Wang, Mingyang Wang, Zhenxing Wu, Xingcai Zhang, Jiameng Yu, Xujun Zhang, Tianyue Wang, Lirong Wen, Guangning Yan, Yafeng Deng, Hui Shi, Chang-Yu Hsieh*, Zhihui Jiang*, Tingjun Hou*, Discovery of antimicrobial peptides with notable antibacterial potency by an LLM-based foundation model, Science Advances, 2025, 11, eads8932.',
-        url: '',
-      },
-      {
-        title: 'Mingyang Wang#, Shuai Li#, Jike Wang#, Odin Zhang, Hongyan Du, Dejun Jiang, Zhenxing Wu, Yafeng Deng, Yu Kang, Peichen Pan, Dan Li, Xiaorui Wang, Tingjun Hou*, Chang-Yu Hsieh*, ClickGen: Directed Exploration of Synthesizable Chemical Space Leading to the Rapid Synthesis of Novel and Active Lead Compounds via Modular Reactions and Reinforcement Learning, Nature Communications, 2024, 15, 10127.',
-        url: '',
-      },
-      {
-        title: 'Jike Wang, Hao Luo, Rui Qin, Mingyang Wang, Xiaozhe Wan, Meijing Fang, Odin Zhang, Qiaolin Gou, Qun Su, Chao Shen, Ziyi You, Liwei Liu*, Chang-Yu Hsieh*, Tingjun Hou*, Yu Kang*, 3DSMILES-GPT: 3D Molecular Pocket-based Generation with Token-only Large Language Model, Chemical Science, 2024, 16, 637-648.',
         url: '',
       },
     ],
