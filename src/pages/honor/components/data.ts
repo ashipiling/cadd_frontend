@@ -203,14 +203,50 @@ export const teacherHonors: TeacherHonor[] = [
 ]
 
 // 集体荣誉数据
+
+export const carouselHonors: CollectiveHonor[] = [
+  {
+    id: 0,
+    title: '恭喜课题组成员戈婧萱、刘毅飞、赵慧锋、陈俞伽同学荣获浙江大学药学院第二届方瑞英奖学金！',
+    title_en: 'Congratulations to the students Ge Jingxuan, Liu Yifei, Zhao Huifeng, Chen Yujia for winning the Second Fang Ruiying Scholarship from the College of Pharmacy, Zhejiang University!',
+    level: '奖学金',
+    year: '2026',
+    honor: '奖学金',
+    participants: [''],
+    instructors: [''],
+    image: null
+  },
+  {
+    id: 1,
+    title: '恭喜课题组成员沈欣领衔项目“LynxMind——中枢神经药物设计领航者”荣获浙江省第十五届“挑战杯”大学生创业计划竞赛金奖！',
+    title_en: 'Congratulations to the student Shen Xin for leading the project "LynxMind——Central Nervous System Drug Design Navigator" winning the Gold Award in the 15th "Challenge Cup" College Students Business Plan Competition of Zhejiang Province!',
+    level: '挑战杯',
+    year: '2026',
+    honor: '金奖',
+    participants: ['沈欣'],
+    instructors: ['侯廷军'],
+    image: null
+  },
+]
+
 export const collectiveHonors: CollectiveHonor[] = [
+  {
+    id: 0,
+    title: '浙江省第十五届“挑战杯”大学生创业计划竞赛金奖',
+    title_en: 'Gold Award in the 15th "Challenge Cup" College Students Business Plan Competition of Zhejiang Province',
+    level: '挑战杯',
+    year: '2026',
+    honor: '金奖',
+    participants: ['沈欣'],
+    instructors: ['侯廷军'],
+    image: null
+  },
   {
     id: 0,
     title: '浙江省国际大学生创新大赛（2025）金奖',
     title_en: 'Gold Award in Zhejiang International College Students Innovation Competition (2025)',
     level: '创新大赛',
     year: '2025',
-    month: '7',
     honor: '金奖',
     participants: [''],
     instructors: [''],

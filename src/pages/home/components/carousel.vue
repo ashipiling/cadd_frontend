@@ -38,13 +38,13 @@
                       <!-- 荣誉项 - 使用动态数据 -->
                       <template v-for="honor in displayHonors" :key="`first-${honor.id}`">
                         <span class="text-gray-300 mx-4 inline-block">
-                          - {{ honor.year }}年 {{ locale === 'zh-CN' ? honor.title : honor.title_en }}
+                          - {{ locale === 'zh-CN' ? honor.title : honor.title_en }}
                         </span>
                       </template>
                       <!-- 重复荣誉项以实现无缝滚动 -->
                       <template v-for="honor in displayHonors" :key="`second-${honor.id}`">
                         <span class="text-gray-300 mx-4 inline-block">
-                          - {{ honor.year }}年 {{ locale === 'zh-CN' ? honor.title : honor.title_en }}
+                          - {{ locale === 'zh-CN' ? honor.title : honor.title_en }}
                         </span>
                       </template>
                     </div>
@@ -143,7 +143,7 @@
 import { ref, onMounted, onUnmounted, computed } from 'vue'
 import { Sparkle } from 'lucide-vue-next'
 import { useI18n } from 'vue-i18n'
-import { collectiveHonors } from '@/pages/honor/components/data'
+import { carouselHonors } from '@/pages/honor/components/data'
 
 const { locale, t } = useI18n()
 
@@ -153,8 +153,7 @@ const autoplayInterval = ref<number | null>(null)
 
 // 计算要显示的荣誉（取前8个）
 const displayHonors = computed(() => {
-  return collectiveHonors
-    .filter(honor => honor.year === '2024') // 只显示2024年的荣誉
+  return carouselHonors
     .slice(0, 8) // 最多显示8个
 })
 
